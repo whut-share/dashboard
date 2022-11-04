@@ -108,7 +108,7 @@ async function sync() {
 
 async function mint() {
   const pop = async () => {
-    await fetch("http://localhost:8000/dassets/mint", {
+    await fetch(process.env["VUE_APP_API_URL"] + "/dassets/mint", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,3 +1,4 @@
+import { loadStripe } from "@/plugins";
 import { useAuthStore, usePreloadStore } from "@/store";
 import { NavigationGuardNext, RouteLocationNormalized } from "vue-router";
 
@@ -7,6 +8,8 @@ export const loadGuard = async (
   next: NavigationGuardNext
 ) => {
   const proms: Promise<any>[] = [];
+
+  await loadStripe();
 
   const auth_store = useAuthStore();
   const preload_store = usePreloadStore();

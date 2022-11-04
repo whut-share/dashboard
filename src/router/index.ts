@@ -34,6 +34,10 @@ const routes: Array<RouteRecordRaw> = [
       },
     ],
   },
+  {
+    path: "/dassets/:session",
+    component: () => import("@/views/DassetsFlowView.vue"),
+  },
   // {
   //   path: "/about",
   //   name: "about",
