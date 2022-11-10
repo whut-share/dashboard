@@ -19,26 +19,18 @@
       variant="outlined"
     ></v-text-field>
 
-    <v-row class="d-flex" v-if="!is_project_loading">
-      <v-col cols="4">
+    <v-row class="d-flex">
+      <v-col cols="6">
         <v-text-field
-          v-model="project.dassets.token_base_url"
+          v-model="project.dassets_settings.token_base_url"
           variant="outlined"
           label="Token metadata url"
         ></v-text-field>
       </v-col>
 
-      <v-col cols="4">
-        <v-text-field
-          label="Webhooks endpoint"
-          v-model="project.dassets.webhook_events_url"
-          variant="outlined"
-        ></v-text-field>
-      </v-col>
-
-      <v-col cols="4">
+      <v-col cols="6">
         <v-select
-          v-model="project.dassets.include_networks"
+          v-model="project.dassets_settings.include_networks"
           :items="[
             { title: 'Local', value: 'local' },
             { title: 'Ethereum', value: 'ethereum' },
@@ -61,88 +53,62 @@
         @click="saveProject"
         >save</v-btn
       >
-      <v-btn :loading="is_mint_loading" color="info" @click="mint"
-        >test mint</v-btn
-      >
     </div>
+
+    <WebhookEndpointsTable :project="project.id" />
+
+    <DassetsCheckoutSessionsTable :project="project.id" />
   </div>
 </template>
 
 <script setup lang="ts">
 import {
-  GqlProjectsSelect,
-  GQL_PROJECTS_CREATE,
+  GqlProjectsGet,
+  GqlProjectsGetVariables,
+  GqlProjectsUpdateOne,
+  GqlProjectsUpdateOneVariables,
   GQL_PROJECTS_GET,
-  GQL_PROJECTS_SELECT,
-  GQL_PROJECTS_UPDATE,
+  GQL_PROJECTS_UPDATE_ONE,
 } from "@/graphql";
 import { IProject } from "@/interfaces";
+import { useProjectsStore } from "@/store";
 import { useApolloClient, useMutation, useQuery } from "@vue/apollo-composable";
 import { onMounted, reactive, ref } from "vue";
 import { useRoute } from "vue-router";
-
-const project = ref({} as IProject);
-const is_project_loading = ref(true);
-const is_save_loading = ref(false);
-const is_mint_loading = ref(false);
+import WebhookEndpointsTable from "@/components/projects/WebhookEndpointsTable.vue";
+import DassetsCheckoutSessionsTable from "@/components/projects/DassetsCheckoutSessionsTable.vue";
 
 const { client } = useApolloClient();
 const route = useRoute();
 
-async function sync() {
-  is_project_loading.value = true;
-  await client
-    .query({
-      query: GQL_PROJECTS_GET,
-      variables: {
-        id: route.params.project,
-      },
-    })
-    .then(({ data }) => {
-      project.value = data.project;
-    })
-    .finally(() => {
-      is_project_loading.value = false;
-    });
-}
+const projects_store = useProjectsStore();
+const project = reactive(
+  projects_store.projects.find((n) => n.id === route.params.project) as IProject
+);
 
-async function mint() {
-  const pop = async () => {
-    await fetch(process.env["VUE_APP_API_URL"] + "/dassets/mint", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        project_id: project.value.id,
-      }),
-    });
-  };
-
-  is_mint_loading.value = true;
-  pop().finally(() => {
-    is_mint_loading.value = false;
-  });
-}
+const is_save_loading = ref(false);
 
 async function saveProject() {
   const pop = async () => {
-    const { data } = await client.query({
-      query: GQL_PROJECTS_UPDATE,
+    const { data } = await client.query<
+      GqlProjectsUpdateOne,
+      GqlProjectsUpdateOneVariables
+    >({
+      query: GQL_PROJECTS_UPDATE_ONE,
       variables: {
-        id: project.value.id,
+        id: project.id,
         data: {
-          dassets: {
-            token_base_url: project.value.dassets.token_base_url,
-            webhook_events_url: project.value.dassets.webhook_events_url,
-            include_networks: project.value.dassets.include_networks,
+          dassets_settings: {
+            token_base_url: project.dassets_settings.token_base_url,
+            webhook_events_url: project.dassets_settings.webhook_events_url,
+            include_networks: project.dassets_settings.include_networks,
           },
-          name: project.value.name,
+          name: project.name,
         },
       },
     });
 
-    project.value = data.projectsUpdate;
+    await projects_store.sync();
   };
 
   is_save_loading.value = true;
@@ -150,6 +116,4 @@ async function saveProject() {
     is_save_loading.value = false;
   });
 }
-
-onMounted(sync);
 </script>

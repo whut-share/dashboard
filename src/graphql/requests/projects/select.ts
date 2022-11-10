@@ -5,7 +5,7 @@ export const GQL_PROJECTS_SELECT = gql`
     projects {
       id
       name
-      dassets {
+      dassets_settings {
         include_networks
         token_base_url
         webhook_events_url

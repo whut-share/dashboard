@@ -1,11 +1,11 @@
 import { gql } from "graphql-tag";
 
-export const GQL_PROJECTS_UPDATE = gql`
-  mutation GqlProjectsUpdate($id: ObjectId!, $data: IProjectsUpdate!) {
-    projectsUpdate(data: $data, id: $id) {
+export const GQL_PROJECTS_UPDATE_ONE = gql`
+  mutation GqlProjectsUpdateOne($id: ObjectId!, $data: IProjectUpdate!) {
+    projectUpdate(data: $data, id: $id) {
       id
       name
-      dassets {
+      dassets_settings {
         include_networks
         token_base_url
         webhook_events_url

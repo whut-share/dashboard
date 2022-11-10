@@ -29,7 +29,7 @@
     </v-dialog>
 
     <div class="list">
-      <v-row v-if="!are_projects_loading">
+      <v-row>
         <v-col cols="4">
           <v-card
             @click="is_modal_opened = true"
@@ -69,10 +69,11 @@
 <script setup lang="ts">
 import {
   GqlProjectsSelect,
-  GQL_PROJECTS_CREATE,
+  GQL_PROJECTS_CREATE_ONE,
   GQL_PROJECTS_SELECT,
 } from "@/graphql";
 import { IProject } from "@/interfaces";
+import { useProjectsStore } from "@/store";
 import { useApolloClient, useMutation, useQuery } from "@vue/apollo-composable";
 import { onMounted, reactive, ref } from "vue";
 import { useRouter } from "vue-router";
@@ -82,37 +83,24 @@ const project_form = reactive({
 });
 
 const { client } = useApolloClient();
+const projects_store = useProjectsStore();
 const router = useRouter();
 
 const is_modal_opened = ref(false);
 const is_create_project_loading = ref(false);
 
-const projects = ref([] as IProject[]);
-const are_projects_loading = ref(true);
-
-async function sync() {
-  await client
-    .query({
-      query: GQL_PROJECTS_SELECT,
-    })
-    .then(({ data }) => {
-      projects.value = data.projects;
-    })
-    .finally(() => {
-      are_projects_loading.value = false;
-    });
-}
+const projects = reactive(projects_store.projects as IProject[]);
 
 async function createProject() {
   const pop = async () => {
     await client.mutate({
-      mutation: GQL_PROJECTS_CREATE,
+      mutation: GQL_PROJECTS_CREATE_ONE,
       variables: {
         data: project_form,
       },
     });
 
-    await sync();
+    await projects_store.sync();
   };
 
   is_create_project_loading.value = true;
@@ -121,6 +109,4 @@ async function createProject() {
     is_modal_opened.value = false;
   });
 }
-
-onMounted(sync);
 </script>

@@ -1,11 +1,11 @@
-export interface IProjectDassetsData {
+export interface IProjectDassetsSettings {
   include_networks: string[];
-  token_base_url: string;
-  webhook_events_url: string;
+  token_base_url: string | null;
+  webhook_events_url: string | null;
 }
 
 export interface IProject {
   id: string;
   name: string;
-  dassets: IProjectDassetsData;
+  dassets_settings: IProjectDassetsSettings;
 }

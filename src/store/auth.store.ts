@@ -1,4 +1,8 @@
-import { GQL_USERS_GET_ME } from "@/graphql";
+import {
+  GqlProjectsGetVariables,
+  GqlUsersGetMe,
+  GQL_USERS_GET_ME,
+} from "@/graphql";
 import { defineStore } from "pinia";
 import { IUser } from "@/interfaces";
 import {
@@ -59,7 +63,7 @@ export const useAuthStore = defineStore("auth", {
 
     async sync() {
       await apollo_client
-        .query({
+        .query<GqlUsersGetMe>({
           query: GQL_USERS_GET_ME,
           variables: {},
           context: {
