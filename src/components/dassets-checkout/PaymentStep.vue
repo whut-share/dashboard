@@ -23,12 +23,16 @@
 </template>
 
 <script setup lang="ts">
-import { useStripe } from "@/plugins";
+import {
+  GqlDassetsCheckoutSessionsAttachStripePaymentIntent,
+  GqlDassetsCheckoutSessionsAttachStripePaymentIntentVariables,
+  GQL_DASSETS_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT,
+} from "@/graphql";
+import { apollo_client, useStripe } from "@/plugins";
 import { useDassetsCheckoutStore } from "@/store";
 import { computed, onMounted, ref } from "vue";
 
 const stripe = useStripe();
-const pi_secret = ref("");
 const is_render_loading = ref(true);
 const is_payment_loading = ref(false);
 
@@ -38,25 +42,33 @@ const session = computed(() => dassets_flow_store.session);
 let elements: any;
 
 async function render() {
-  await fetch(
-    `${process.env["VUE_APP_API_URL"]}/dassets-checkouts/${session.value?.id}/stripe-pi`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+  const session = dassets_flow_store.getSessionOrFail();
+
+  await apollo_client
+    .mutate<
+      GqlDassetsCheckoutSessionsAttachStripePaymentIntent,
+      GqlDassetsCheckoutSessionsAttachStripePaymentIntentVariables
+    >({
+      mutation: GQL_DASSETS_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT,
+      variables: {
+        id: session.id,
       },
-    }
-  )
-    .then((res) => res.json())
+    })
     .then((res) => {
-      pi_secret.value = res.client_secret;
+      dassets_flow_store.setSession(
+        res.data.dassetsCheckoutSessionAttachStripePaymentIntent
+      );
     });
+
+  if (!session.stripe_pi_client_secret) {
+    throw new Error("No stripe pi client secret");
+  }
 
   elements = stripe.elements({
     appearance: {
       theme: "stripe",
     },
-    clientSecret: pi_secret.value,
+    clientSecret: session.stripe_pi_client_secret,
   });
 
   const paymentElement = elements.create("payment");
@@ -68,7 +80,6 @@ async function submit() {
 
   await stripe
     .confirmPayment({
-      //`Elements` instance that was used to create the Payment Element
       elements,
       confirmParams: {
         return_url: window.location.href,

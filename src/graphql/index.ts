@@ -11,6 +11,7 @@ export * from "./requests/projects/get";
 export * from "./requests/dassets-checkout-sessions/create";
 export * from "./requests/dassets-checkout-sessions/update";
 export * from "./requests/dassets-checkout-sessions/get";
+export * from "./requests/dassets-checkout-sessions/attach-stripe-payment-intent";
 
 export * from "./requests/webhook-endpoints/create";
 export * from "./requests/webhook-endpoints/select";

@@ -91,6 +91,10 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
       merge(session, data);
     },
 
+    setSession(data: IDassetsCheckoutSession) {
+      this.session = data;
+    },
+
     async updateSessionAndSave(data: ISessionUpdate) {
       this.updateSession(data);
 

@@ -37,11 +37,15 @@ export const apollo_client = new ApolloClient({
   defaultOptions: {
     watchQuery: {
       fetchPolicy: "no-cache",
-      // errorPolicy: 'ignore',
+      // errorPolicy: 'all',
+    },
+    mutate: {
+      fetchPolicy: "no-cache",
+      // errorPolicy: 'all',
     },
     query: {
       fetchPolicy: "no-cache",
-      // errorPolicy: 'none',
+      // errorPolicy: 'all',
     },
   },
 });

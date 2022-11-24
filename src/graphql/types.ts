@@ -4,6 +4,66 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
+// GraphQL mutation operation: GqlDassetsCheckoutSessionsAttachStripePaymentIntent
+// ====================================================
+
+export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_price_estimation {
+  __typename: "DassetsCheckoutSessionPriceEstimate";
+  price: number;
+  total_eth: number;
+  eth_price: number;
+  gas_price: number;
+  gas: number;
+  slippage: number;
+}
+
+export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_asset_info {
+  __typename: "DassetsNftAssetInfo";
+  id: string;
+  name: string;
+  description: string | null;
+  image_url: string | null;
+}
+
+export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent {
+  __typename: "DassetsCheckoutSession";
+  id: string;
+  created_at: any;
+  updated_at: any;
+  project: string;
+  address: string | null;
+  mint_tx: string | null;
+  mint_request_id: string | null;
+  mint_token_id: number | null;
+  payment_id: string | null;
+  network: string | null;
+  contract_type: string;
+  is_succeeded: boolean;
+  is_minted: boolean;
+  is_payed: boolean;
+  is_expired: boolean;
+  expires_at: any;
+  url: string;
+  payment_expires_at: any | null;
+  stripe_pi_client_secret: string | null;
+  price_estimation: GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_price_estimation | null;
+  asset_info: GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_asset_info;
+}
+
+export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent {
+  dassetsCheckoutSessionAttachStripePaymentIntent: GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent;
+}
+
+export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntentVariables {
+  id: any;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
 // GraphQL mutation operation: GqlDassetsCheckoutSessionsCreateOne
 // ====================================================
 
@@ -66,6 +126,7 @@ export interface GqlDassetsCheckoutSessionsGet_dassets_checkout_session {
   is_expired: boolean;
   expires_at: any;
   url: string;
+  payment_expires_at: any | null;
   price_estimation: GqlDassetsCheckoutSessionsGet_dassets_checkout_session_price_estimation | null;
   asset_info: GqlDassetsCheckoutSessionsGet_dassets_checkout_session_asset_info;
 }
@@ -124,6 +185,7 @@ export interface GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdat
   is_expired: boolean;
   expires_at: any;
   url: string;
+  payment_expires_at: any | null;
   price_estimation: GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate_price_estimation | null;
   asset_info: GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate_asset_info;
 }

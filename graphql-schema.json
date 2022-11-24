@@ -680,6 +680,18 @@
             "deprecationReason": null
           },
           {
+            "name": "payment_expires_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "network",
             "description": null,
             "args": [],
@@ -756,6 +768,22 @@
             "deprecationReason": null
           },
           {
+            "name": "is_payed",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "url",
             "description": null,
             "args": [],
@@ -773,22 +801,6 @@
           },
           {
             "name": "is_minted",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "is_payed",
             "description": null,
             "args": [],
             "type": {
@@ -826,6 +838,18 @@
             "type": {
               "kind": "OBJECT",
               "name": "DassetsCheckoutSessionPriceEstimate",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "stripe_pi_client_secret",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
               "ofType": null
             },
             "isDeprecated": false,
@@ -1420,6 +1444,39 @@
                   "ofType": {
                     "kind": "INPUT_OBJECT",
                     "name": "IDassetsCheckoutSessionUpdate",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "DassetsCheckoutSession",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "dassetsCheckoutSessionAttachStripePaymentIntent",
+            "description": null,
+            "args": [
+              {
+                "name": "id",
+                "description": null,
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ObjectId",
                     "ofType": null
                   }
                 },

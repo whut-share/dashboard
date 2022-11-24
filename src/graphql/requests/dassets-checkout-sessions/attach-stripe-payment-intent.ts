@@ -1,11 +1,8 @@
 import { gql } from "graphql-tag";
 
-export const GQL_DASSETS_CHECKOUT_SESSIONS_UPDATE_ONE = gql`
-  mutation GqlDassetsCheckoutSessionsUpdateOne(
-    $id: ObjectId!
-    $data: IDassetsCheckoutSessionUpdate!
-  ) {
-    dassetsCheckoutSessionUpdate(data: $data, id: $id) {
+export const GQL_DASSETS_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT = gql`
+  mutation GqlDassetsCheckoutSessionsAttachStripePaymentIntent($id: ObjectId!) {
+    dassetsCheckoutSessionAttachStripePaymentIntent(id: $id) {
       id
       created_at
       updated_at
@@ -24,6 +21,7 @@ export const GQL_DASSETS_CHECKOUT_SESSIONS_UPDATE_ONE = gql`
       expires_at
       url
       payment_expires_at
+      stripe_pi_client_secret
       price_estimation {
         price
         total_eth

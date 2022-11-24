@@ -32,6 +32,8 @@ export interface IDassetsCheckoutSession {
   is_expired: boolean;
   expires_at: any;
   url: string;
+  payment_expires_at: any | null;
+  stripe_pi_client_secret?: string | null;
 
   asset_info: IDassetsCheckoutSessionAssetInfo;
   price_estimation: IDassetsCheckoutSessionPriceEstimation | null;

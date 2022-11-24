@@ -20,6 +20,7 @@ export const GQL_DASSETS_CHECKOUT_SESSIONS_GET = gql`
       is_expired
       expires_at
       url
+      payment_expires_at
       price_estimation {
         price
         total_eth
