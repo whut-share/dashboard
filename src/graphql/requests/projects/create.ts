@@ -5,6 +5,9 @@ export const GQL_PROJECTS_CREATE_ONE = gql`
     projectCreate(data: $data) {
       id
       name
+      dassets_syncer_instance {
+        id
+      }
       dassets_settings {
         include_networks
         token_base_url

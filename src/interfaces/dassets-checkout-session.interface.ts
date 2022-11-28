@@ -10,8 +10,8 @@ export interface IDassetsCheckoutSessionPriceEstimation {
 export interface IDassetsCheckoutSessionAssetInfo {
   id: string;
   name: string;
-  description: string | null;
-  image_url: string | null;
+  description?: string | null;
+  image_url?: string | null;
 }
 
 export interface IDassetsCheckoutSession {

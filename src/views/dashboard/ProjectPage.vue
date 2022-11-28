@@ -55,8 +55,6 @@
       >
     </div>
 
-    <WebhookEndpointsTable :project="project.id" />
-
     <DassetsCheckoutSessionsTable :project="project.id" />
   </div>
 </template>
@@ -75,7 +73,6 @@ import { useProjectsStore } from "@/store";
 import { useApolloClient, useMutation, useQuery } from "@vue/apollo-composable";
 import { onMounted, reactive, ref } from "vue";
 import { useRoute } from "vue-router";
-import WebhookEndpointsTable from "@/components/projects/WebhookEndpointsTable.vue";
 import DassetsCheckoutSessionsTable from "@/components/projects/DassetsCheckoutSessionsTable.vue";
 
 const { client } = useApolloClient();

@@ -1,21 +1,27 @@
 <template>
   <v-app>
-    <v-main class="d-flex flex-column">
+    <v-main
+      class="d-flex flex-column"
+      :class="{
+        'big-padding-left': is_sidebar_opened,
+      }"
+    >
       <router-view />
     </v-main>
   </v-app>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import { computed } from "vue";
+import { useSidebarStore } from "./store";
 
-export default defineComponent({
-  name: "App",
+const sidebar_store = useSidebarStore();
 
-  data() {
-    return {
-      //
-    };
-  },
-});
+const is_sidebar_opened = computed(() => sidebar_store.is_opened);
 </script>
+
+<style lang="scss" scoped>
+.big-padding-left {
+  padding-left: 250px;
+}
+</style>

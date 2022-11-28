@@ -205,8 +205,114 @@ export interface GqlDassetsCheckoutSessionsUpdateOneVariables {
 // This file was automatically generated and should not be edited.
 
 // ====================================================
+// GraphQL mutation operation: GqlEventEmitterInstancesCreateOne
+// ====================================================
+
+export interface GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: string;
+}
+
+export interface GqlEventEmitterInstancesCreateOne {
+  eventEmitterInstanceCreate: GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate;
+}
+
+export interface GqlEventEmitterInstancesCreateOneVariables {
+  data: IEventEmitterInstanceCreate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlEventEmitterInstancesGet
+// ====================================================
+
+export interface GqlEventEmitterInstancesGet_event_emitter_instance {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: string;
+}
+
+export interface GqlEventEmitterInstancesGet {
+  event_emitter_instance: GqlEventEmitterInstancesGet_event_emitter_instance[];
+}
+
+export interface GqlEventEmitterInstancesGetVariables {
+  id: any;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlEventEmitterInstancesSelect
+// ====================================================
+
+export interface GqlEventEmitterInstancesSelect_event_emitter_instances {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: string;
+}
+
+export interface GqlEventEmitterInstancesSelect {
+  event_emitter_instances: GqlEventEmitterInstancesSelect_event_emitter_instances[];
+}
+
+export interface GqlEventEmitterInstancesSelectVariables {
+  filter: IEventEmitterInstancesFilter;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL mutation operation: GqlEventEmitterInstancesUpdateOne
+// ====================================================
+
+export interface GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: string;
+}
+
+export interface GqlEventEmitterInstancesUpdateOne {
+  eventEmitterInstanceUpdate: GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate;
+}
+
+export interface GqlEventEmitterInstancesUpdateOneVariables {
+  id: any;
+  data: IEventEmitterInstanceUpdate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
 // GraphQL mutation operation: GqlProjectsCreateOne
 // ====================================================
+
+export interface GqlProjectsCreateOne_projectCreate_dassets_syncer_instance {
+  __typename: "SyncerInstance";
+  id: any;
+}
 
 export interface GqlProjectsCreateOne_projectCreate_dassets_settings {
   __typename: "ProjectDassetsSettings";
@@ -219,6 +325,7 @@ export interface GqlProjectsCreateOne_projectCreate {
   __typename: "Project";
   id: string;
   name: string;
+  dassets_syncer_instance: GqlProjectsCreateOne_projectCreate_dassets_syncer_instance;
   dassets_settings: GqlProjectsCreateOne_projectCreate_dassets_settings;
 }
 
@@ -239,6 +346,11 @@ export interface GqlProjectsCreateOneVariables {
 // GraphQL query operation: GqlProjectsGet
 // ====================================================
 
+export interface GqlProjectsGet_project_dassets_syncer_instance {
+  __typename: "SyncerInstance";
+  id: any;
+}
+
 export interface GqlProjectsGet_project_dassets_settings {
   __typename: "ProjectDassetsSettings";
   include_networks: string[];
@@ -250,6 +362,7 @@ export interface GqlProjectsGet_project {
   __typename: "Project";
   id: string;
   name: string;
+  dassets_syncer_instance: GqlProjectsGet_project_dassets_syncer_instance;
   dassets_settings: GqlProjectsGet_project_dassets_settings;
 }
 
@@ -270,6 +383,11 @@ export interface GqlProjectsGetVariables {
 // GraphQL query operation: GqlProjectsSelect
 // ====================================================
 
+export interface GqlProjectsSelect_projects_dassets_syncer_instance {
+  __typename: "SyncerInstance";
+  id: any;
+}
+
 export interface GqlProjectsSelect_projects_dassets_settings {
   __typename: "ProjectDassetsSettings";
   include_networks: string[];
@@ -281,6 +399,7 @@ export interface GqlProjectsSelect_projects {
   __typename: "Project";
   id: string;
   name: string;
+  dassets_syncer_instance: GqlProjectsSelect_projects_dassets_syncer_instance;
   dassets_settings: GqlProjectsSelect_projects_dassets_settings;
 }
 
@@ -297,6 +416,11 @@ export interface GqlProjectsSelect {
 // GraphQL mutation operation: GqlProjectsUpdateOne
 // ====================================================
 
+export interface GqlProjectsUpdateOne_projectUpdate_dassets_syncer_instance {
+  __typename: "SyncerInstance";
+  id: any;
+}
+
 export interface GqlProjectsUpdateOne_projectUpdate_dassets_settings {
   __typename: "ProjectDassetsSettings";
   include_networks: string[];
@@ -308,6 +432,7 @@ export interface GqlProjectsUpdateOne_projectUpdate {
   __typename: "Project";
   id: string;
   name: string;
+  dassets_syncer_instance: GqlProjectsUpdateOne_projectUpdate_dassets_syncer_instance;
   dassets_settings: GqlProjectsUpdateOne_projectUpdate_dassets_settings;
 }
 
@@ -318,6 +443,95 @@ export interface GqlProjectsUpdateOne {
 export interface GqlProjectsUpdateOneVariables {
   id: any;
   data: IProjectUpdate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL mutation operation: GqlSyncerInstancesCreateOne
+// ====================================================
+
+export interface GqlSyncerInstancesCreateOne_syncerInstanceCreate {
+  __typename: "SyncerInstance";
+  id: any;
+}
+
+export interface GqlSyncerInstancesCreateOne {
+  syncerInstanceCreate: GqlSyncerInstancesCreateOne_syncerInstanceCreate;
+}
+
+export interface GqlSyncerInstancesCreateOneVariables {
+  data: ISyncerInstanceCreate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlSyncerInstancesGet
+// ====================================================
+
+export interface GqlSyncerInstancesGet_syncer_instance {
+  __typename: "SyncerInstance";
+  id: any;
+}
+
+export interface GqlSyncerInstancesGet {
+  syncer_instance: GqlSyncerInstancesGet_syncer_instance;
+}
+
+export interface GqlSyncerInstancesGetVariables {
+  id: any;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlSyncerInstancesSelect
+// ====================================================
+
+export interface GqlSyncerInstancesSelect_syncer_instances {
+  __typename: "SyncerInstance";
+  id: any;
+}
+
+export interface GqlSyncerInstancesSelect {
+  syncer_instances: GqlSyncerInstancesSelect_syncer_instances[];
+}
+
+export interface GqlSyncerInstancesSelectVariables {
+  filter: ISyncerInstancesFilter;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL mutation operation: GqlSyncerInstancesUpdateOne
+// ====================================================
+
+export interface GqlSyncerInstancesUpdateOne_syncerInstanceUpdate {
+  __typename: "SyncerInstance";
+  id: any;
+}
+
+export interface GqlSyncerInstancesUpdateOne {
+  syncerInstanceUpdate: GqlSyncerInstancesUpdateOne_syncerInstanceUpdate;
+}
+
+export interface GqlSyncerInstancesUpdateOneVariables {
+  id: any;
+  data: ISyncerInstanceUpdate;
 }
 
 /* tslint:disable */
@@ -368,103 +582,6 @@ export interface GqlUsersSignUpVariables {
 // @generated
 // This file was automatically generated and should not be edited.
 
-// ====================================================
-// GraphQL mutation operation: GqlWebhookEndpointsCreateOne
-// ====================================================
-
-export interface GqlWebhookEndpointsCreateOne_webhookEndpointCreate {
-  __typename: "WebhookEndpoint";
-  id: string;
-  url: string;
-  project: string;
-  key: string;
-}
-
-export interface GqlWebhookEndpointsCreateOne {
-  webhookEndpointCreate: GqlWebhookEndpointsCreateOne_webhookEndpointCreate;
-}
-
-export interface GqlWebhookEndpointsCreateOneVariables {
-  data: IWebhookEndpointCreate;
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
-// ====================================================
-// GraphQL query operation: GqlWebhookEndpointsGet
-// ====================================================
-
-export interface GqlWebhookEndpointsGet_webhook_endpoint {
-  __typename: "WebhookEndpoint";
-  id: string;
-  url: string;
-  project: string;
-  key: string;
-}
-
-export interface GqlWebhookEndpointsGet {
-  webhook_endpoint: GqlWebhookEndpointsGet_webhook_endpoint;
-}
-
-export interface GqlWebhookEndpointsGetVariables {
-  id: any;
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
-// ====================================================
-// GraphQL query operation: GqlWebhookEndpointsSelect
-// ====================================================
-
-export interface GqlWebhookEndpointsSelect_webhook_endpoints {
-  __typename: "WebhookEndpoint";
-  id: string;
-  url: string;
-  project: string;
-  key: string;
-}
-
-export interface GqlWebhookEndpointsSelect {
-  webhook_endpoints: GqlWebhookEndpointsSelect_webhook_endpoints[];
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
-// ====================================================
-// GraphQL mutation operation: GqlWebhookEndpointsUpdateOne
-// ====================================================
-
-export interface GqlWebhookEndpointsUpdateOne_webhookEndpointUpdate {
-  __typename: "WebhookEndpoint";
-  id: string;
-  url: string;
-  project: string;
-  key: string;
-}
-
-export interface GqlWebhookEndpointsUpdateOne {
-  webhookEndpointUpdate: GqlWebhookEndpointsUpdateOne_webhookEndpointUpdate;
-}
-
-export interface GqlWebhookEndpointsUpdateOneVariables {
-  id: any;
-  data: IWebhookEndpointUpdate;
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
 //==============================================================
 // START Enums and Input Objects
 //==============================================================
@@ -486,6 +603,21 @@ export interface IDassetsCheckoutSessionUpdate {
   network?: string | null;
 }
 
+export interface IEventEmitterInstanceCreate {
+  is_webhook_emitter: boolean;
+  webhook_endpoint?: string | null;
+  syncer_instance: any;
+}
+
+export interface IEventEmitterInstanceUpdate {
+  is_webhook_emitter?: boolean | null;
+  webhook_endpoint?: string | null;
+}
+
+export interface IEventEmitterInstancesFilter {
+  syncer_instance?: string | null;
+}
+
 export interface IProjectCreate {
   name: string;
 }
@@ -501,20 +633,41 @@ export interface IProjectUpdate {
   dassets_settings?: IProjectDassetsSettingsUpdate | null;
 }
 
+export interface ISyncerInstanceCreate {
+  project: any;
+  preset?: string | null;
+  contracts?: ISyncerInstanceCreateContracts[] | null;
+}
+
+export interface ISyncerInstanceCreateContracts {
+  address?: string | null;
+  deploy_tx?: string | null;
+  contract_name: string;
+  events: string[];
+  abi: any;
+}
+
+export interface ISyncerInstanceUpdate {
+  project?: any | null;
+  preset?: string | null;
+  contracts?: ISyncerInstanceUpdateContracts[] | null;
+}
+
+export interface ISyncerInstanceUpdateContracts {
+  address?: string | null;
+  deploy_tx?: string | null;
+  contract_name?: string | null;
+  events?: string[] | null;
+  abi?: any | null;
+}
+
+export interface ISyncerInstancesFilter {
+  project: any;
+}
+
 export interface IUserSignUp {
   email: string;
   password: string;
-}
-
-export interface IWebhookEndpointCreate {
-  project: any;
-  url?: string | null;
-  key?: string | null;
-}
-
-export interface IWebhookEndpointUpdate {
-  url?: string | null;
-  key?: string | null;
 }
 
 //==============================================================

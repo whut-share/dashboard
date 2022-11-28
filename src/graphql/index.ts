@@ -13,7 +13,12 @@ export * from "./requests/dassets-checkout-sessions/update";
 export * from "./requests/dassets-checkout-sessions/get";
 export * from "./requests/dassets-checkout-sessions/attach-stripe-payment-intent";
 
-export * from "./requests/webhook-endpoints/create";
-export * from "./requests/webhook-endpoints/select";
-export * from "./requests/webhook-endpoints/update";
-export * from "./requests/webhook-endpoints/get";
+export * from "./requests/event-emitter-instances/create";
+export * from "./requests/event-emitter-instances/select";
+export * from "./requests/event-emitter-instances/update";
+export * from "./requests/event-emitter-instances/get";
+
+export * from "./requests/syncer-instances/create";
+export * from "./requests/syncer-instances/select";
+export * from "./requests/syncer-instances/update";
+export * from "./requests/syncer-instances/get";

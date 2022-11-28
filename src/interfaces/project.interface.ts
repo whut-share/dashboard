@@ -8,4 +8,8 @@ export interface IProject {
   id: string;
   name: string;
   dassets_settings: IProjectDassetsSettings;
+
+  dassets_syncer_instance: {
+    id: string;
+  };
 }
