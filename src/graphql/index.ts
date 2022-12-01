@@ -22,3 +22,8 @@ export * from "./requests/syncer-instances/create";
 export * from "./requests/syncer-instances/select";
 export * from "./requests/syncer-instances/update";
 export * from "./requests/syncer-instances/get";
+
+export * from "./requests/project-groups/create";
+export * from "./requests/project-groups/select";
+export * from "./requests/project-groups/update";
+export * from "./requests/project-groups/get";

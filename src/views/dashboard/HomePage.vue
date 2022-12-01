@@ -1,112 +1,31 @@
 <template>
-  <div class="home-page mt-10">
-    <v-breadcrumbs :items="['Dashboard', 'Home']" class="mb-3"></v-breadcrumbs>
-
-    <v-dialog max-width="500" v-model="is_modal_opened">
-      <v-card rounded="lg" class="pa-5">
-        <div class="text-h5 font-weight-bold mb-8 align-center d-flex">
-          New project
-          <v-spacer></v-spacer>
-          <v-btn
-            @click="is_modal_opened = false"
-            icon="mdi-close"
-            variant="text"
-          ></v-btn>
-        </div>
-        <v-text-field
-          label="Project name"
-          variant="outlined"
-          v-model="project_form.name"
-        ></v-text-field>
-        <v-btn
-          :loading="is_create_project_loading"
-          class="align-self-start"
-          @click="createProject"
-          color="success"
-          >create</v-btn
-        >
-      </v-card>
-    </v-dialog>
-
-    <div class="list">
+  <div class="home-page mt-5">
+    <v-container fluid>
       <v-row>
-        <v-col cols="4">
-          <v-card
-            @click="is_modal_opened = true"
-            rounded="lg"
-            height="100%"
-            class="d-flex flex-column align-center justify-center pa-5 bg-blue"
-          >
-            <v-icon size="x-large">mdi-plus</v-icon>
-            <div class="text-h6">New project</div>
-          </v-card>
+        <v-col cols="6" class="d-flex flex-column">
+          <GettingStarted />
+          <NeedHelp />
+          <SendFeedback />
         </v-col>
 
-        <v-col cols="4" v-for="n in projects" :key="n.id">
-          <v-card
-            rounded="lg"
-            height="100%"
-            class="d-flex flex-column align-start pa-5 bg-blue"
-          >
-            <div class="text-h5">
-              {{ n.name }}
-            </div>
-            <v-btn
-              @click="router.push(`/dsh/project/${n.id}`)"
-              variant="tonal"
-              class="mt-10"
-              rounded
-              small
-              >open</v-btn
-            >
-          </v-card>
+        <v-col cols="6">
+          <ProductsCard />
+          <TutorialCard />
         </v-col>
       </v-row>
-    </div>
+    </v-container>
   </div>
 </template>
 
 <script setup lang="ts">
-import {
-  GqlProjectsSelect,
-  GQL_PROJECTS_CREATE_ONE,
-  GQL_PROJECTS_SELECT,
-} from "@/graphql";
-import { IProject } from "@/interfaces";
-import { useProjectsStore } from "@/store";
-import { useApolloClient, useMutation, useQuery } from "@vue/apollo-composable";
-import { onMounted, reactive, ref } from "vue";
-import { useRouter } from "vue-router";
-
-const project_form = reactive({
-  name: "",
-});
-
-const { client } = useApolloClient();
-const projects_store = useProjectsStore();
-const router = useRouter();
-
-const is_modal_opened = ref(false);
-const is_create_project_loading = ref(false);
-
-const projects = reactive(projects_store.projects as IProject[]);
-
-async function createProject() {
-  const pop = async () => {
-    await client.mutate({
-      mutation: GQL_PROJECTS_CREATE_ONE,
-      variables: {
-        data: project_form,
-      },
-    });
-
-    await projects_store.sync();
-  };
-
-  is_create_project_loading.value = true;
-  pop().finally(() => {
-    is_create_project_loading.value = false;
-    is_modal_opened.value = false;
-  });
-}
+import GettingStarted from "@/components/home-page/GettingStarted.vue";
+import NeedHelp from "@/components/home-page/NeedHelp.vue";
+import SendFeedback from "@/components/home-page/SendFeedback.vue";
+import ProductsCard from "@/components/home-page/ProductsCard.vue";
+import TutorialCard from "@/components/home-page/TutorialCard.vue";
 </script>
+
+<style lang="scss" scoped>
+.home-page {
+}
+</style>

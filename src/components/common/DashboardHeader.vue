@@ -9,9 +9,9 @@
 
     <div class="d-flex ml-10">
       <router-link
-        class="mr-10 body-2"
+        class="mr-10 body-2 font-weight-medium text-black"
         :class="{
-          'font-weight-bold primary--text': $route.path === item.to,
+          'font-weight-bold primary--text text-accent': isActive(item.to),
         }"
         :to="item.to"
         :key="item.to"
@@ -22,27 +22,21 @@
     </div>
 
     <v-spacer></v-spacer>
-
-    <v-select
-      density="compact"
-      hide-details
-      label="Project"
-      :items="projects"
-      item-title="name"
-      item-value="id"
-      v-model="projects_store.selected_project_id"
-    ></v-select>
+    <HeaderProjectGroupSelector />
   </v-sheet>
 </template>
 
 <script setup lang="ts">
 import HeaderLogo from "./HeaderLogo.vue";
+import HeaderProjectGroupSelector from "./HeaderProjectGroupSelector.vue";
 
 import { useAuthStore, useProjectsStore } from "@/store";
 import { computed } from "vue-demi";
+import { useRoute } from "vue-router";
 
 const auth_store = useAuthStore();
 const projects_store = useProjectsStore();
+const route = useRoute();
 
 const projects = computed(() => projects_store.projects);
 
@@ -53,7 +47,7 @@ function logout() {
 const navigation = [
   {
     title: "Home",
-    to: "/dsh",
+    to: "/dsh/home",
   },
   {
     title: "Developers",
@@ -68,6 +62,10 @@ const navigation = [
     to: "/dsh/account",
   },
 ];
+
+function isActive(to: string): boolean {
+  return new RegExp(to).test(route.path);
+}
 </script>
 
 <style lang="scss" scoped>

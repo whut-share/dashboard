@@ -10,6 +10,10 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: "/",
+        redirect: "/sign-in",
+      },
+      {
+        path: "/sign-in",
         component: () => import("@/views/auth/SignInPage.vue"),
       },
       {
@@ -25,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: "",
+        redirect: "/dsh/home",
+      },
+
+      {
+        path: "home",
         component: () => import("@/views/dashboard/HomePage.vue"),
       },
 
@@ -40,6 +49,10 @@ const routes: Array<RouteRecordRaw> = [
         children: [
           {
             path: "",
+            redirect: "/dsh/developers/overview",
+          },
+          {
+            path: "overview",
             component: () =>
               import("@/views/dashboard/developers/OverviewPage.vue"),
           },

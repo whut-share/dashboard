@@ -1,8 +1,8 @@
 <template>
   <div class="dashboard-view flex-grow-1 d-flex flex-column">
-    <v-container>
-      <router-view />
-    </v-container>
+    <GlobalBg />
+
+    <router-view style="position: relative" />
 
     <DashboardHeader />
   </div>
@@ -10,6 +10,7 @@
 
 <script setup lang="ts">
 import DashboardHeader from "@/components/common/DashboardHeader.vue";
+import GlobalBg from "@/components/common/GlobalBg.vue";
 </script>
 
 <style lang="scss" scoped>

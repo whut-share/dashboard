@@ -306,6 +306,99 @@ export interface GqlEventEmitterInstancesUpdateOneVariables {
 // This file was automatically generated and should not be edited.
 
 // ====================================================
+// GraphQL mutation operation: GqlProjectGroupsCreateOne
+// ====================================================
+
+export interface GqlProjectGroupsCreateOne_projectGroupCreate {
+  __typename: "ProjectGroup";
+  id: string;
+  name: string;
+  projects: string[];
+}
+
+export interface GqlProjectGroupsCreateOne {
+  projectGroupCreate: GqlProjectGroupsCreateOne_projectGroupCreate;
+}
+
+export interface GqlProjectGroupsCreateOneVariables {
+  data: IProjectGroupCreate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlProjectGroupsGet
+// ====================================================
+
+export interface GqlProjectGroupsGet_project_group {
+  __typename: "ProjectGroup";
+  id: string;
+  name: string;
+  projects: string[];
+}
+
+export interface GqlProjectGroupsGet {
+  project_group: GqlProjectGroupsGet_project_group;
+}
+
+export interface GqlProjectGroupsGetVariables {
+  id: any;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlProjectGroupsSelect
+// ====================================================
+
+export interface GqlProjectGroupsSelect_project_groups {
+  __typename: "ProjectGroup";
+  id: string;
+  name: string;
+  projects: string[];
+}
+
+export interface GqlProjectGroupsSelect {
+  project_groups: GqlProjectGroupsSelect_project_groups[];
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL mutation operation: GqlProjectGroupsUpdateOne
+// ====================================================
+
+export interface GqlProjectGroupsUpdateOne_projectGroupUpdate {
+  __typename: "ProjectGroup";
+  id: string;
+  name: string;
+  projects: string[];
+}
+
+export interface GqlProjectGroupsUpdateOne {
+  projectGroupUpdate: GqlProjectGroupsUpdateOne_projectGroupUpdate;
+}
+
+export interface GqlProjectGroupsUpdateOneVariables {
+  id: any;
+  data: IProjectGroupUpdate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
 // GraphQL mutation operation: GqlProjectsCreateOne
 // ====================================================
 
@@ -403,8 +496,16 @@ export interface GqlProjectsSelect_projects {
   dassets_settings: GqlProjectsSelect_projects_dassets_settings;
 }
 
+export interface GqlProjectsSelect_project_groups {
+  __typename: "ProjectGroup";
+  id: string;
+  name: string;
+  projects: string[];
+}
+
 export interface GqlProjectsSelect {
   projects: GqlProjectsSelect_projects[];
+  project_groups: GqlProjectsSelect_project_groups[];
 }
 
 /* tslint:disable */
@@ -626,6 +727,18 @@ export interface IProjectDassetsSettingsUpdate {
   include_networks?: string[] | null;
   token_base_url?: string | null;
   webhook_events_url?: string | null;
+}
+
+export interface IProjectGroupCreate {
+  name: string;
+  pic?: string | null;
+  projects?: any[] | null;
+}
+
+export interface IProjectGroupUpdate {
+  name?: string | null;
+  pic?: string | null;
+  projects?: any[] | null;
 }
 
 export interface IProjectUpdate {
