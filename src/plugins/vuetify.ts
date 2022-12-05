@@ -1,5 +1,5 @@
 // Styles
-import "@mdi/font/css/materialdesignicons.css";
+// import "@mdi/font/css/materialdesignicons.css";
 import "vuetify/styles";
 import { h } from "vue";
 import { aliases } from "@/assets/icons";
@@ -26,13 +26,13 @@ const dark: ThemeDefinition = {
   dark: true,
   colors: {
     // white: '#FFFFFF',
-    // black: '#FFFFFF',
+    black: "#FDFDFD",
     surface: "#000000",
     // background: '#FFFFFF',
 
     primary: "#7D42FB",
     accent: "#2BABCC",
-    "m-emphasis": "#6E6E83",
+    "m-emphasis": "#D2DAFF",
 
     error: "#D3281D",
     info: "#2196F3",
@@ -60,6 +60,10 @@ export default createVuetify({
     VBtn: {
       rounded: "pill",
     },
+    VCheckbox: {
+      falseIcon: "outline-interface-checkbox-inactive",
+      trueIcon: "solid-interface-checkbox-active",
+    },
   },
 
   icons: {
@@ -69,8 +73,6 @@ export default createVuetify({
       bsl: {
         component: (props: IconProps) => {
           const _key = props.icon.replace(/\n| /g, "");
-
-          console.log(_key);
 
           if (!aliases[_key]) {
             return h("span");

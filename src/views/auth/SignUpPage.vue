@@ -97,14 +97,14 @@
         <v-checkbox
           density="compact"
           v-model="form.terms"
-          true-icon="solid-interface-check"
           class="mb-6 mt-4"
+          color="primary"
           :rules="[
             (v: boolean) => !!v || 'You must agree to the terms and conditions'
           ]"
         >
           <template #label>
-            <div>
+            <div class="ml-2">
               <span class="font-weight-medium">I accept the</span>
               <a href="https://google.com" class="flex-grow-1">
                 Terms and conditions

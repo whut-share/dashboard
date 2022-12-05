@@ -31,8 +31,12 @@ a {
     }
   }
 
+  .v-divider.bg-accent {
+    border-color: #D2DAFF !important;
+  }
+
   .v-field {
-    border-radius: 16px !important;
+    border-radius: 12px !important;
   }
 
   .v-field__field {
@@ -41,6 +45,10 @@ a {
 
   .v-field__field input {
     border-radius: inherit !important;
+  }
+
+  .v-input__control {
+    border-radius: 12px !important;
   }
 
   .v-table__wrapper {
@@ -79,12 +87,12 @@ a {
     font-family: 'Courier', Courier, monospace;
   }
 
-  .v-field__outline__start {
+  .v-field--variant-outlined .v-field__outline__start {
     border-top-left-radius: inherit !important;
     border-bottom-left-radius: inherit !important;
   }
 
-  .v-field__outline__end {
+  .v-field--variant-outlined .v-field__outline__end {
     border-top-right-radius: inherit !important;
     border-bottom-right-radius: inherit !important;
   }

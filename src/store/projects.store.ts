@@ -23,6 +23,16 @@ export const useProjectsStore = defineStore("projects", {
         (n) => n.id === state.selected_project_group_id
       );
     },
+
+    selectedProjectGroupProjects: (state): IProject[] => {
+      const pg = state.project_groups.find(
+        (n) => n.id === state.selected_project_group_id
+      );
+
+      if (!pg) return [];
+
+      return state.projects.filter((n) => pg.projects.includes(n.id));
+    },
   },
 
   actions: {

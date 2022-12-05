@@ -89,6 +89,27 @@ const routes: Array<RouteRecordRaw> = [
           },
         ],
       },
+
+      {
+        path: "products",
+        component: () => import("@/views/dashboard/products/ProductsView.vue"),
+        children: [
+          {
+            path: "",
+            redirect: "/dsh/products/overview",
+          },
+          {
+            path: "overview",
+            component: () =>
+              import("@/views/dashboard/products/OverviewPage.vue"),
+          },
+          {
+            path: "wallet-login",
+            component: () =>
+              import("@/views/dashboard/products/WalletLoginPage.vue"),
+          },
+        ],
+      },
     ],
   },
   {

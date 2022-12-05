@@ -1,5 +1,5 @@
 <template>
-  <div class="project-page mt-5">
+  <div class="developers-view mt-5">
     <v-container fluid>
       <router-view />
     </v-container>
@@ -26,7 +26,7 @@
             icon_inactive: 'outline-interface-attach',
           },
           {
-            title: 'Synchronization',
+            title: 'Event Emitters',
             to: '/dsh/developers/sync',
             icon: 'solid-interface-sort',
             icon_inactive: 'outline-interface-sort',
@@ -63,7 +63,7 @@ import ReusableSidebar from "@/components/common/ReusableSidebar.vue";
 </script>
 
 <style lang="scss" scoped>
-.project-page {
+.developers-view {
   padding-left: 250px;
 }
 </style>
