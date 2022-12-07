@@ -1,12 +1,12 @@
 <template>
-  <v-container fluid class="d-flex flex-column">
+  <div class="d-flex flex-column">
     <div class="d-flex align-center">
       <div class="text-h4 font-weight-medium">Webhooks</div>
       <v-spacer></v-spacer>
       <ProjectsSelector v-model="project" />
     </div>
 
-    <v-card elevation="10" variant="flat" class="mt-8">
+    <v-card elevation="10" variant="flat" class="mt-8 pb-6">
       <div class="d-flex flex-column pa-6">
         <div class="d-flex align-center">
           <div class="text-h5 font-weight-medium">Hosted endpoints</div>
@@ -67,7 +67,7 @@
         </tbody>
       </v-table>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script setup lang="ts">

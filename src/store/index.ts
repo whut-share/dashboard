@@ -7,3 +7,6 @@ export * from "./preload.store";
 export * from "./dassets-checkout.store";
 export * from "./projects.store";
 export * from "./sidebar.store";
+export * from "./modals.store";
+
+export * from "./eei-page.store";

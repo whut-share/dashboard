@@ -2,11 +2,21 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import { loadGuard } from "./load-guard";
 import VueRouterMultiguard from "vue-router-multiguard";
 import { authMiddleware } from "./middleware";
+import { usePreloadStore } from "@/store";
+
+const loadingMiddleware = (prom: Promise<any>): Promise<any> => {
+  const preload_store = usePreloadStore();
+
+  preload_store.setViewLoading(true);
+  return prom.finally(() => {
+    preload_store.setViewLoading(false);
+  });
+};
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    component: () => import("@/views/auth/AuthView.vue"),
+    component: () => loadingMiddleware(import("@/views/auth/AuthView.vue")),
     children: [
       {
         path: "/",
@@ -14,17 +24,20 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: "/sign-in",
-        component: () => import("@/views/auth/SignInPage.vue"),
+        component: () =>
+          loadingMiddleware(import("@/views/auth/SignInPage.vue")),
       },
       {
         path: "/sign-up",
-        component: () => import("@/views/auth/SignUpPage.vue"),
+        component: () =>
+          loadingMiddleware(import("@/views/auth/SignUpPage.vue")),
       },
     ],
   },
   {
     path: "/dsh",
-    component: () => import("@/views/dashboard/DashboardView.vue"),
+    component: () =>
+      loadingMiddleware(import("@/views/dashboard/DashboardView.vue")),
     beforeEnter: VueRouterMultiguard([authMiddleware]),
     children: [
       {
@@ -34,18 +47,16 @@ const routes: Array<RouteRecordRaw> = [
 
       {
         path: "home",
-        component: () => import("@/views/dashboard/HomePage.vue"),
-      },
-
-      {
-        path: "project/:project",
-        component: () => import("@/views/dashboard/ProjectPage.vue"),
+        component: () =>
+          loadingMiddleware(import("@/views/dashboard/HomePage.vue")),
       },
 
       {
         path: "developers",
         component: () =>
-          import("@/views/dashboard/developers/DevelopersView.vue"),
+          loadingMiddleware(
+            import("@/views/dashboard/developers/DevelopersView.vue")
+          ),
         children: [
           {
             path: "",
@@ -54,45 +65,72 @@ const routes: Array<RouteRecordRaw> = [
           {
             path: "overview",
             component: () =>
-              import("@/views/dashboard/developers/OverviewPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/developers/OverviewPage.vue")
+              ),
           },
           {
             path: "api-keys",
             component: () =>
-              import("@/views/dashboard/developers/KeysPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/developers/KeysPage.vue")
+              ),
           },
           {
             path: "webhooks",
             component: () =>
-              import("@/views/dashboard/developers/WebhooksPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/developers/WebhooksPage.vue")
+              ),
           },
           {
             path: "sync",
             component: () =>
-              import("@/views/dashboard/developers/SyncPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/developers/SyncPage.vue")
+              ),
           },
 
           {
             path: "syncer",
             component: () =>
-              import("@/views/dashboard/developers/SyncersPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/developers/SyncersPage.vue")
+              ),
           },
           {
             path: "dassets",
             component: () =>
-              import("@/views/dashboard/developers/DassetsPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/developers/DassetsPage.vue")
+              ),
           },
           {
             path: "wallet-login",
             component: () =>
-              import("@/views/dashboard/developers/WalletLoginPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/developers/WalletLoginPage.vue")
+              ),
+          },
+
+          {
+            path: "eei/:eei",
+            component: () =>
+              loadingMiddleware(
+                import(
+                  "@/views/dashboard/developers/EventEmitterInstancePage.vue"
+                )
+              ),
           },
         ],
       },
 
       {
         path: "products",
-        component: () => import("@/views/dashboard/products/ProductsView.vue"),
+        component: () =>
+          loadingMiddleware(
+            import("@/views/dashboard/products/ProductsView.vue")
+          ),
         children: [
           {
             path: "",
@@ -101,12 +139,16 @@ const routes: Array<RouteRecordRaw> = [
           {
             path: "overview",
             component: () =>
-              import("@/views/dashboard/products/OverviewPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/products/OverviewPage.vue")
+              ),
           },
           {
             path: "wallet-login",
             component: () =>
-              import("@/views/dashboard/products/WalletLoginPage.vue"),
+              loadingMiddleware(
+                import("@/views/dashboard/products/WalletLoginPage.vue")
+              ),
           },
         ],
       },
@@ -114,7 +156,8 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/dassets-checkout/:session",
-    component: () => import("@/views/DassetsCheckoutView.vue"),
+    component: () =>
+      loadingMiddleware(import("@/views/DassetsCheckoutView.vue")),
   },
   {
     path: "/:pathMatch(.*)*",

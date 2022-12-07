@@ -18,10 +18,25 @@ a {
   --v-high-emphasis-opacity: 1 !important;
 }
 
-.v-application {
+html, .v-application {
 
   .text-h1, .text-h2, .text-h3, .text-h4, .text-h5, .text-h6, .text-body-1, .text-body-2, .text-caption, .text-subtitle-1, .text-subtitle-2 {
     font-family: "Satoshi", sans-serif !important;
+  }
+
+  .v-radio {
+
+    &.v-selection-control--dirty {
+
+      .v-label {
+        color: rgba(var(--v-theme-black)) !important;
+        opacity: 1 !important;
+      }
+    }
+
+    .v-label {
+      font-weight: 500;
+    }
   }
 
   .v-card {
@@ -31,8 +46,21 @@ a {
     }
   }
 
+  .v-tooltip {
+    .v-overlay__content {
+      background-color: #1B1B2B;
+      font-weight: 500;
+      border-radius: 8px;
+    }
+  }
+
   .v-divider.bg-accent {
-    border-color: #D2DAFF !important;
+    border-top: 1px solid rgba(#D2DAFF, 0.5);
+    background: none !important;
+
+    &.v-divider--vertical {
+      border-right: 1px solid rgba(#D2DAFF, 0.5);
+    }
   }
 
   .v-field {

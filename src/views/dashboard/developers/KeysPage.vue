@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="d-flex flex-column">
+  <div class="d-flex flex-column">
     <div class="d-flex align-center">
       <div class="text-h4 font-weight-medium">API keys</div>
       <v-spacer></v-spacer>
@@ -57,7 +57,7 @@
         </tbody>
       </v-table>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -7,6 +7,7 @@ import { DefaultApolloClient } from "@vue/apollo-composable";
 import { apollo_client } from "./plugins/apollo";
 import { pinia } from "./store";
 import "@/assets/styles/index.scss";
+import { ui } from "./plugins/ui";
 
 loadFonts();
 
@@ -14,6 +15,7 @@ loadFonts();
   .use(router)
   .use(pinia)
   .use(vuetify)
+  .use(ui)
   .provide(DefaultApolloClient, apollo_client)
 
   .directive("inline-svg", (el) => {

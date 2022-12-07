@@ -17,7 +17,7 @@ const light: ThemeDefinition = {
 
     error: "#D3281D",
     info: "#2196F3",
-    success: "#12870F",
+    success: "#40C72A",
     warning: "#DC6A18",
   },
 };
@@ -63,6 +63,13 @@ export default createVuetify({
     VCheckbox: {
       falseIcon: "outline-interface-checkbox-inactive",
       trueIcon: "solid-interface-checkbox-active",
+    },
+    VRadioGroup: {
+      falseIcon: "solid-interface-radio",
+      trueIcon: "solid-interface-radio-active",
+    },
+    VSelect: {
+      // menuIcon: "solid-interface-radio",
     },
   },
 

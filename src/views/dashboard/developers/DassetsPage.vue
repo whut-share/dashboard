@@ -1,35 +1,54 @@
 <template>
   <div class="dassets-page">
-    <v-card class="pa-5 mb-3">
-      <v-text-field
-        :disabled="!new_event_emitter_instance.is_webhook_emitter"
-        v-model="new_event_emitter_instance.webhook_endpoint"
-        label="Webhook endpoint"
-      ></v-text-field>
+    <div class="d-flex align-center">
+      <div class="text-h4 font-weight-medium">dAssets</div>
+      <v-spacer></v-spacer>
+      <ProjectsSelector v-model="selected_project_id" />
+    </div>
 
-      <v-checkbox
-        v-model="new_event_emitter_instance.is_webhook_emitter"
-        label="Webhook emitter?"
-      ></v-checkbox>
-
-      <v-btn color="success" @click="create">Create</v-btn>
+    <v-card elevation="10" class="d-flex flex-column pa-6 mt-8">
+      <div class="text-h5 font-weight-bold text-black">Settings</div>
     </v-card>
 
-    <v-card class="pa-5 mb-3" v-for="n in event_emitter_instances" :key="n.id">
-      <div class="body-1 font-weight-bold mb-3">ID: {{ n.id }}</div>
-
-      <v-text-field
-        :disabled="!n.is_webhook_emitter"
-        v-model="n.webhook_endpoint"
-        label="Webhook endpoint"
-      ></v-text-field>
-
-      <v-btn color="primary" @click="save">Save</v-btn>
+    <v-card
+      v-if="selected_project_id"
+      elevation="10"
+      class="d-flex flex-column pa-6 mt-8"
+    >
+      <div class="text-h5 font-weight-bold text-black">Event Emitters</div>
+      <v-fade-transition mode="out-in">
+        <v-row v-if="!is_event_emitter_instances_loading" class="mt-4">
+          <v-col v-for="n in event_emitter_instances" :key="n.id" cols="3">
+            <EventEmitterInstance :data="n" />
+          </v-col>
+          <v-col cols="3">
+            <NewEventEmitterInstance @click="openModal" />
+          </v-col>
+        </v-row>
+        <v-card
+          variant="outlined"
+          color="accent"
+          width="100%"
+          height="200"
+          v-else
+          class="mt-4 d-flex align-center justify-center"
+        >
+          <v-progress-circular
+            color="primary"
+            indeterminate
+          ></v-progress-circular>
+        </v-card>
+      </v-fade-transition>
     </v-card>
   </div>
 </template>
 
 <script setup lang="ts">
+import EventEmitterInstance from "@/components/common/EventEmitterInstance.vue";
+import NewEventEmitterInstance from "@/components/common/NewEventEmitterInstance.vue";
+import ProjectsSelector from "@/components/common/ProjectsSelector.vue";
+import { ICreateEventEmitterInstanceModalData } from "@/components/modals/CreateEventEmitterInstance.vue";
+
 import {
   GqlEventEmitterInstancesCreateOne,
   GqlEventEmitterInstancesCreateOneVariables,
@@ -43,70 +62,54 @@ import {
 } from "@/graphql";
 import { IEventEmitterInstance } from "@/interfaces";
 import { apollo_client } from "@/plugins";
-import { useProjectsStore } from "@/store";
-import { onMounted, reactive, ref } from "vue-demi";
-
-const new_event_emitter_instance = reactive({
-  is_webhook_emitter: true,
-  webhook_endpoint: "",
-});
+import { useModalsStore, useProjectsStore } from "@/store";
+import { computed, onMounted, reactive, ref } from "vue-demi";
 
 const event_emitter_instances = ref<IEventEmitterInstance[]>([]);
 
-async function loadEventEmitterInstances() {
-  const projects_store = useProjectsStore();
+const projects_store = useProjectsStore();
+const syncer_instance_id = computed(() => {
+  return projects_store.selectedProjectGroupProjects.find(
+    (n) => n.id === selected_project_id.value
+  )?.dassets_syncer_instance.id;
+});
+const selected_project_id = ref<string | null>(null);
 
-  const { data } = await apollo_client.query<
-    GqlEventEmitterInstancesSelect,
-    GqlEventEmitterInstancesSelectVariables
-  >({
-    query: GQL_EVENT_EMITTER_INSTANCES_SELECT,
-    variables: {
-      filter: {
-        syncer_instance:
-          projects_store.selectedProject?.dassets_syncer_instance.id,
+async function syncEventEmitterInstances() {
+  is_event_emitter_instances_loading.value = true;
+  await apollo_client
+    .query<
+      GqlEventEmitterInstancesSelect,
+      GqlEventEmitterInstancesSelectVariables
+    >({
+      query: GQL_EVENT_EMITTER_INSTANCES_SELECT,
+      variables: {
+        filter: {
+          syncer_instance: syncer_instance_id.value,
+        },
       },
-    },
-  });
-
-  event_emitter_instances.value = data.event_emitter_instances;
+    })
+    .then((res) => {
+      event_emitter_instances.value = res.data.event_emitter_instances;
+    })
+    .finally(() => {
+      is_event_emitter_instances_loading.value = false;
+    });
 }
 
-onMounted(loadEventEmitterInstances);
+onMounted(syncEventEmitterInstances);
 
-async function save(eei: IEventEmitterInstance) {
-  await apollo_client.mutate<
-    GqlEventEmitterInstancesUpdateOne,
-    GqlEventEmitterInstancesUpdateOneVariables
-  >({
-    mutation: GQL_EVENT_EMITTER_INSTANCES_UPDATE_ONE,
-    variables: {
-      id: eei.id,
-      data: {
-        webhook_endpoint: eei.webhook_endpoint,
-      },
+const modals_store = useModalsStore();
+function openModal() {
+  modals_store.open("create-event-emitter-instance", {
+    async onSuccess() {
+      await syncEventEmitterInstances();
     },
-  });
+    syncer_instance_id: syncer_instance_id.value,
+  } as ICreateEventEmitterInstanceModalData);
 }
 
-async function create() {
-  const projects_store = useProjectsStore();
-
-  await apollo_client.mutate<
-    GqlEventEmitterInstancesCreateOne,
-    GqlEventEmitterInstancesCreateOneVariables
-  >({
-    mutation: GQL_EVENT_EMITTER_INSTANCES_CREATE_ONE,
-    variables: {
-      data: {
-        webhook_endpoint: new_event_emitter_instance.webhook_endpoint,
-        is_webhook_emitter: new_event_emitter_instance.is_webhook_emitter,
-        syncer_instance:
-          projects_store.selectedProject?.dassets_syncer_instance.id,
-      },
-    },
-  });
-}
+const is_event_emitter_instances_loading = ref(false);
 </script>
 
 <style lang="scss" scoped></style>

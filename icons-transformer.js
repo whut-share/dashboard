@@ -17,10 +17,9 @@ const getIcons = async () => {
         // thanks to copilot
         const iconPath = `./src/assets/icons-raw/${type}/${section}/${icon}`;
         const iconData = await FS.readFile(iconPath, "utf8");
-        const iconDataTransformed = iconData.replace(
-          /fill=".*?"/g,
-          'fill="currentColor"'
-        );
+        const iconDataTransformed = iconData
+          .replace('fill="none"', "fill='none'")
+          .replace(/fill=".*?"/g, 'fill="currentColor"');
 
         const icon_key = `${type}-${section}-${icon}`
           .replace(".svg", "")

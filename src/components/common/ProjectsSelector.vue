@@ -53,11 +53,13 @@
 <script setup lang="ts">
 import { useProjectsStore } from "@/store";
 import {
-  onDeactivated,
   onMounted,
   defineProps,
   computed,
   defineEmits,
+  watch,
+  onActivated,
+  onBeforeMount,
 } from "vue-demi";
 import { useRoute } from "vue-router";
 
@@ -72,6 +74,20 @@ const emit = defineEmits(["update:modelValue"]);
 function selectProject(project_id: string) {
   emit("update:modelValue", project_id);
 }
+
+onBeforeMount(() => {
+  if (!props.modelValue) {
+    selectProject(projects.value[0].id);
+  }
+});
+watch(
+  () => props.modelValue,
+  (val) => {
+    if (!val) {
+      selectProject(projects.value[0].id);
+    }
+  }
+);
 </script>
 
 <style lang="scss" scoped>

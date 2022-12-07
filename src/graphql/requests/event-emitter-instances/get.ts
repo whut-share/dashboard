@@ -7,6 +7,10 @@ export const GQL_EVENT_EMITTER_INSTANCES_GET = gql`
       is_webhook_emitter
       webhook_endpoint
       syncer_instance
+      is_stopped
+      name
+      created_at
+      updated_at
     }
   }
 `;

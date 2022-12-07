@@ -52,7 +52,7 @@
 <script setup lang="ts">
 import HeaderLogo from "./HeaderLogo.vue";
 import { useAuthStore, useSidebarStore } from "@/store";
-import { onDeactivated, onMounted, defineProps } from "vue-demi";
+import { onMounted, defineProps, onUnmounted } from "vue-demi";
 import { useRoute } from "vue-router";
 
 const auth_store = useAuthStore();
@@ -82,7 +82,7 @@ onMounted(() => {
   sidebar_store.setOpened(true);
 });
 
-onDeactivated(() => {
+onUnmounted(() => {
   sidebar_store.setOpened(false);
 });
 </script>

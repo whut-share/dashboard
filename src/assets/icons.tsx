@@ -4,7 +4,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -32,7 +32,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -58,7 +58,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -88,7 +88,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -111,7 +111,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M8.37109 15.5V8.086H9.72409V15.5H8.37109Z" fill="currentColor" />
@@ -132,7 +132,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -156,7 +156,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -182,7 +182,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -198,7 +198,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -222,7 +222,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -238,7 +238,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -254,7 +254,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -282,7 +282,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -314,7 +314,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -330,7 +330,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -346,7 +346,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -362,7 +362,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -382,7 +382,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -398,7 +398,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -414,7 +414,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -434,7 +434,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -450,7 +450,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -466,7 +466,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -482,7 +482,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -498,7 +498,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -534,7 +534,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -560,7 +560,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -588,7 +588,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -608,7 +608,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -628,7 +628,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -644,7 +644,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -660,7 +660,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -688,7 +688,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -704,7 +704,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -724,7 +724,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -782,7 +782,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -798,7 +798,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -814,7 +814,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -838,7 +838,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -854,7 +854,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -870,7 +870,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -886,7 +886,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -918,7 +918,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -934,7 +934,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -954,7 +954,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -970,7 +970,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -992,7 +992,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1008,7 +1008,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1036,7 +1036,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1056,7 +1056,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1076,7 +1076,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1096,7 +1096,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1112,7 +1112,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1136,7 +1136,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1152,7 +1152,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1168,7 +1168,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1184,7 +1184,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1200,7 +1200,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1216,7 +1216,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1236,7 +1236,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1258,7 +1258,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1278,7 +1278,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1300,7 +1300,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1316,7 +1316,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1332,7 +1332,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1348,7 +1348,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1368,7 +1368,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1384,7 +1384,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1410,7 +1410,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1440,7 +1440,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1466,7 +1466,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1488,7 +1488,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1504,7 +1504,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1524,7 +1524,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1546,7 +1546,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1566,7 +1566,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1586,7 +1586,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1606,7 +1606,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1626,7 +1626,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1648,7 +1648,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1664,7 +1664,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1734,7 +1734,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1770,7 +1770,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1786,7 +1786,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1806,7 +1806,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1822,7 +1822,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1842,7 +1842,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1864,7 +1864,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1896,7 +1896,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1912,7 +1912,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1928,7 +1928,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1948,7 +1948,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1964,7 +1964,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -1988,7 +1988,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2012,7 +2012,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2028,7 +2028,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2050,7 +2050,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2070,7 +2070,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2090,7 +2090,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2110,7 +2110,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2126,7 +2126,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2146,7 +2146,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2170,7 +2170,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2190,7 +2190,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2210,7 +2210,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2230,7 +2230,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2254,7 +2254,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2270,7 +2270,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2290,7 +2290,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2310,7 +2310,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2330,7 +2330,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2346,7 +2346,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2366,7 +2366,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2388,7 +2388,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2404,7 +2404,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2424,7 +2424,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2452,7 +2452,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2476,7 +2476,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2496,7 +2496,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2530,7 +2530,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2546,7 +2546,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2578,7 +2578,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2598,7 +2598,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2614,7 +2614,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2630,7 +2630,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2652,7 +2652,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2668,7 +2668,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2688,7 +2688,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2704,7 +2704,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2728,7 +2728,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2752,7 +2752,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2768,7 +2768,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2788,7 +2788,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2804,7 +2804,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2844,7 +2844,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2860,7 +2860,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2876,7 +2876,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2900,7 +2900,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2924,7 +2924,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2972,7 +2972,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -2998,7 +2998,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3014,7 +3014,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3034,7 +3034,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3054,7 +3054,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3118,7 +3118,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3132,7 +3132,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3146,7 +3146,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3160,7 +3160,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3174,7 +3174,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3190,7 +3190,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3206,7 +3206,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3226,7 +3226,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3242,7 +3242,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3262,7 +3262,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3278,7 +3278,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3294,7 +3294,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3310,7 +3310,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3326,7 +3326,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3342,7 +3342,7 @@ export const aliases: Record<string, any> = {
       width="125"
       height="125"
       viewBox="0 0 125 125"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3358,7 +3358,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3392,7 +3392,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3414,7 +3414,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3436,7 +3436,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3452,7 +3452,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3472,7 +3472,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3492,7 +3492,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3510,7 +3510,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3544,7 +3544,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3562,7 +3562,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3590,7 +3590,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3624,7 +3624,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3644,7 +3644,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3664,7 +3664,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3692,7 +3692,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3706,7 +3706,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3728,7 +3728,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3744,7 +3744,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3766,7 +3766,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3780,7 +3780,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3802,7 +3802,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3818,7 +3818,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3834,7 +3834,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3856,7 +3856,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3878,7 +3878,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3900,7 +3900,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3918,7 +3918,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3942,7 +3942,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3966,7 +3966,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -3994,7 +3994,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4014,7 +4014,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4034,7 +4034,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4050,7 +4050,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4066,7 +4066,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4082,7 +4082,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4098,7 +4098,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4122,7 +4122,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4142,7 +4142,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4158,7 +4158,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4180,7 +4180,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4196,7 +4196,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4218,7 +4218,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4240,7 +4240,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4260,7 +4260,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4280,7 +4280,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4300,7 +4300,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4324,7 +4324,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4344,7 +4344,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4366,7 +4366,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4386,7 +4386,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4408,7 +4408,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4428,7 +4428,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4454,7 +4454,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4476,7 +4476,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4502,7 +4502,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4518,7 +4518,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4540,7 +4540,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4560,7 +4560,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4576,7 +4576,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4594,7 +4594,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4610,7 +4610,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4634,7 +4634,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4656,7 +4656,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4672,7 +4672,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4692,7 +4692,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4712,7 +4712,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4728,7 +4728,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4746,7 +4746,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4770,7 +4770,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4794,7 +4794,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4818,7 +4818,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4838,7 +4838,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4854,7 +4854,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4874,7 +4874,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4890,7 +4890,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4906,7 +4906,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4922,7 +4922,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4948,7 +4948,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4968,7 +4968,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -4988,7 +4988,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5012,7 +5012,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5028,7 +5028,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5044,7 +5044,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5068,7 +5068,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5084,7 +5084,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5108,7 +5108,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5124,7 +5124,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5140,7 +5140,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5156,7 +5156,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5176,7 +5176,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5196,7 +5196,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5212,7 +5212,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5232,7 +5232,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5256,7 +5256,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5276,7 +5276,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5296,7 +5296,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5316,7 +5316,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5332,7 +5332,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5348,7 +5348,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5368,7 +5368,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5388,7 +5388,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5424,7 +5424,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5438,7 +5438,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5456,7 +5456,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5478,7 +5478,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5504,7 +5504,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5530,7 +5530,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5564,7 +5564,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5594,7 +5594,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5610,7 +5610,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5624,7 +5624,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5654,7 +5654,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5670,7 +5670,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5684,7 +5684,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5706,7 +5706,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5732,7 +5732,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5758,7 +5758,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5778,7 +5778,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5800,7 +5800,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5816,7 +5816,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5832,7 +5832,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5846,7 +5846,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5860,7 +5860,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5876,7 +5876,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5918,7 +5918,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5934,7 +5934,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5976,7 +5976,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -5990,7 +5990,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6006,7 +6006,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6022,7 +6022,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6036,7 +6036,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6052,7 +6052,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6066,7 +6066,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6082,7 +6082,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6096,7 +6096,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6118,7 +6118,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6134,7 +6134,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6151,7 +6151,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6167,7 +6167,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6185,7 +6185,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6201,7 +6201,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6221,7 +6221,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6237,7 +6237,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6253,7 +6253,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6267,7 +6267,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6283,7 +6283,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6297,7 +6297,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6315,7 +6315,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6333,7 +6333,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6347,7 +6347,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6361,7 +6361,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6379,7 +6379,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6399,7 +6399,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6417,7 +6417,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6437,7 +6437,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6451,7 +6451,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6465,7 +6465,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6479,7 +6479,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6497,7 +6497,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6511,7 +6511,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6535,7 +6535,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6563,7 +6563,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6585,7 +6585,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6603,7 +6603,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6619,7 +6619,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6639,7 +6639,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6655,7 +6655,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6671,7 +6671,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6687,7 +6687,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6703,7 +6703,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6719,7 +6719,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6739,7 +6739,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6755,7 +6755,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6805,7 +6805,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6821,7 +6821,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6837,7 +6837,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6853,7 +6853,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6875,7 +6875,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6891,7 +6891,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6911,7 +6911,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6933,7 +6933,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6949,7 +6949,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6965,7 +6965,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6981,7 +6981,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -6997,7 +6997,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7013,7 +7013,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7035,7 +7035,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7055,7 +7055,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7071,7 +7071,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7087,7 +7087,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7105,7 +7105,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7121,7 +7121,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7135,7 +7135,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7153,7 +7153,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7173,7 +7173,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7193,7 +7193,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7213,7 +7213,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7233,7 +7233,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7253,7 +7253,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7271,7 +7271,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7291,7 +7291,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7307,7 +7307,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7327,7 +7327,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7343,7 +7343,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7359,7 +7359,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7381,7 +7381,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7395,7 +7395,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7415,7 +7415,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7431,7 +7431,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7451,7 +7451,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7473,7 +7473,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7497,7 +7497,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7517,7 +7517,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7547,7 +7547,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7563,7 +7563,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7581,7 +7581,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7597,7 +7597,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7615,7 +7615,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7637,7 +7637,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7653,7 +7653,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7667,7 +7667,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7683,7 +7683,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7699,7 +7699,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7713,7 +7713,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7735,7 +7735,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7749,7 +7749,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7765,7 +7765,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7779,7 +7779,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7795,7 +7795,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7815,7 +7815,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7837,7 +7837,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7883,7 +7883,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7907,7 +7907,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7921,7 +7921,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7941,7 +7941,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -7957,7 +7957,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8003,7 +8003,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8017,7 +8017,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8031,7 +8031,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8045,7 +8045,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8059,7 +8059,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8075,7 +8075,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8091,7 +8091,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8107,7 +8107,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8123,7 +8123,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8139,7 +8139,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8155,7 +8155,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8171,7 +8171,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8187,7 +8187,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8203,7 +8203,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8219,7 +8219,7 @@ export const aliases: Record<string, any> = {
       width="125"
       height="125"
       viewBox="0 0 125 125"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8235,7 +8235,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8269,7 +8269,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8287,7 +8287,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8309,7 +8309,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8323,7 +8323,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8341,7 +8341,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8359,7 +8359,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8377,7 +8377,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8411,7 +8411,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8429,7 +8429,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8457,7 +8457,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8483,7 +8483,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8501,7 +8501,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8519,7 +8519,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8547,7 +8547,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8561,7 +8561,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8583,7 +8583,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8599,7 +8599,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8616,12 +8616,45 @@ export const aliases: Record<string, any> = {
       />
     </svg>
   ),
+  "solid-interface-radio-active": (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10 0C4.47705 0 0 4.47754 0 10C0 15.5225 4.47705 20 10 20C15.5229 20 20 15.5225 20 10C20 4.47754 15.5229 0 10 0ZM10 14C12.2092 14 14 12.209 14 10C14 7.79102 12.2092 6 10 6C7.79077 6 6 7.79102 6 10C6 12.209 7.79077 14 10 14Z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+  "solid-interface-radio": (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M1 10C1 14.9706 5.02944 19 10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10ZM10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0Z"
+        fill="currentColor"
+        fill-opacity="0.5"
+      />
+    </svg>
+  ),
   "solid-interface-refresh": (
     <svg
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8635,7 +8668,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8653,7 +8686,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8675,7 +8708,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8691,7 +8724,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8709,7 +8742,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8729,7 +8762,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8749,7 +8782,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8767,7 +8800,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8789,7 +8822,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8809,7 +8842,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8829,7 +8862,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8845,7 +8878,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8861,7 +8894,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8875,7 +8908,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8889,7 +8922,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8903,7 +8936,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect x="10" y="18" width="4" height="4" rx="2" fill="currentColor" />
@@ -8939,7 +8972,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8961,7 +8994,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -8979,7 +9012,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
@@ -9012,7 +9045,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9030,7 +9063,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9044,7 +9077,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9066,7 +9099,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9084,7 +9117,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9102,7 +9135,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9128,7 +9161,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9146,7 +9179,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9168,7 +9201,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9184,7 +9217,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9204,7 +9237,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9224,7 +9257,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9240,7 +9273,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9256,7 +9289,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9272,7 +9305,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9292,7 +9325,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9316,7 +9349,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9330,7 +9363,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9350,7 +9383,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9370,7 +9403,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9384,7 +9417,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9398,7 +9431,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9432,7 +9465,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9452,7 +9485,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9472,7 +9505,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9486,7 +9519,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9502,7 +9535,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9520,7 +9553,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9534,7 +9567,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9552,7 +9585,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9568,7 +9601,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9584,7 +9617,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9600,7 +9633,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9616,7 +9649,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9634,7 +9667,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9656,7 +9689,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9674,7 +9707,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9688,7 +9721,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9702,7 +9735,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9728,7 +9761,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9744,7 +9777,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9764,7 +9797,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9788,7 +9821,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9804,7 +9837,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9818,7 +9851,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9834,7 +9867,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9858,7 +9891,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9874,7 +9907,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9888,7 +9921,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9902,7 +9935,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9916,7 +9949,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9932,7 +9965,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9948,7 +9981,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -9964,7 +9997,7 @@ export const aliases: Record<string, any> = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

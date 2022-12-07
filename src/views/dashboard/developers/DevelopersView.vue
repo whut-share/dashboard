@@ -1,5 +1,5 @@
 <template>
-  <div class="developers-view mt-5">
+  <div class="developers-view pt-6">
     <v-container fluid>
       <router-view />
     </v-container>

@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page mt-5">
+  <div class="home-page pt-6">
     <v-container fluid>
       <v-row>
         <v-col cols="6" class="d-flex flex-column">

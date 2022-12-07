@@ -214,6 +214,10 @@ export interface GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate {
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
   syncer_instance: string;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlEventEmitterInstancesCreateOne {
@@ -239,10 +243,14 @@ export interface GqlEventEmitterInstancesGet_event_emitter_instance {
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
   syncer_instance: string;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlEventEmitterInstancesGet {
-  event_emitter_instance: GqlEventEmitterInstancesGet_event_emitter_instance[];
+  event_emitter_instance: GqlEventEmitterInstancesGet_event_emitter_instance;
 }
 
 export interface GqlEventEmitterInstancesGetVariables {
@@ -264,6 +272,10 @@ export interface GqlEventEmitterInstancesSelect_event_emitter_instances {
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
   syncer_instance: string;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlEventEmitterInstancesSelect {
@@ -289,6 +301,10 @@ export interface GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate {
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
   syncer_instance: string;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlEventEmitterInstancesUpdateOne {
@@ -496,16 +512,8 @@ export interface GqlProjectsSelect_projects {
   dassets_settings: GqlProjectsSelect_projects_dassets_settings;
 }
 
-export interface GqlProjectsSelect_project_groups {
-  __typename: "ProjectGroup";
-  id: string;
-  name: string;
-  projects: string[];
-}
-
 export interface GqlProjectsSelect {
   projects: GqlProjectsSelect_projects[];
-  project_groups: GqlProjectsSelect_project_groups[];
 }
 
 /* tslint:disable */
