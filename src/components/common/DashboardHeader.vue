@@ -23,12 +23,14 @@
 
     <v-spacer></v-spacer>
     <HeaderProjectGroupSelector />
+    <HeaderAccountDropdown />
   </v-sheet>
 </template>
 
 <script setup lang="ts">
 import HeaderLogo from "./HeaderLogo.vue";
 import HeaderProjectGroupSelector from "./HeaderProjectGroupSelector.vue";
+import HeaderAccountDropdown from "./HeaderAccountDropdown.vue";
 
 import { useAuthStore, useProjectsStore } from "@/store";
 import { computed } from "vue-demi";

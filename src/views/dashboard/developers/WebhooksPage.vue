@@ -17,8 +17,8 @@
         </div>
       </div>
 
-      <v-table class="text-black" style="border-radius: 0 !important">
-        <thead class="text-m-emphasis text-uppercase">
+      <ui-table class="rounded-0">
+        <template #head>
           <tr>
             <th class="pl-6">URL</th>
             <th>Last 7d</th>
@@ -26,8 +26,8 @@
             <th>Error rate</th>
             <th>Status</th>
           </tr>
-        </thead>
-        <tbody class="font-weight-medium">
+        </template>
+        <template #body>
           <tr v-for="i in 4" :key="i">
             <td class="pl-6">
               https://test-api.interactwith.io/folder/webhook
@@ -64,8 +64,8 @@
             <td class="text-error">20%</td>
             <td class="text-success">Active</td>
           </tr>
-        </tbody>
-      </v-table>
+        </template>
+      </ui-table>
     </v-card>
   </div>
 </template>
