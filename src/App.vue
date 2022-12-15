@@ -5,6 +5,7 @@
     </v-main>
 
     <CreateEventEmitterInstance />
+    <EventEmitterInstanceScannerModal />
 
     <v-progress-linear
       color="primary"

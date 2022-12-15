@@ -16,10 +16,11 @@
             icon_inactive: 'outline-interface-layout',
           },
           {
-            title: 'dAssets',
+            title: 'Minter',
             to: '/dsh/developers/dassets',
             icon: 'solid-status-lightning',
             icon_inactive: 'outline-status-lightning',
+            disabled: true,
           },
           {
             title: 'Syncer',
@@ -27,6 +28,7 @@
 
             icon: 'solid-interface-cursor',
             icon_inactive: 'outline-interface-cursor',
+            disabled: true,
           },
           {
             title: 'Wallet Login',
@@ -36,23 +38,23 @@
             icon_inactive: 'outline-general-wallet',
           },
 
-          {
-            title: 'Logs',
-            to: '/dsh/developers/wallet-login',
-            icon: 'solid-devices-binocular',
-            icon_inactive: 'outline-devices-binocular',
-          },
+          // {
+          //   title: 'Logs',
+          //   to: '/dsh/developers/wallet-login',
+          //   icon: 'solid-devices-binocular',
+          //   icon_inactive: 'outline-devices-binocular',
+          // },
 
-          {
-            title: 'Events',
-            to: '/dsh/developers/wallet-login',
-            icon: 'solid-files-document',
-            icon_inactive: 'outline-files-document',
-          },
+          // {
+          //   title: 'Events',
+          //   to: '/dsh/developers/wallet-login',
+          //   icon: 'solid-files-document',
+          //   icon_inactive: 'outline-files-document',
+          // },
 
           {
             title: 'Users',
-            to: '/dsh/developers/wallet-login',
+            to: '/dsh/products/users',
             icon: 'solid-communication-user',
             icon_inactive: 'outline-communication-user',
           },

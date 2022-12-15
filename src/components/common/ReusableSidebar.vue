@@ -21,6 +21,7 @@
           rounded="lg"
           :color="isTabActive(item.to) ? 'primary' : '#A1B0FF'"
           :variant="isTabActive(item.to) ? 'flat' : 'text'"
+          :disabled="item.disabled"
         >
           <v-icon v-if="isTabActive(item.to)" start>{{ item.icon }}</v-icon>
           <v-icon v-else start>{{ item.icon_inactive }}</v-icon>
@@ -66,6 +67,7 @@ interface Navigation {
   to: string;
   icon: string;
   icon_inactive: string;
+  disabled?: boolean;
 }
 
 const props = defineProps<{ nav: Navigation[][] }>();

@@ -1,8 +1,8 @@
 <template>
-  <div class="event-logs d-flex flex-column">
+  <div class="webhook-logs d-flex flex-column">
     <div class="d-flex flex-column pa-6">
       <div class="d-flex mb-3 align-center">
-        <div class="text-h5 font-weight-medium">Logs</div>
+        <div class="text-h5 font-weight-medium">Webhooks</div>
       </div>
 
       <div class="d-flex">
@@ -67,8 +67,20 @@
         <v-col cols="6" class="d-flex">
           <v-divider vertical class="h-100" color="accent"></v-divider>
           <div class="d-flex flex-column py-3">
-            <div class="text-body-1 font-weight-bold text-black px-6">
-              <code> webhook_interact.created </code>
+            <div class="d-flex px-6 align-center">
+              <div class="text-body-1 font-weight-bold text-black">
+                <code> webhook_interact.created </code>
+              </div>
+
+              <v-spacer></v-spacer>
+
+              <v-btn
+                color="accent"
+                prepend-icon="outline-interface-refresh"
+                variant="outlined"
+              >
+                Resend
+              </v-btn>
             </div>
 
             <div class="d-flex flex-column mt-6 px-6">
@@ -101,7 +113,7 @@
             </div>
 
             <div class="py-6 text-caption px-6">
-              <code>
+              <code class="text-m-emphasis">
                 { "lastUpdateId": 2213985103103, "E": 1669750749604, "T":
                 1669750749599, "bids": [ [ "16413.0", "18.133" ], [ "16412.9",
                 "1.115" ] ], "asks": [ [ "16413.1", "8.292" ] ] }
@@ -114,7 +126,7 @@
               <div class="text-h5 font-weight-medium">Request</div>
 
               <div class="py-6 text-caption">
-                <code>
+                <code class="text-m-emphasis">
                   { "lastUpdateId": 2213985103103, "E": 1669750749604, "T":
                   1669750749599, "bids": [ [ "16413.0", "18.133" ], [ "16412.9",
                   "1.115" ] ], "asks": [ [ "16413.1", "8.292" ] ] }

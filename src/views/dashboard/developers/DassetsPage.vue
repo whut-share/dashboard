@@ -1,13 +1,32 @@
 <template>
   <div class="dassets-page">
     <div class="d-flex align-center">
-      <div class="text-h4 font-weight-medium">dAssets</div>
+      <div class="text-h4 font-weight-medium">Minter</div>
       <v-spacer></v-spacer>
       <ProjectsSelector v-model="selected_project_id" />
     </div>
 
-    <v-card elevation="10" class="d-flex flex-column pa-6 mt-8">
+    <v-card elevation="10" class="d-flex align-start flex-column pa-6 mt-8">
       <div class="text-h5 font-weight-bold text-black">Settings</div>
+
+      <v-row class="w-100 mt-2">
+        <v-col cols="6">
+          <div class="d-flex mt-6 w-100">
+            <v-text-field label="Token URI" variant="outlined">
+              <template #append-inner>
+                <v-btn
+                  :disabled="true"
+                  color="success"
+                  size="small"
+                  variant="flat"
+                  prepend-icon="solid-interface-save"
+                  >Save</v-btn
+                >
+              </template>
+            </v-text-field>
+          </div>
+        </v-col>
+      </v-row>
     </v-card>
 
     <v-card

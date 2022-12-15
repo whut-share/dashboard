@@ -12,6 +12,7 @@ a {
 .v-theme--light {
   --v-shadow-key-umbra-opacity: rgba(0,0,0,0.02);
   --v-shadow-key-penumbra-opacity: rgba(0,0,0,0.02);
+  --v-theme-on-success: 255,255,255 !important;
 }
 
 .v-theme--dark {
@@ -22,6 +23,10 @@ html, .v-application {
 
   .text-h1, .text-h2, .text-h3, .text-h4, .text-h5, .text-h6, .text-body-1, .text-body-2, .text-caption, .text-subtitle-1, .text-subtitle-2 {
     font-family: "Satoshi", sans-serif !important;
+  }
+
+  .v-expansion-panel-title__overlay {
+    background-color: transparent !important;
   }
 
   .v-radio {
@@ -84,10 +89,26 @@ html, .v-application {
       th {
         background: rgba(#D2DAFF, 0.3);
         border-bottom: 0 !important;
+
+        &:first-child {
+          padding-left: 24px !important;
+        }
+
+        &:last-child {
+          padding-right: 24px !important;
+        }
       }
     }
     td {
       border-bottom: 0 !important;
+
+      &:first-child {
+        padding-left: 24px !important;
+      }
+
+      &:last-child {
+        padding-right: 24px !important;
+      }
     }
   }
 

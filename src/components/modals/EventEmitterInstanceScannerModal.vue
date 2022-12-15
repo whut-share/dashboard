@@ -1,6 +1,6 @@
 <template>
   <v-dialog
-    :modelValue="true"
+    :modelValue="is_modal_opened"
     @update:modelValue="onDialogModelUpdate"
     width="500"
   >
@@ -15,12 +15,7 @@
         </div>
       </template>
 
-      <v-btn
-        size="large"
-        variant="flat"
-        color="success"
-        class="mt-2 align-self-start"
-      >
+      <v-btn variant="flat" color="success" class="mt-2 align-self-start">
         Re-emit all events
       </v-btn>
 
@@ -57,7 +52,9 @@ import { computed, reactive, ref } from "vue-demi";
 
 const modals_store = useModalsStore();
 const modal_name = computed(() => "event-emitter-instance-scanner");
-// const is_modal_opened = computed(() => modals_store.isModalOpened(modal_name.value));
+const is_modal_opened = computed(() =>
+  modals_store.isModalOpened(modal_name.value)
+);
 
 function onDialogModelUpdate(e: boolean) {
   if (!e) {

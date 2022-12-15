@@ -39,8 +39,8 @@
 
           <v-spacer></v-spacer>
 
-          <div class="d-flex text-success align-center mr-8">
-            <ui-pulsator color="success" class="mr-3"></ui-pulsator>
+          <div class="d-flex text-warning align-center mr-8">
+            <ui-pulsator color="warning" class="mr-3"></ui-pulsator>
             <div class="d-flex font-weight-bold text-body-1">Out of sync</div>
           </div>
 
@@ -82,7 +82,7 @@
                     marginLeft: !i ? '0' : '0.1694915254237288%',
                   }"
                   v-bind="props"
-                  @click="true"
+                  @click="openGraphModal"
                 >
                 </v-card>
               </template>
@@ -112,19 +112,20 @@
         </div>
       </div>
 
-      <EventLogs />
+      <WebhookLogs />
     </v-card>
   </div>
 </template>
 
 <script setup lang="ts">
-import EventLogs from "@/components/developers/EventLogs.vue";
-import { useEeiPageStore, useProjectsStore } from "@/store";
+import WebhookLogs from "@/components/developers/WebhookLogs.vue";
+import { useEeiPageStore, useModalsStore, useProjectsStore } from "@/store";
 import { computed, onMounted, ref } from "vue-demi";
 import { useRoute, useRouter } from "vue-router";
 
 const eei_page_store = useEeiPageStore();
 const projects_store = useProjectsStore();
+const modals_store = useModalsStore();
 const route = useRoute();
 const router = useRouter();
 
@@ -160,6 +161,10 @@ onMounted(() => {
 
 function goBack() {
   router.back();
+}
+
+function openGraphModal() {
+  modals_store.open("event-emitter-instance-scanner");
 }
 </script>
 

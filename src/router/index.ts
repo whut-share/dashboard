@@ -150,6 +150,62 @@ const routes: Array<RouteRecordRaw> = [
                 import("@/views/dashboard/products/WalletLoginPage.vue")
               ),
           },
+          {
+            path: "users",
+            component: () =>
+              loadingMiddleware(
+                import("@/views/dashboard/products/UsersPage.vue")
+              ),
+          },
+        ],
+      },
+
+      {
+        path: "account",
+        component: () =>
+          loadingMiddleware(
+            import("@/views/dashboard/account/AccountView.vue")
+          ),
+        children: [
+          {
+            path: "",
+            redirect: "/dsh/account/company",
+          },
+          {
+            path: "company",
+            component: () =>
+              loadingMiddleware(
+                import("@/views/dashboard/account/CompanyPage.vue")
+              ),
+          },
+          {
+            path: "subscription",
+            component: () =>
+              loadingMiddleware(
+                import("@/views/dashboard/account/SubsPage.vue")
+              ),
+          },
+          {
+            path: "team",
+            component: () =>
+              loadingMiddleware(
+                import("@/views/dashboard/account/TeamPage.vue")
+              ),
+          },
+          {
+            path: "billing",
+            component: () =>
+              loadingMiddleware(
+                import("@/views/dashboard/account/BillingPage.vue")
+              ),
+          },
+          {
+            path: "settings",
+            component: () =>
+              loadingMiddleware(
+                import("@/views/dashboard/account/SettingsPage.vue")
+              ),
+          },
         ],
       },
     ],

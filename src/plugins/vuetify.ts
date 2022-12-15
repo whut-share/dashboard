@@ -57,6 +57,10 @@ export default createVuetify({
     VCard: {
       rounded: "lg",
     },
+    VTextField: {
+      variant: "outlined",
+      density: "comfortable",
+    },
     VBtn: {
       rounded: "pill",
     },
