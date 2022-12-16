@@ -10,7 +10,7 @@
         <div class="icon-container mb-4">
           <DassetsIcon />
         </div>
-        <div class="text-h5 font-weight-medium mb-3 text-black">dAssets</div>
+        <div class="text-h5 font-weight-medium mb-3 text-black">Minter</div>
         <div class="text-body-2 text-grey font-weight-medium">
           Create, manage and trade in-game assets
         </div>

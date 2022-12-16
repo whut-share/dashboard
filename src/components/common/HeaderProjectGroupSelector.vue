@@ -1,5 +1,5 @@
 <template>
-  <div class="header-project-group-selector">
+  <div class="header-project-group-selector" v-click-outside="closeDropdown">
     <v-card
       @click="toggleDropdown"
       elevation="0"
@@ -69,6 +69,9 @@ const project_groups = computed(() => projects_store.project_groups);
 const is_opened = ref(false);
 function toggleDropdown() {
   is_opened.value = !is_opened.value;
+}
+function closeDropdown() {
+  is_opened.value = false;
 }
 </script>
 

@@ -32,7 +32,7 @@
                 v-if="is_dassets"
                 class="font-weight-bold text-uppercase"
               >
-                dAssets
+                Minter
               </v-chip>
             </div>
           </div>

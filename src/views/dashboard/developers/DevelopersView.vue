@@ -35,7 +35,7 @@
 
         [
           {
-            title: 'dAssets',
+            title: 'Minter',
             to: '/dsh/developers/dassets',
             icon: 'solid-general-wallet',
             icon_inactive: 'outline-general-wallet',
