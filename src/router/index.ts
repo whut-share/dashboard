@@ -211,9 +211,9 @@ const routes: Array<RouteRecordRaw> = [
     ],
   },
   {
-    path: "/dassets-checkout/:session",
+    path: "/minter-checkout/:session",
     component: () =>
-      loadingMiddleware(import("@/views/DassetsCheckoutView.vue")),
+      loadingMiddleware(import("@/views/MinterCheckoutView.vue")),
   },
   {
     path: "/:pathMatch(.*)*",

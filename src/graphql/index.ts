@@ -27,3 +27,5 @@ export * from "./requests/project-groups/create";
 export * from "./requests/project-groups/select";
 export * from "./requests/project-groups/update";
 export * from "./requests/project-groups/get";
+
+export * from "./requests/chain-networks/select";

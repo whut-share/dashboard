@@ -31,12 +31,12 @@ export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsChec
   created_at: any;
   updated_at: any;
   project: string;
-  address: string | null;
-  mint_tx: string | null;
+  address: any | null;
+  mint_tx: any | null;
   mint_request_id: string | null;
   mint_token_id: number | null;
   payment_id: string | null;
-  network: string | null;
+  network: any | null;
   contract_type: string;
   is_succeeded: boolean;
   is_minted: boolean;
@@ -113,12 +113,12 @@ export interface GqlDassetsCheckoutSessionsGet_dassets_checkout_session {
   created_at: any;
   updated_at: any;
   project: string;
-  address: string | null;
-  mint_tx: string | null;
+  address: any | null;
+  mint_tx: any | null;
   mint_request_id: string | null;
   mint_token_id: number | null;
   payment_id: string | null;
-  network: string | null;
+  network: any | null;
   contract_type: string;
   is_succeeded: boolean;
   is_minted: boolean;
@@ -172,12 +172,12 @@ export interface GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdat
   created_at: any;
   updated_at: any;
   project: string;
-  address: string | null;
-  mint_tx: string | null;
+  address: any | null;
+  mint_tx: any | null;
   mint_request_id: string | null;
   mint_token_id: number | null;
   payment_id: string | null;
-  network: string | null;
+  network: any | null;
   contract_type: string;
   is_succeeded: boolean;
   is_minted: boolean;
@@ -213,7 +213,7 @@ export interface GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate {
   id: string;
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
-  syncer_instance: string;
+  syncer_instance: any;
   is_stopped: boolean;
   name: string;
   created_at: any;
@@ -242,7 +242,7 @@ export interface GqlEventEmitterInstancesGet_event_emitter_instance {
   id: string;
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
-  syncer_instance: string;
+  syncer_instance: any;
   is_stopped: boolean;
   name: string;
   created_at: any;
@@ -271,7 +271,7 @@ export interface GqlEventEmitterInstancesSelect_event_emitter_instances {
   id: string;
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
-  syncer_instance: string;
+  syncer_instance: any;
   is_stopped: boolean;
   name: string;
   created_at: any;
@@ -300,7 +300,7 @@ export interface GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate {
   id: string;
   is_webhook_emitter: boolean;
   webhook_endpoint: string | null;
-  syncer_instance: string;
+  syncer_instance: any;
   is_stopped: boolean;
   name: string;
   created_at: any;
@@ -329,7 +329,7 @@ export interface GqlProjectGroupsCreateOne_projectGroupCreate {
   __typename: "ProjectGroup";
   id: string;
   name: string;
-  projects: string[];
+  projects: any[];
 }
 
 export interface GqlProjectGroupsCreateOne {
@@ -353,7 +353,7 @@ export interface GqlProjectGroupsGet_project_group {
   __typename: "ProjectGroup";
   id: string;
   name: string;
-  projects: string[];
+  projects: any[];
 }
 
 export interface GqlProjectGroupsGet {
@@ -377,7 +377,7 @@ export interface GqlProjectGroupsSelect_project_groups {
   __typename: "ProjectGroup";
   id: string;
   name: string;
-  projects: string[];
+  projects: any[];
 }
 
 export interface GqlProjectGroupsSelect {
@@ -397,7 +397,7 @@ export interface GqlProjectGroupsUpdateOne_projectGroupUpdate {
   __typename: "ProjectGroup";
   id: string;
   name: string;
-  projects: string[];
+  projects: any[];
 }
 
 export interface GqlProjectGroupsUpdateOne {
@@ -696,7 +696,7 @@ export interface GqlUsersSignUpVariables {
 //==============================================================
 
 export interface IDassetsCheckoutSessionCreate {
-  project: string;
+  project: any;
   asset_info: IDassetsCheckoutSessionCreateAssetInfo;
 }
 
@@ -708,8 +708,8 @@ export interface IDassetsCheckoutSessionCreateAssetInfo {
 }
 
 export interface IDassetsCheckoutSessionUpdate {
-  address?: string | null;
-  network?: string | null;
+  address?: any | null;
+  network?: any | null;
 }
 
 export interface IEventEmitterInstanceCreate {
@@ -724,7 +724,7 @@ export interface IEventEmitterInstanceUpdate {
 }
 
 export interface IEventEmitterInstancesFilter {
-  syncer_instance?: string | null;
+  syncer_instance?: any | null;
 }
 
 export interface IProjectCreate {
@@ -732,7 +732,7 @@ export interface IProjectCreate {
 }
 
 export interface IProjectDassetsSettingsUpdate {
-  include_networks?: string[] | null;
+  include_networks?: any[] | null;
   token_base_url?: string | null;
   webhook_events_url?: string | null;
 }
@@ -761,8 +761,8 @@ export interface ISyncerInstanceCreate {
 }
 
 export interface ISyncerInstanceCreateContracts {
-  address?: string | null;
-  deploy_tx?: string | null;
+  address?: any | null;
+  deploy_tx?: any | null;
   contract_name: string;
   events: string[];
   abi: any;
@@ -775,8 +775,8 @@ export interface ISyncerInstanceUpdate {
 }
 
 export interface ISyncerInstanceUpdateContracts {
-  address?: string | null;
-  deploy_tx?: string | null;
+  address?: any | null;
+  deploy_tx?: any | null;
   contract_name?: string | null;
   events?: string[] | null;
   abi?: any | null;

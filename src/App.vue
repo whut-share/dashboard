@@ -4,9 +4,6 @@
       <router-view />
     </v-main>
 
-    <CreateEventEmitterInstance />
-    <EventEmitterInstanceScannerModal />
-
     <v-progress-linear
       color="primary"
       indeterminate
@@ -19,8 +16,6 @@
 
 <script setup lang="ts">
 import { computed } from "vue-demi";
-import CreateEventEmitterInstance from "./components/modals/CreateEventEmitterInstance.vue";
-import EventEmitterInstanceScannerModal from "./components/modals/EventEmitterInstanceScannerModal.vue";
 import { usePreloadStore } from "./store";
 
 const preload_store = usePreloadStore();

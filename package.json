@@ -7,6 +7,8 @@
     "build": "vue-cli-service build",
     "build:test": "vue-cli-service build --mode=test",
     "lint": "vue-cli-service lint",
+    "transform-icons": "node ./scripts/icons-transformer.js",
+    "generate-interfaces": "node ./scripts/interfaces-gen.js",
     "gql-sync": "apollo service:download --endpoint=http://localhost:8000/graphql graphql-schema.json",
     "gql-codegen": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql --outputFlat ./src/graphql/types.ts",
     "gqls": "npm run gql-sync && npm run gql-codegen"

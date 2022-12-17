@@ -7,8 +7,9 @@ import { aliases } from "@/assets/icons";
 const light: ThemeDefinition = {
   dark: false,
   colors: {
-    background: "#FFFFFF",
-    surface: "#FFFFFF",
+    background: "#FDFDFD",
+    surface: "#FDFDFD",
+    white: "#FDFDFD",
     black: "#0D0D2F",
 
     primary: "#7D42FB",
