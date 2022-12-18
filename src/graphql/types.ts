@@ -4,6 +4,30 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
+// GraphQL query operation: GqlChainNetworksSelect
+// ====================================================
+
+export interface GqlChainNetworksSelect_chain_networks {
+  __typename: "ChainNetwork";
+  default_rpc: string;
+  archive_rpc: string;
+  key: string;
+  type: string;
+  block_time: number;
+  native_curr_symbol: string;
+  icon_url: string | null;
+}
+
+export interface GqlChainNetworksSelect {
+  chain_networks: GqlChainNetworksSelect_chain_networks[];
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
 // GraphQL mutation operation: GqlDassetsCheckoutSessionsAttachStripePaymentIntent
 // ====================================================
 
@@ -330,6 +354,9 @@ export interface GqlProjectGroupsCreateOne_projectGroupCreate {
   id: string;
   name: string;
   projects: any[];
+  user: any;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectGroupsCreateOne {
@@ -354,6 +381,9 @@ export interface GqlProjectGroupsGet_project_group {
   id: string;
   name: string;
   projects: any[];
+  user: any;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectGroupsGet {
@@ -378,6 +408,9 @@ export interface GqlProjectGroupsSelect_project_groups {
   id: string;
   name: string;
   projects: any[];
+  user: any;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectGroupsSelect {
@@ -398,6 +431,9 @@ export interface GqlProjectGroupsUpdateOne_projectGroupUpdate {
   id: string;
   name: string;
   projects: any[];
+  user: any;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectGroupsUpdateOne {
@@ -430,12 +466,22 @@ export interface GqlProjectsCreateOne_projectCreate_dassets_settings {
   webhook_events_url: string | null;
 }
 
+export interface GqlProjectsCreateOne_projectCreate_syncer_settings {
+  __typename: "ProjectSyncerSettings";
+  include_networks: any[];
+  contracts_base_url: string | null;
+}
+
 export interface GqlProjectsCreateOne_projectCreate {
   __typename: "Project";
   id: string;
   name: string;
   dassets_syncer_instance: GqlProjectsCreateOne_projectCreate_dassets_syncer_instance;
   dassets_settings: GqlProjectsCreateOne_projectCreate_dassets_settings;
+  syncer_settings: GqlProjectsCreateOne_projectCreate_syncer_settings;
+  user: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectsCreateOne {
@@ -467,12 +513,22 @@ export interface GqlProjectsGet_project_dassets_settings {
   webhook_events_url: string | null;
 }
 
+export interface GqlProjectsGet_project_syncer_settings {
+  __typename: "ProjectSyncerSettings";
+  include_networks: any[];
+  contracts_base_url: string | null;
+}
+
 export interface GqlProjectsGet_project {
   __typename: "Project";
   id: string;
   name: string;
   dassets_syncer_instance: GqlProjectsGet_project_dassets_syncer_instance;
   dassets_settings: GqlProjectsGet_project_dassets_settings;
+  syncer_settings: GqlProjectsGet_project_syncer_settings;
+  user: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectsGet {
@@ -504,12 +560,22 @@ export interface GqlProjectsSelect_projects_dassets_settings {
   webhook_events_url: string | null;
 }
 
+export interface GqlProjectsSelect_projects_syncer_settings {
+  __typename: "ProjectSyncerSettings";
+  include_networks: any[];
+  contracts_base_url: string | null;
+}
+
 export interface GqlProjectsSelect_projects {
   __typename: "Project";
   id: string;
   name: string;
   dassets_syncer_instance: GqlProjectsSelect_projects_dassets_syncer_instance;
   dassets_settings: GqlProjectsSelect_projects_dassets_settings;
+  syncer_settings: GqlProjectsSelect_projects_syncer_settings;
+  user: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectsSelect {
@@ -537,12 +603,22 @@ export interface GqlProjectsUpdateOne_projectUpdate_dassets_settings {
   webhook_events_url: string | null;
 }
 
+export interface GqlProjectsUpdateOne_projectUpdate_syncer_settings {
+  __typename: "ProjectSyncerSettings";
+  include_networks: any[];
+  contracts_base_url: string | null;
+}
+
 export interface GqlProjectsUpdateOne_projectUpdate {
   __typename: "Project";
   id: string;
   name: string;
   dassets_syncer_instance: GqlProjectsUpdateOne_projectUpdate_dassets_syncer_instance;
   dassets_settings: GqlProjectsUpdateOne_projectUpdate_dassets_settings;
+  syncer_settings: GqlProjectsUpdateOne_projectUpdate_syncer_settings;
+  user: string;
+  created_at: any;
+  updated_at: any;
 }
 
 export interface GqlProjectsUpdateOne {
@@ -657,6 +733,7 @@ export interface GqlUsersGetMe_me {
   id: any;
   email: string;
   created_at: any;
+  updated_at: any;
 }
 
 export interface GqlUsersGetMe {
@@ -676,6 +753,7 @@ export interface GqlUsersSignUp_userSignUp {
   __typename: "User";
   id: any;
   email: string;
+  updated_at: any;
 }
 
 export interface GqlUsersSignUp {

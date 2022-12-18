@@ -9,7 +9,7 @@ export const GQL_CHAIN_NETWORKS_SELECT = gql`
       type
       block_time
       native_curr_symbol
-      image_url
+      icon_url
     }
   }
 `;

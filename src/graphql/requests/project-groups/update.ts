@@ -9,6 +9,9 @@ export const GQL_PROJECT_GROUPS_UPDATE_ONE = gql`
       id
       name
       projects
+      user
+      created_at
+      updated_at
     }
   }
 `;

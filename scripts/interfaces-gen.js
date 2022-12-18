@@ -65,8 +65,12 @@ const init = async () => {
             }
           }
 
-          return `\t${field.name}${is_must}: ${type_name}${
-            is_array ? "[]" : ""
+          if (field.name === "id") {
+            return `\t${field.name}: ${type_name};`;
+          }
+
+          return `\t${field.name}?: ${type_name}${is_array ? "[]" : ""}${
+            is_must === "?" ? " | null | undefined" : ""
           };`;
         })
         .join("\n");

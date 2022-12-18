@@ -6,6 +6,9 @@ export const GQL_PROJECT_GROUPS_CREATE_ONE = gql`
       id
       name
       projects
+      user
+      created_at
+      updated_at
     }
   }
 `;

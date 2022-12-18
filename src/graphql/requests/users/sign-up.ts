@@ -5,6 +5,7 @@ export const GQL_USERS_SIGN_UP = gql`
     userSignUp(data: $data) {
       id
       email
+      updated_at
     }
   }
 `;

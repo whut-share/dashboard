@@ -6,6 +6,7 @@ export const GQL_USERS_GET_ME = gql`
       id
       email
       created_at
+      updated_at
     }
   }
 `;

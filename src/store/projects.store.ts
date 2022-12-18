@@ -31,7 +31,7 @@ export const useProjectsStore = defineStore("projects", {
 
       if (!pg) return [];
 
-      return state.projects.filter((n) => pg.projects.includes(n.id));
+      return state.projects.filter((n) => pg.projects?.includes(n.id));
     },
   },
 
