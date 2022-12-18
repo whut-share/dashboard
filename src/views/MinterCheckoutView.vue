@@ -70,16 +70,16 @@
               class="pa-5 d-flex align-center justify-center text-h3"
               variant="text"
             >
-              <v-img contain :src="session?.asset_info.image_url"></v-img>
+              <v-img contain :src="session?.asset_info?.image_url"></v-img>
             </v-card>
             <div class="text-h4 text-center mt-4 font-weight-bold">
-              {{ session?.asset_info.name }}
+              {{ session?.asset_info?.name }}
             </div>
             <div
               class="text-body-2 text-m-emphasis text-center mt-2"
               style="max-width: 200px"
             >
-              {{ session?.asset_info.description }}
+              {{ session?.asset_info?.description }}
             </div>
           </v-col>
 

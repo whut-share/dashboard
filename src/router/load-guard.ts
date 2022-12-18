@@ -1,5 +1,10 @@
 import { loadStripe } from "@/plugins";
-import { useAuthStore, usePreloadStore, useProjectsStore } from "@/store";
+import {
+  useAuthStore,
+  useChainNetworksStore,
+  usePreloadStore,
+  useProjectsStore,
+} from "@/store";
 import { reactive } from "vue";
 import { NavigationGuardNext, RouteLocationNormalized } from "vue-router";
 
@@ -15,6 +20,7 @@ export const loadGuard = async (
   const auth_store = useAuthStore();
   const projects_store = useProjectsStore();
   const preload_store = usePreloadStore();
+  const chain_networks_store = useChainNetworksStore();
 
   if (!auth_store.is_token_loaded) {
     auth_store.loadTokenFromLocalStorage();
@@ -36,6 +42,14 @@ export const loadGuard = async (
       }
     });
   }
+
+  if (!chain_networks_store.is_loaded) {
+    proms.push(async () => {
+      return chain_networks_store.sync();
+    });
+  }
+
+  // ---
 
   if (proms.length) {
     console.log("Load guard is loading", proms.length, "promises");

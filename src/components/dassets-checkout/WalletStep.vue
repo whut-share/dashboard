@@ -15,20 +15,20 @@
       <div class="d-flex ml-2">
         <v-btn
           size="x-small"
-          @click="selectNetwork(n.name)"
+          @click="selectNetwork(n.id)"
           variant="outlined"
           rounded="md"
           :class="{
             'ml-1': !!i,
           }"
-          v-for="(n, i) in networks"
+          v-for="(n, i) in chain_networks"
           :key="n"
-          :color="selected_network === n.name ? 'primary' : 'black'"
+          :color="selected_network === n.id ? 'primary' : 'black'"
         >
           <v-avatar size="14" class="netimg d-inline">
-            <v-img :src="n.image_url"></v-img>
+            <v-img :src="n.icon_url"></v-img>
           </v-avatar>
-          <span class="text-uppercase">{{ n.name }}</span>
+          <span class="text-uppercase">{{ n.id }}</span>
         </v-btn>
       </div>
     </v-sheet>
@@ -58,10 +58,11 @@
 </template>
 
 <script setup lang="ts">
-import { useDassetsCheckoutStore } from "@/store";
+import { useChainNetworksStore, useDassetsCheckoutStore } from "@/store";
 import { computed, ref } from "vue-demi";
 
 const minter_checkout_store = useDassetsCheckoutStore();
+const chain_networks_store = useChainNetworksStore();
 
 const properties = ref<Record<string, string>>({
   "Skin quality": "Rare Special",
@@ -72,18 +73,7 @@ const properties = ref<Record<string, string>>({
 
 const session = computed(() => minter_checkout_store.session);
 
-const networks = ref([
-  {
-    name: "eth",
-    image_url:
-      "https://www.pngitem.com/pimgs/m/124-1245793_ethereum-eth-icon-ethereum-png-transparent-png.png",
-  },
-  {
-    name: "bsc",
-    image_url:
-      "https://www.pngitem.com/pimgs/m/124-1245793_ethereum-eth-icon-ethereum-png-transparent-png.png",
-  },
-]);
+const chain_networks = computed(() => chain_networks_store.chain_networks);
 
 const selected_network = ref(session.value?.network);
 function selectNetwork(network: string) {

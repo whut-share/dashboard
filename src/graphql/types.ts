@@ -9,9 +9,9 @@
 
 export interface GqlChainNetworksSelect_chain_networks {
   __typename: "ChainNetwork";
+  id: string;
   default_rpc: string;
   archive_rpc: string;
-  key: string;
   type: string;
   block_time: number;
   native_curr_symbol: string;

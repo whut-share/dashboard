@@ -15,9 +15,9 @@ export interface IEventEmitterInstance {
   is_stopped?: boolean;
 }
 export interface IChainNetwork {
+  id: string;
   default_rpc?: string;
   archive_rpc?: string;
-  key?: string;
   type?: string;
   block_time?: number;
   native_curr_symbol?: string;
