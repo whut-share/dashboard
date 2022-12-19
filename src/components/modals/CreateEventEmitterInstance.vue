@@ -22,7 +22,7 @@
           ></v-text-field>
         </ui-titled-input>
 
-        <ui-titled-input title="Select events to listen to">
+        <ui-titled-input title="Select events to listen to" class="mt-4">
           <v-select
             prepend-inner-icon="solid-interface-search"
             placeholder="Search events ..."

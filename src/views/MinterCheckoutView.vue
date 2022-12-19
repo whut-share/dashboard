@@ -1,5 +1,5 @@
 <template>
-  <div class="dassets-flow-view flex-grow-1 d-flex flex-column">
+  <div class="dassets-flow-view flex-grow-1 d-flex flex-column pb-16">
     <svg
       width="288"
       class="w-100"
@@ -49,51 +49,47 @@
       </defs>
     </svg>
 
-    <div class="d-flex flex-column flex-grow-1" style="position: relative">
+    <div
+      class="d-flex flex-column align-center flex-grow-1"
+      style="position: relative"
+    >
       <GlobalBg style="position: absolute" />
       <div class="grad"></div>
-      <StepsBlock />
 
-      <v-container
-        class="flex-grow-1 d-flex flex-column pt-16"
+      <v-sheet
+        class="flex-grow-1 d-flex flex-column pt-16 px-4"
         style="position: relative"
+        max-width="600"
+        width="100%"
+        color="transparent"
       >
-        <v-row class="flex-grow-1">
-          <v-col
-            cols="12"
-            md="6"
-            class="d-flex flex-column align-center justify-center"
-          >
+        <div class="flex-grow-1">
+          <v-fade-transition mode="out-in">
             <v-card
+              color="m-emphasis"
+              variant="tonal"
+              height="100%"
+              class="pa-5 text-h6 d-flex align-center justify-center font-weight-bold"
               rounded="xl"
-              width="500"
-              class="pa-5 d-flex align-center justify-center text-h3"
-              variant="text"
+              v-if="is_session_loading"
             >
-              <v-img contain :src="session?.asset_info?.image_url"></v-img>
+              <span class="mr-3 text-black">Loading</span>
+              <v-progress-circular
+                indeterminate
+                color="primary"
+                size="18"
+                width="3"
+              />
             </v-card>
-            <div class="text-h4 text-center mt-4 font-weight-bold">
-              {{ session?.asset_info?.name }}
-            </div>
-            <div
-              class="text-body-2 text-m-emphasis text-center mt-2"
-              style="max-width: 200px"
-            >
-              {{ session?.asset_info?.description }}
-            </div>
-          </v-col>
 
-          <v-col cols="12" md="6" class="d-flex flex-column justify-center">
-            <div class="flex-grow-1">
-              <div class="text-h5" v-if="is_session_loading">Loading...</div>
+            <FirstStep v-else-if="step === 1" />
+            <PaymentStep v-else-if="step === 2" />
+            <WaitStep v-else-if="step === 3" />
+          </v-fade-transition>
+        </div>
+      </v-sheet>
 
-              <FirstStep v-else-if="step === 1" />
-              <PaymentStep v-else-if="step === 2" />
-              <WaitStep v-else-if="step === 3" />
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+      <StepsBlock />
     </div>
   </div>
 </template>

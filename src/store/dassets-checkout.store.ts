@@ -21,13 +21,13 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
   state: () => ({
     session: null as IDassetsCheckoutSession | null,
     is_save_loading: false,
-    step: 1,
+    step: 0,
   }),
 
   getters: {
     maxStep(state): number {
       if (!state.session) {
-        return 1;
+        return 0;
       } else if (!state.session.network) {
         return 1;
       } else if (!state.session.is_payed) {
@@ -38,7 +38,7 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
       ) {
         return 3;
       } else {
-        return 1;
+        return 0;
       }
     },
   },
@@ -58,6 +58,14 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
       if (this.step > 1) {
         this.step--;
       }
+    },
+
+    setPage(step: number) {
+      if (step > this.maxStep) {
+        step = this.maxStep;
+      }
+
+      this.step = step;
     },
 
     async sync(session_id?: string) {

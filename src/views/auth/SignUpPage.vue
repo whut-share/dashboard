@@ -56,43 +56,46 @@
       </div>
 
       <v-form ref="reg_form" lazy-validation>
-        <v-text-field
-          v-model="form.full_name"
-          label="Full name"
-          variant="outlined"
-          :rules="[
-            (v: string) => !!v.length || 'Enter your name',
-          ]"
-        ></v-text-field>
-        <v-text-field
-          v-model="form.email"
-          label="Email"
-          variant="outlined"
-          class="mt-4"
-          :rules="[
-            (v: string) => !!v.length || 'Enter email',
-          ]"
-        ></v-text-field>
-        <v-text-field
-          v-model="form.password"
-          label="Password"
-          type="password"
-          variant="outlined"
-          class="mt-4"
-          :rules="[
-            (v: string) => !!v.length || 'Enter password',
-          ]"
-        ></v-text-field>
-        <v-text-field
-          v-model="form.confirm_password"
-          label="Confirm password"
-          type="password"
-          variant="outlined"
-          class="mt-4"
-          :rules="[
-            (v: string) => v === form.password || 'Confirm password correctly'
-          ]"
-        ></v-text-field>
+        <ui-titled-input title="Full name">
+          <v-text-field
+            v-model="form.full_name"
+            variant="outlined"
+            placeholder="e.g. John Doe"
+            :rules="[
+              (v: string) => !!v.length || 'Enter your name',
+            ]"
+          ></v-text-field>
+        </ui-titled-input>
+        <ui-titled-input title="Email" class="mt-3">
+          <v-text-field
+            v-model="form.email"
+            variant="outlined"
+            placeholder="e.g. john@email.com"
+            :rules="[
+              (v: string) => !!v.length || 'Enter email',
+            ]"
+          ></v-text-field>
+        </ui-titled-input>
+        <ui-titled-input title="Password" class="mt-3">
+          <v-text-field
+            v-model="form.password"
+            type="password"
+            variant="outlined"
+            :rules="[
+              (v: string) => !!v.length || 'Enter password',
+            ]"
+          ></v-text-field>
+        </ui-titled-input>
+        <ui-titled-input title="Confirm password" class="mt-3">
+          <v-text-field
+            v-model="form.confirm_password"
+            type="password"
+            variant="outlined"
+            :rules="[
+              (v: string) => v === form.password || 'Confirm password correctly'
+            ]"
+          ></v-text-field>
+        </ui-titled-input>
 
         <v-checkbox
           density="compact"

@@ -12,18 +12,23 @@
       <v-row class="w-100 mt-2">
         <v-col cols="6">
           <div class="d-flex mt-6 w-100">
-            <v-text-field label="Token URI" variant="outlined">
-              <template #append-inner>
-                <v-btn
-                  :disabled="true"
-                  color="success"
-                  size="small"
-                  variant="flat"
-                  prepend-icon="solid-interface-save"
-                  >Save</v-btn
-                >
-              </template>
-            </v-text-field>
+            <ui-titled-input class="w-100" title="Token URI">
+              <v-text-field
+                placeholder="https://api.example.com/{token}"
+                variant="outlined"
+              >
+                <template #append-inner>
+                  <v-btn
+                    :disabled="true"
+                    color="success"
+                    size="small"
+                    variant="flat"
+                    prepend-icon="solid-interface-save"
+                    >Save</v-btn
+                  >
+                </template>
+              </v-text-field>
+            </ui-titled-input>
           </div>
         </v-col>
       </v-row>

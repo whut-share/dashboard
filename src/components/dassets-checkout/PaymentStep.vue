@@ -1,11 +1,26 @@
 <template>
-  <div class="payment-step flex-grow-1 d-flex flex-column">
-    <div style="min-height: 200px" class="mb-6">
+  <div class="payment-step d-flex justify-center flex-column">
+    <v-card
+      color="transparent"
+      rounded="lg"
+      elevation="0"
+      style="overflow: visible"
+      min-height="100"
+      class="mb-4"
+    >
       <div id="payment-element"></div>
-      <v-overlay absolute>
-        <v-progress-circular indeterminate size="64"></v-progress-circular>
+      <v-overlay
+        contained
+        v-model="overlay"
+        class="d-flex align-center justify-center"
+      >
+        <v-progress-circular
+          color="primary"
+          indeterminate
+          size="32"
+        ></v-progress-circular>
       </v-overlay>
-    </div>
+    </v-card>
     <ui-titled-input title="Wallet address">
       <v-text-field
         placeholder="0x00...000"
@@ -14,7 +29,7 @@
     </ui-titled-input>
     <v-btn
       :loading="is_payment_loading"
-      class="align-self-start"
+      class="mt-8"
       size="large"
       color="primary"
       rounded="lg"
@@ -34,7 +49,6 @@ import {
 import { apollo_client, useStripe } from "@/plugins";
 import { useDassetsCheckoutStore } from "@/store";
 import { computed, onMounted, ref } from "vue";
-import { satoshi_base64 } from "./satoshi-base64";
 
 const stripe = useStripe();
 const is_render_loading = ref(true);
@@ -42,8 +56,11 @@ const is_payment_loading = ref(false);
 
 const dassets_flow_store = useDassetsCheckoutStore();
 const session = computed(() => dassets_flow_store.session);
+const overlay = computed(
+  () => is_render_loading.value || is_payment_loading.value
+);
 
-let elements: any;
+let stripe_elements: any;
 
 async function render() {
   await apollo_client
@@ -66,7 +83,7 @@ async function render() {
     throw new Error("No stripe pi client secret");
   }
 
-  elements = stripe.elements({
+  const elements = stripe.elements({
     locale: "en",
     fonts: [
       {
@@ -80,6 +97,21 @@ async function render() {
         fontFamily: "Satoshi",
         colorPrimary: "#7D42FB",
         borderRadius: "12px",
+        fontSizeSm: "0.75rem",
+        focusBoxShadow: "none",
+        colorTextPlaceholder: "#767683",
+        spacingGridRow: "16px",
+      },
+      rules: {
+        ".Label": {
+          paddingLeft: "8px",
+          lineHeight: "1.25rem",
+        },
+        ".Input": {
+          paddingLeft: "16px",
+          paddingTop: "12px",
+          paddingBottom: "12px",
+        },
       },
     },
     clientSecret: session.value?.stripe_pi_client_secret,
@@ -87,6 +119,8 @@ async function render() {
 
   const paymentElement = elements.create("payment", {});
   paymentElement.mount("#payment-element");
+
+  stripe_elements = elements;
 }
 
 const wallet_address = ref("");
@@ -100,7 +134,7 @@ async function submit() {
 
   await stripe
     .confirmPayment({
-      elements,
+      elements: stripe_elements,
       confirmParams: {
         return_url: window.location.href,
       },
@@ -116,3 +150,5 @@ onMounted(() => {
   });
 });
 </script>
+
+<style lang="scss" scoped></style>

@@ -61,6 +61,8 @@ export default createVuetify({
     VTextField: {
       variant: "outlined",
       density: "comfortable",
+      color: "black",
+      hideDetails: "auto",
     },
     VBtn: {
       rounded: "pill",

@@ -1,14 +1,44 @@
 <template>
-  <div class="network-step flex-grow-1 d-flex flex-column">
-    <div class="text-h6 font-weight-bold mb-4">Wait for payment...</div>
+  <div class="network-step h-100 d-flex flex-column">
+    <div
+      class="text-black flex-grow-1 d-flex align-center justify-center"
+      v-if="!session?.is_succeeded"
+    >
+      <div class="text-h6 font-weight-bold mr-4">
+        <template v-if="!session?.is_payed"> Payment preceeding </template>
+        <template v-else-if="!session?.is_minted">
+          Waiting for transaction
+        </template>
+        <template v-else> Summarizing </template>
+      </div>
 
-    <div v-if="session?.is_payed" class="text-success">- Payed!</div>
-    <div v-if="session?.is_minted" class="text-success">
-      - Minted! Transaction hash: <b>{{ session?.mint_tx }}</b>
+      <v-progress-circular
+        :size="20"
+        :width="3"
+        :indeterminate="true"
+        color="primary"
+      ></v-progress-circular>
     </div>
-    <div v-if="session?.is_succeeded" class="text-success">
-      - Success! Token ID: <b>{{ session?.mint_token_id }}</b>
+    <div
+      class="d-flex flex-column justify-center align-center flex-grow-1"
+      v-else
+    >
+      <span class="font-weight-bold text-m-emphasis text-body-2"
+        >Item minted to:</span
+      >
+      <span class="text-black text-body-1 mt-2">{{ session?.address }}</span>
     </div>
+
+    <v-btn
+      class="mt-8"
+      size="large"
+      color="primary"
+      rounded="lg"
+      :disabled="!session?.is_succeeded"
+      href="#"
+    >
+      Check transaction
+    </v-btn>
   </div>
 </template>
 
@@ -22,7 +52,7 @@ const session = computed(() => dassets_checkout_store.session);
 
 async function startChecks() {
   await dassets_checkout_store.sync();
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   await startChecks();
 }
 
