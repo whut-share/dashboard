@@ -87,10 +87,9 @@
             <div class="flex-grow-1">
               <div class="text-h5" v-if="is_session_loading">Loading...</div>
 
-              <WalletStep v-else-if="step === 1" />
-              <NetworkStep v-else-if="step === 2" />
-              <PaymentStep v-else-if="step === 3" />
-              <WaitStep v-else-if="step === 4" />
+              <FirstStep v-else-if="step === 1" />
+              <PaymentStep v-else-if="step === 2" />
+              <WaitStep v-else-if="step === 3" />
             </div>
           </v-col>
         </v-row>
@@ -100,9 +99,8 @@
 </template>
 
 <script setup lang="ts">
-import NetworkStep from "@/components/dassets-checkout/NetworkStep.vue";
 import PaymentStep from "@/components/dassets-checkout/PaymentStep.vue";
-import WalletStep from "@/components/dassets-checkout/WalletStep.vue";
+import FirstStep from "@/components/dassets-checkout/FirstStep.vue";
 import WaitStep from "@/components/dassets-checkout/WaitStep.vue";
 import GlobalBg from "@/components/common/GlobalBg.vue";
 import { useDassetsCheckoutStore } from "@/store";

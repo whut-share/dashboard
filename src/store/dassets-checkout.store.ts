@@ -28,17 +28,15 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
     maxStep(state): number {
       if (!state.session) {
         return 1;
-      } else if (!state.session.address) {
-        return 1;
       } else if (!state.session.network) {
-        return 2;
+        return 1;
       } else if (!state.session.is_payed) {
-        return 3;
+        return 2;
       } else if (
         (state.session.is_payed && !state.session.is_minted) ||
         state.session.is_succeeded
       ) {
-        return 4;
+        return 3;
       } else {
         return 1;
       }

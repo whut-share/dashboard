@@ -1,5 +1,5 @@
 <template>
-  <div class="wallet-step h-100 d-flex justify-center flex-column">
+  <div class="first-step h-100 d-flex justify-center flex-column">
     <v-sheet
       height="30"
       class="d-flex align-center pl-6"
@@ -50,6 +50,7 @@
         rounded="lg"
         size="large"
         class="mt-4"
+        @click="nextPage"
       >
         Pay with Card
       </v-btn>
