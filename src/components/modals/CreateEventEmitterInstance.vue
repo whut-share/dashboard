@@ -29,7 +29,7 @@
             v-model="form.events"
             variant="outlined"
             multiple
-            :items="['Dassets.Transfer', 'Dassets.NftMinted']"
+            :items="['Minter.Transfer', 'Minter.NftMinted']"
           ></v-select>
         </ui-titled-input>
       </div>

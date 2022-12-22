@@ -28,11 +28,11 @@ export interface GqlChainNetworksSelect {
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL mutation operation: GqlDassetsCheckoutSessionsAttachStripePaymentIntent
+// GraphQL mutation operation: GqlMinterCheckoutSessionsAttachStripePaymentIntent
 // ====================================================
 
-export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_price_estimation {
-  __typename: "DassetsCheckoutSessionPriceEstimate";
+export interface GqlMinterCheckoutSessionsAttachStripePaymentIntent_minterCheckoutSessionAttachStripePaymentIntent_price_estimation {
+  __typename: "MinterCheckoutSessionPriceEstimate";
   price: number;
   total_eth: number;
   eth_price: number;
@@ -41,16 +41,16 @@ export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsChec
   slippage: number;
 }
 
-export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_asset_info {
-  __typename: "DassetsNftAssetInfo";
+export interface GqlMinterCheckoutSessionsAttachStripePaymentIntent_minterCheckoutSessionAttachStripePaymentIntent_asset_info {
+  __typename: "MinterNftAssetInfo";
   id: string;
   name: string;
   description: string | null;
   image_url: string | null;
 }
 
-export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent {
-  __typename: "DassetsCheckoutSession";
+export interface GqlMinterCheckoutSessionsAttachStripePaymentIntent_minterCheckoutSessionAttachStripePaymentIntent {
+  __typename: "MinterCheckoutSession";
   id: string;
   created_at: any;
   updated_at: any;
@@ -70,15 +70,15 @@ export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsChec
   url: string;
   payment_expires_at: any | null;
   stripe_pi_client_secret: string | null;
-  price_estimation: GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_price_estimation | null;
-  asset_info: GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent_asset_info;
+  price_estimation: GqlMinterCheckoutSessionsAttachStripePaymentIntent_minterCheckoutSessionAttachStripePaymentIntent_price_estimation | null;
+  asset_info: GqlMinterCheckoutSessionsAttachStripePaymentIntent_minterCheckoutSessionAttachStripePaymentIntent_asset_info;
 }
 
-export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntent {
-  dassetsCheckoutSessionAttachStripePaymentIntent: GqlDassetsCheckoutSessionsAttachStripePaymentIntent_dassetsCheckoutSessionAttachStripePaymentIntent;
+export interface GqlMinterCheckoutSessionsAttachStripePaymentIntent {
+  minterCheckoutSessionAttachStripePaymentIntent: GqlMinterCheckoutSessionsAttachStripePaymentIntent_minterCheckoutSessionAttachStripePaymentIntent;
 }
 
-export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntentVariables {
+export interface GqlMinterCheckoutSessionsAttachStripePaymentIntentVariables {
   id: any;
 }
 
@@ -88,20 +88,20 @@ export interface GqlDassetsCheckoutSessionsAttachStripePaymentIntentVariables {
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL mutation operation: GqlDassetsCheckoutSessionsCreateOne
+// GraphQL mutation operation: GqlMinterCheckoutSessionsCreateOne
 // ====================================================
 
-export interface GqlDassetsCheckoutSessionsCreateOne_dassetsCheckoutSessionCreate {
-  __typename: "DassetsCheckoutSession";
+export interface GqlMinterCheckoutSessionsCreateOne_minterCheckoutSessionCreate {
+  __typename: "MinterCheckoutSession";
   id: string;
 }
 
-export interface GqlDassetsCheckoutSessionsCreateOne {
-  dassetsCheckoutSessionCreate: GqlDassetsCheckoutSessionsCreateOne_dassetsCheckoutSessionCreate;
+export interface GqlMinterCheckoutSessionsCreateOne {
+  minterCheckoutSessionCreate: GqlMinterCheckoutSessionsCreateOne_minterCheckoutSessionCreate;
 }
 
-export interface GqlDassetsCheckoutSessionsCreateOneVariables {
-  data: IDassetsCheckoutSessionCreate;
+export interface GqlMinterCheckoutSessionsCreateOneVariables {
+  data: IMinterCheckoutSessionCreate;
 }
 
 /* tslint:disable */
@@ -110,11 +110,11 @@ export interface GqlDassetsCheckoutSessionsCreateOneVariables {
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: GqlDassetsCheckoutSessionsGet
+// GraphQL query operation: GqlMinterCheckoutSessionsGet
 // ====================================================
 
-export interface GqlDassetsCheckoutSessionsGet_dassets_checkout_session_price_estimation {
-  __typename: "DassetsCheckoutSessionPriceEstimate";
+export interface GqlMinterCheckoutSessionsGet_minter_checkout_session_price_estimation {
+  __typename: "MinterCheckoutSessionPriceEstimate";
   price: number;
   total_eth: number;
   eth_price: number;
@@ -123,16 +123,16 @@ export interface GqlDassetsCheckoutSessionsGet_dassets_checkout_session_price_es
   slippage: number;
 }
 
-export interface GqlDassetsCheckoutSessionsGet_dassets_checkout_session_asset_info {
-  __typename: "DassetsNftAssetInfo";
+export interface GqlMinterCheckoutSessionsGet_minter_checkout_session_asset_info {
+  __typename: "MinterNftAssetInfo";
   id: string;
   name: string;
   description: string | null;
   image_url: string | null;
 }
 
-export interface GqlDassetsCheckoutSessionsGet_dassets_checkout_session {
-  __typename: "DassetsCheckoutSession";
+export interface GqlMinterCheckoutSessionsGet_minter_checkout_session {
+  __typename: "MinterCheckoutSession";
   id: string;
   created_at: any;
   updated_at: any;
@@ -151,15 +151,15 @@ export interface GqlDassetsCheckoutSessionsGet_dassets_checkout_session {
   expires_at: any;
   url: string;
   payment_expires_at: any | null;
-  price_estimation: GqlDassetsCheckoutSessionsGet_dassets_checkout_session_price_estimation | null;
-  asset_info: GqlDassetsCheckoutSessionsGet_dassets_checkout_session_asset_info;
+  price_estimation: GqlMinterCheckoutSessionsGet_minter_checkout_session_price_estimation | null;
+  asset_info: GqlMinterCheckoutSessionsGet_minter_checkout_session_asset_info;
 }
 
-export interface GqlDassetsCheckoutSessionsGet {
-  dassets_checkout_session: GqlDassetsCheckoutSessionsGet_dassets_checkout_session;
+export interface GqlMinterCheckoutSessionsGet {
+  minter_checkout_session: GqlMinterCheckoutSessionsGet_minter_checkout_session;
 }
 
-export interface GqlDassetsCheckoutSessionsGetVariables {
+export interface GqlMinterCheckoutSessionsGetVariables {
   id: any;
 }
 
@@ -169,11 +169,11 @@ export interface GqlDassetsCheckoutSessionsGetVariables {
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL mutation operation: GqlDassetsCheckoutSessionsUpdateOne
+// GraphQL mutation operation: GqlMinterCheckoutSessionsUpdateOne
 // ====================================================
 
-export interface GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate_price_estimation {
-  __typename: "DassetsCheckoutSessionPriceEstimate";
+export interface GqlMinterCheckoutSessionsUpdateOne_minterCheckoutSessionUpdate_price_estimation {
+  __typename: "MinterCheckoutSessionPriceEstimate";
   price: number;
   total_eth: number;
   eth_price: number;
@@ -182,16 +182,16 @@ export interface GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdat
   slippage: number;
 }
 
-export interface GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate_asset_info {
-  __typename: "DassetsNftAssetInfo";
+export interface GqlMinterCheckoutSessionsUpdateOne_minterCheckoutSessionUpdate_asset_info {
+  __typename: "MinterNftAssetInfo";
   id: string;
   name: string;
   description: string | null;
   image_url: string | null;
 }
 
-export interface GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate {
-  __typename: "DassetsCheckoutSession";
+export interface GqlMinterCheckoutSessionsUpdateOne_minterCheckoutSessionUpdate {
+  __typename: "MinterCheckoutSession";
   id: string;
   created_at: any;
   updated_at: any;
@@ -210,17 +210,17 @@ export interface GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdat
   expires_at: any;
   url: string;
   payment_expires_at: any | null;
-  price_estimation: GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate_price_estimation | null;
-  asset_info: GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate_asset_info;
+  price_estimation: GqlMinterCheckoutSessionsUpdateOne_minterCheckoutSessionUpdate_price_estimation | null;
+  asset_info: GqlMinterCheckoutSessionsUpdateOne_minterCheckoutSessionUpdate_asset_info;
 }
 
-export interface GqlDassetsCheckoutSessionsUpdateOne {
-  dassetsCheckoutSessionUpdate: GqlDassetsCheckoutSessionsUpdateOne_dassetsCheckoutSessionUpdate;
+export interface GqlMinterCheckoutSessionsUpdateOne {
+  minterCheckoutSessionUpdate: GqlMinterCheckoutSessionsUpdateOne_minterCheckoutSessionUpdate;
 }
 
-export interface GqlDassetsCheckoutSessionsUpdateOneVariables {
+export interface GqlMinterCheckoutSessionsUpdateOneVariables {
   id: any;
-  data: IDassetsCheckoutSessionUpdate;
+  data: IMinterCheckoutSessionUpdate;
 }
 
 /* tslint:disable */
@@ -454,13 +454,13 @@ export interface GqlProjectGroupsUpdateOneVariables {
 // GraphQL mutation operation: GqlProjectsCreateOne
 // ====================================================
 
-export interface GqlProjectsCreateOne_projectCreate_dassets_syncer_instance {
+export interface GqlProjectsCreateOne_projectCreate_minter_syncer_instance {
   __typename: "SyncerInstance";
   id: any;
 }
 
-export interface GqlProjectsCreateOne_projectCreate_dassets_settings {
-  __typename: "ProjectDassetsSettings";
+export interface GqlProjectsCreateOne_projectCreate_minter_settings {
+  __typename: "ProjectMinterSettings";
   include_networks: string[];
   token_base_url: string | null;
   webhook_events_url: string | null;
@@ -476,8 +476,8 @@ export interface GqlProjectsCreateOne_projectCreate {
   __typename: "Project";
   id: string;
   name: string;
-  dassets_syncer_instance: GqlProjectsCreateOne_projectCreate_dassets_syncer_instance;
-  dassets_settings: GqlProjectsCreateOne_projectCreate_dassets_settings;
+  minter_syncer_instance: GqlProjectsCreateOne_projectCreate_minter_syncer_instance;
+  minter_settings: GqlProjectsCreateOne_projectCreate_minter_settings;
   syncer_settings: GqlProjectsCreateOne_projectCreate_syncer_settings;
   user: string;
   created_at: any;
@@ -501,13 +501,13 @@ export interface GqlProjectsCreateOneVariables {
 // GraphQL query operation: GqlProjectsGet
 // ====================================================
 
-export interface GqlProjectsGet_project_dassets_syncer_instance {
+export interface GqlProjectsGet_project_minter_syncer_instance {
   __typename: "SyncerInstance";
   id: any;
 }
 
-export interface GqlProjectsGet_project_dassets_settings {
-  __typename: "ProjectDassetsSettings";
+export interface GqlProjectsGet_project_minter_settings {
+  __typename: "ProjectMinterSettings";
   include_networks: string[];
   token_base_url: string | null;
   webhook_events_url: string | null;
@@ -523,8 +523,8 @@ export interface GqlProjectsGet_project {
   __typename: "Project";
   id: string;
   name: string;
-  dassets_syncer_instance: GqlProjectsGet_project_dassets_syncer_instance;
-  dassets_settings: GqlProjectsGet_project_dassets_settings;
+  minter_syncer_instance: GqlProjectsGet_project_minter_syncer_instance;
+  minter_settings: GqlProjectsGet_project_minter_settings;
   syncer_settings: GqlProjectsGet_project_syncer_settings;
   user: string;
   created_at: any;
@@ -548,13 +548,13 @@ export interface GqlProjectsGetVariables {
 // GraphQL query operation: GqlProjectsSelect
 // ====================================================
 
-export interface GqlProjectsSelect_projects_dassets_syncer_instance {
+export interface GqlProjectsSelect_projects_minter_syncer_instance {
   __typename: "SyncerInstance";
   id: any;
 }
 
-export interface GqlProjectsSelect_projects_dassets_settings {
-  __typename: "ProjectDassetsSettings";
+export interface GqlProjectsSelect_projects_minter_settings {
+  __typename: "ProjectMinterSettings";
   include_networks: string[];
   token_base_url: string | null;
   webhook_events_url: string | null;
@@ -570,8 +570,8 @@ export interface GqlProjectsSelect_projects {
   __typename: "Project";
   id: string;
   name: string;
-  dassets_syncer_instance: GqlProjectsSelect_projects_dassets_syncer_instance;
-  dassets_settings: GqlProjectsSelect_projects_dassets_settings;
+  minter_syncer_instance: GqlProjectsSelect_projects_minter_syncer_instance;
+  minter_settings: GqlProjectsSelect_projects_minter_settings;
   syncer_settings: GqlProjectsSelect_projects_syncer_settings;
   user: string;
   created_at: any;
@@ -591,13 +591,13 @@ export interface GqlProjectsSelect {
 // GraphQL mutation operation: GqlProjectsUpdateOne
 // ====================================================
 
-export interface GqlProjectsUpdateOne_projectUpdate_dassets_syncer_instance {
+export interface GqlProjectsUpdateOne_projectUpdate_minter_syncer_instance {
   __typename: "SyncerInstance";
   id: any;
 }
 
-export interface GqlProjectsUpdateOne_projectUpdate_dassets_settings {
-  __typename: "ProjectDassetsSettings";
+export interface GqlProjectsUpdateOne_projectUpdate_minter_settings {
+  __typename: "ProjectMinterSettings";
   include_networks: string[];
   token_base_url: string | null;
   webhook_events_url: string | null;
@@ -613,8 +613,8 @@ export interface GqlProjectsUpdateOne_projectUpdate {
   __typename: "Project";
   id: string;
   name: string;
-  dassets_syncer_instance: GqlProjectsUpdateOne_projectUpdate_dassets_syncer_instance;
-  dassets_settings: GqlProjectsUpdateOne_projectUpdate_dassets_settings;
+  minter_syncer_instance: GqlProjectsUpdateOne_projectUpdate_minter_syncer_instance;
+  minter_settings: GqlProjectsUpdateOne_projectUpdate_minter_settings;
   syncer_settings: GqlProjectsUpdateOne_projectUpdate_syncer_settings;
   user: string;
   created_at: any;
@@ -773,23 +773,6 @@ export interface GqlUsersSignUpVariables {
 // START Enums and Input Objects
 //==============================================================
 
-export interface IDassetsCheckoutSessionCreate {
-  project: any;
-  asset_info: IDassetsCheckoutSessionCreateAssetInfo;
-}
-
-export interface IDassetsCheckoutSessionCreateAssetInfo {
-  id: string;
-  name: string;
-  description?: string | null;
-  image_url?: string | null;
-}
-
-export interface IDassetsCheckoutSessionUpdate {
-  address?: any | null;
-  network?: any | null;
-}
-
 export interface IEventEmitterInstanceCreate {
   is_webhook_emitter: boolean;
   webhook_endpoint?: string | null;
@@ -805,14 +788,25 @@ export interface IEventEmitterInstancesFilter {
   syncer_instance?: any | null;
 }
 
-export interface IProjectCreate {
-  name: string;
+export interface IMinterCheckoutSessionCreate {
+  project: any;
+  asset_info: IMinterCheckoutSessionCreateAssetInfo;
 }
 
-export interface IProjectDassetsSettingsUpdate {
-  include_networks?: any[] | null;
-  token_base_url?: string | null;
-  webhook_events_url?: string | null;
+export interface IMinterCheckoutSessionCreateAssetInfo {
+  id: string;
+  name: string;
+  description?: string | null;
+  image_url?: string | null;
+}
+
+export interface IMinterCheckoutSessionUpdate {
+  address?: any | null;
+  network?: any | null;
+}
+
+export interface IProjectCreate {
+  name: string;
 }
 
 export interface IProjectGroupCreate {
@@ -827,9 +821,15 @@ export interface IProjectGroupUpdate {
   projects?: any[] | null;
 }
 
+export interface IProjectMinterSettingsUpdate {
+  include_networks?: any[] | null;
+  token_base_url?: string | null;
+  webhook_events_url?: string | null;
+}
+
 export interface IProjectUpdate {
   name?: string | null;
-  dassets_settings?: IProjectDassetsSettingsUpdate | null;
+  minter_settings?: IProjectMinterSettingsUpdate | null;
 }
 
 export interface ISyncerInstanceCreate {

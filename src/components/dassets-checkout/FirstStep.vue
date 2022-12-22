@@ -84,10 +84,10 @@
 </template>
 
 <script setup lang="ts">
-import { useChainNetworksStore, useDassetsCheckoutStore } from "@/store";
+import { useChainNetworksStore, useMinterCheckoutStore } from "@/store";
 import { computed, ref } from "vue-demi";
 
-const minter_checkout_store = useDassetsCheckoutStore();
+const minter_checkout_store = useMinterCheckoutStore();
 const chain_networks_store = useChainNetworksStore();
 
 const properties = ref<Record<string, string>>({

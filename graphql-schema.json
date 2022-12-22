@@ -754,7 +754,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "ProjectDassetsSettings",
+        "name": "ProjectMinterSettings",
         "description": null,
         "specifiedByUrl": null,
         "fields": [
@@ -911,7 +911,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassets_settings",
+            "name": "minter_settings",
             "description": null,
             "args": [],
             "type": {
@@ -919,7 +919,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "ProjectDassetsSettings",
+                "name": "ProjectMinterSettings",
                 "ofType": null
               }
             },
@@ -943,7 +943,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassets_syncer_instance",
+            "name": "minter_syncer_instance",
             "description": null,
             "args": [],
             "type": {
@@ -966,7 +966,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "DassetsNft",
+        "name": "MinterNft",
         "description": null,
         "specifiedByUrl": null,
         "fields": [
@@ -1313,7 +1313,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "DassetsNftAssetInfo",
+        "name": "MinterNftAssetInfo",
         "description": null,
         "specifiedByUrl": null,
         "fields": [
@@ -1381,7 +1381,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "DassetsCheckoutSessionPriceEstimate",
+        "name": "MinterCheckoutSessionPriceEstimate",
         "description": null,
         "specifiedByUrl": null,
         "fields": [
@@ -1489,7 +1489,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "DassetsCheckoutSession",
+        "name": "MinterCheckoutSession",
         "description": null,
         "specifiedByUrl": null,
         "fields": [
@@ -1698,7 +1698,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "DassetsNftAssetInfo",
+                "name": "MinterNftAssetInfo",
                 "ofType": null
               }
             },
@@ -1775,7 +1775,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "DassetsCheckoutSessionPriceEstimate",
+              "name": "MinterCheckoutSessionPriceEstimate",
               "ofType": null
             },
             "isDeprecated": false,
@@ -2150,7 +2150,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassets_nfts",
+            "name": "minter_nfts",
             "description": null,
             "args": [
               {
@@ -2158,7 +2158,7 @@
                 "description": null,
                 "type": {
                   "kind": "INPUT_OBJECT",
-                  "name": "IDassetsNftsFilter",
+                  "name": "IMinterNftsFilter",
                   "ofType": null
                 },
                 "defaultValue": null,
@@ -2177,7 +2177,7 @@
                   "name": null,
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "DassetsNft",
+                    "name": "MinterNft",
                     "ofType": null
                   }
                 }
@@ -2187,7 +2187,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassets_nft",
+            "name": "minter_nft",
             "description": null,
             "args": [
               {
@@ -2212,7 +2212,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "DassetsNft",
+                "name": "MinterNft",
                 "ofType": null
               }
             },
@@ -2580,7 +2580,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassets_checkout_session",
+            "name": "minter_checkout_session",
             "description": null,
             "args": [
               {
@@ -2605,7 +2605,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "DassetsCheckoutSession",
+                "name": "MinterCheckoutSession",
                 "ofType": null
               }
             },
@@ -2620,7 +2620,7 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "IDassetsNftsFilter",
+        "name": "IMinterNftsFilter",
         "description": null,
         "specifiedByUrl": null,
         "fields": null,
@@ -3230,7 +3230,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassetsCheckoutSessionCreate",
+            "name": "minterCheckoutSessionCreate",
             "description": null,
             "args": [
               {
@@ -3241,7 +3241,7 @@
                   "name": null,
                   "ofType": {
                     "kind": "INPUT_OBJECT",
-                    "name": "IDassetsCheckoutSessionCreate",
+                    "name": "IMinterCheckoutSessionCreate",
                     "ofType": null
                   }
                 },
@@ -3255,7 +3255,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "DassetsCheckoutSession",
+                "name": "MinterCheckoutSession",
                 "ofType": null
               }
             },
@@ -3263,7 +3263,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassetsCheckoutSessionUpdate",
+            "name": "minterCheckoutSessionUpdate",
             "description": null,
             "args": [
               {
@@ -3290,7 +3290,7 @@
                   "name": null,
                   "ofType": {
                     "kind": "INPUT_OBJECT",
-                    "name": "IDassetsCheckoutSessionUpdate",
+                    "name": "IMinterCheckoutSessionUpdate",
                     "ofType": null
                   }
                 },
@@ -3304,7 +3304,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "DassetsCheckoutSession",
+                "name": "MinterCheckoutSession",
                 "ofType": null
               }
             },
@@ -3312,7 +3312,7 @@
             "deprecationReason": null
           },
           {
-            "name": "dassetsCheckoutSessionAttachStripePaymentIntent",
+            "name": "minterCheckoutSessionAttachStripePaymentIntent",
             "description": null,
             "args": [
               {
@@ -3337,7 +3337,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "DassetsCheckoutSession",
+                "name": "MinterCheckoutSession",
                 "ofType": null
               }
             },
@@ -3833,11 +3833,11 @@
             "deprecationReason": null
           },
           {
-            "name": "dassets_settings",
+            "name": "minter_settings",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "IProjectDassetsSettingsUpdate",
+              "name": "IProjectMinterSettingsUpdate",
               "ofType": null
             },
             "defaultValue": null,
@@ -3851,7 +3851,7 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "IProjectDassetsSettingsUpdate",
+        "name": "IProjectMinterSettingsUpdate",
         "description": null,
         "specifiedByUrl": null,
         "fields": null,
@@ -4067,7 +4067,7 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "IDassetsCheckoutSessionCreate",
+        "name": "IMinterCheckoutSessionCreate",
         "description": null,
         "specifiedByUrl": null,
         "fields": null,
@@ -4096,7 +4096,7 @@
               "name": null,
               "ofType": {
                 "kind": "INPUT_OBJECT",
-                "name": "IDassetsCheckoutSessionCreateAssetInfo",
+                "name": "IMinterCheckoutSessionCreateAssetInfo",
                 "ofType": null
               }
             },
@@ -4111,7 +4111,7 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "IDassetsCheckoutSessionCreateAssetInfo",
+        "name": "IMinterCheckoutSessionCreateAssetInfo",
         "description": null,
         "specifiedByUrl": null,
         "fields": null,
@@ -4179,7 +4179,7 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "IDassetsCheckoutSessionUpdate",
+        "name": "IMinterCheckoutSessionUpdate",
         "description": null,
         "specifiedByUrl": null,
         "fields": null,

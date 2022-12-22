@@ -1,8 +1,8 @@
 import { gql } from "graphql-tag";
 
-export const GQL_DASSETS_CHECKOUT_SESSIONS_GET = gql`
-  query GqlDassetsCheckoutSessionsGet($id: ObjectId!) {
-    dassets_checkout_session(id: $id) {
+export const GQL_MINTER_CHECKOUT_SESSIONS_GET = gql`
+  query GqlMinterCheckoutSessionsGet($id: ObjectId!) {
+    minter_checkout_session(id: $id) {
       id
       created_at
       updated_at

@@ -8,10 +8,10 @@ export * from "./requests/projects/select";
 export * from "./requests/projects/update";
 export * from "./requests/projects/get";
 
-export * from "./requests/dassets-checkout-sessions/create";
-export * from "./requests/dassets-checkout-sessions/update";
-export * from "./requests/dassets-checkout-sessions/get";
-export * from "./requests/dassets-checkout-sessions/attach-stripe-payment-intent";
+export * from "./requests/minter-checkout-sessions/create";
+export * from "./requests/minter-checkout-sessions/update";
+export * from "./requests/minter-checkout-sessions/get";
+export * from "./requests/minter-checkout-sessions/attach-stripe-payment-intent";
 
 export * from "./requests/event-emitter-instances/create";
 export * from "./requests/event-emitter-instances/select";

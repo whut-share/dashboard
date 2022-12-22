@@ -36,7 +36,7 @@
         [
           {
             title: 'Minter',
-            to: '/dsh/developers/dassets',
+            to: '/dsh/developers/minter',
             icon: 'solid-general-wallet',
             icon_inactive: 'outline-general-wallet',
           },

@@ -1,5 +1,5 @@
 <template>
-  <div class="dassets-page">
+  <div class="minter-page">
     <div class="d-flex align-center">
       <div class="text-h4 font-weight-medium">Minter</div>
       <v-spacer></v-spacer>
@@ -95,7 +95,7 @@ const projects_store = useProjectsStore();
 const syncer_instance_id = computed(() => {
   return projects_store.selectedProjectGroupProjects.find(
     (n) => n.id === selected_project_id.value
-  )?.dassets_syncer_instance.id;
+  )?.minter_syncer_instance.id;
 });
 const selected_project_id = ref<string | null>(null);
 

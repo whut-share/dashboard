@@ -22,7 +22,7 @@
     <v-row class="d-flex">
       <v-col cols="6">
         <v-text-field
-          v-model="project.dassets_settings.token_base_url"
+          v-model="project.minter_settings.token_base_url"
           variant="outlined"
           label="Token metadata url"
         ></v-text-field>
@@ -30,7 +30,7 @@
 
       <v-col cols="6">
         <v-select
-          v-model="project.dassets_settings.include_networks"
+          v-model="project.minter_settings.include_networks"
           :items="[
             { title: 'Local', value: 'local' },
             { title: 'Ethereum', value: 'ethereum' },
@@ -55,7 +55,7 @@
       >
     </div>
 
-    <DassetsCheckoutSessionsTable :project="project.id" />
+    <MinterCheckoutSessionsTable :project="project.id" />
   </div>
 </template>
 
@@ -73,7 +73,7 @@ import { useProjectsStore } from "@/store";
 import { useApolloClient, useMutation, useQuery } from "@vue/apollo-composable";
 import { onMounted, reactive, ref } from "vue";
 import { useRoute } from "vue-router";
-import DassetsCheckoutSessionsTable from "@/components/projects/DassetsCheckoutSessionsTable.vue";
+import MinterCheckoutSessionsTable from "@/components/projects/MinterCheckoutSessionsTable.vue";
 
 const { client } = useApolloClient();
 const route = useRoute();
@@ -95,10 +95,10 @@ async function saveProject() {
       variables: {
         id: project.id,
         data: {
-          dassets_settings: {
-            token_base_url: project.dassets_settings.token_base_url,
-            webhook_events_url: project.dassets_settings.webhook_events_url,
-            include_networks: project.dassets_settings.include_networks,
+          minter_settings: {
+            token_base_url: project.minter_settings.token_base_url,
+            webhook_events_url: project.minter_settings.webhook_events_url,
+            include_networks: project.minter_settings.include_networks,
           },
           name: project.name,
         },

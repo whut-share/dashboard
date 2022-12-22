@@ -5,10 +5,10 @@ export const GQL_PROJECTS_SELECT = gql`
     projects {
       id
       name
-      dassets_syncer_instance {
+      minter_syncer_instance {
         id
       }
-      dassets_settings {
+      minter_settings {
         include_networks
         token_base_url
         webhook_events_url

@@ -42,20 +42,20 @@
 
 <script setup lang="ts">
 import {
-  GqlDassetsCheckoutSessionsAttachStripePaymentIntent,
-  GqlDassetsCheckoutSessionsAttachStripePaymentIntentVariables,
-  GQL_DASSETS_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT,
+  GqlMinterCheckoutSessionsAttachStripePaymentIntent,
+  GqlMinterCheckoutSessionsAttachStripePaymentIntentVariables,
+  GQL_MINTER_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT,
 } from "@/graphql";
 import { apollo_client, useStripe } from "@/plugins";
-import { useDassetsCheckoutStore } from "@/store";
+import { useMinterCheckoutStore } from "@/store";
 import { computed, onMounted, ref } from "vue";
 
 const stripe = useStripe();
 const is_render_loading = ref(true);
 const is_payment_loading = ref(false);
 
-const dassets_flow_store = useDassetsCheckoutStore();
-const session = computed(() => dassets_flow_store.session);
+const minter_flow_store = useMinterCheckoutStore();
+const session = computed(() => minter_flow_store.session);
 const overlay = computed(
   () => is_render_loading.value || is_payment_loading.value
 );
@@ -65,17 +65,17 @@ let stripe_elements: any;
 async function render() {
   await apollo_client
     .mutate<
-      GqlDassetsCheckoutSessionsAttachStripePaymentIntent,
-      GqlDassetsCheckoutSessionsAttachStripePaymentIntentVariables
+      GqlMinterCheckoutSessionsAttachStripePaymentIntent,
+      GqlMinterCheckoutSessionsAttachStripePaymentIntentVariables
     >({
-      mutation: GQL_DASSETS_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT,
+      mutation: GQL_MINTER_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT,
       variables: {
         id: session.value?.id,
       },
     })
     .then((res) => {
-      dassets_flow_store.setSession(
-        res.data.dassetsCheckoutSessionAttachStripePaymentIntent
+      minter_flow_store.setSession(
+        res.data.minterCheckoutSessionAttachStripePaymentIntent
       );
     });
 

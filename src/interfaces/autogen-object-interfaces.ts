@@ -45,7 +45,7 @@ export interface IProjectSyncerSettings {
   include_networks?: string[];
   contracts_base_url?: string | null | undefined;
 }
-export interface IProjectDassetsSettings {
+export interface IProjectMinterSettings {
   include_networks?: string[];
   token_base_url?: string | null | undefined;
   webhook_events_url?: string | null | undefined;
@@ -57,11 +57,11 @@ export interface IProject {
   user?: string;
   name?: string;
   pic?: string | null | undefined;
-  dassets_settings?: IProjectDassetsSettings;
+  minter_settings?: IProjectMinterSettings;
   syncer_settings?: IProjectSyncerSettings;
-  dassets_syncer_instance?: ISyncerInstance;
+  minter_syncer_instance?: ISyncerInstance;
 }
-export interface IDassetsNft {
+export interface IMinterNft {
   created_at?: string | Date;
   updated_at?: string | Date;
   project?: string;
@@ -85,13 +85,13 @@ export interface ISyncerEvent {
   metadata?: any;
   is_processed?: boolean;
 }
-export interface IDassetsNftAssetInfo {
+export interface IMinterNftAssetInfo {
   id: string;
   name?: string;
   description?: string | null | undefined;
   image_url?: string | null | undefined;
 }
-export interface IDassetsCheckoutSessionPriceEstimate {
+export interface IMinterCheckoutSessionPriceEstimate {
   price?: number;
   total_eth?: number;
   eth_price?: number;
@@ -99,7 +99,7 @@ export interface IDassetsCheckoutSessionPriceEstimate {
   gas?: number;
   slippage?: number;
 }
-export interface IDassetsCheckoutSession {
+export interface IMinterCheckoutSession {
   created_at?: string | Date;
   updated_at?: string | Date;
   id: string;
@@ -114,12 +114,12 @@ export interface IDassetsCheckoutSession {
   contract_type?: string;
   is_succeeded?: boolean;
   expires_at?: string | Date;
-  asset_info?: IDassetsNftAssetInfo;
+  asset_info?: IMinterNftAssetInfo;
   is_payed?: boolean;
   url?: string;
   is_minted?: boolean;
   is_expired?: boolean;
-  price_estimation?: IDassetsCheckoutSessionPriceEstimate | null | undefined;
+  price_estimation?: IMinterCheckoutSessionPriceEstimate | null | undefined;
   stripe_pi_client_secret?: string | null | undefined;
 }
 export interface IProjectGroup {

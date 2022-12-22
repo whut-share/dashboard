@@ -43,15 +43,15 @@
 </template>
 
 <script setup lang="ts">
-import { useDassetsCheckoutStore } from "@/store";
+import { useMinterCheckoutStore } from "@/store";
 import { computed, onMounted, ref } from "vue";
 
-const dassets_checkout_store = useDassetsCheckoutStore();
+const minter_checkout_store = useMinterCheckoutStore();
 
-const session = computed(() => dassets_checkout_store.session);
+const session = computed(() => minter_checkout_store.session);
 
 async function startChecks() {
-  await dassets_checkout_store.sync();
+  await minter_checkout_store.sync();
   await new Promise((resolve) => setTimeout(resolve, 3000));
   await startChecks();
 }

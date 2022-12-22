@@ -29,7 +29,7 @@
               <v-chip
                 size="x-small"
                 color="accent"
-                v-if="is_dassets"
+                v-if="is_minter"
                 class="font-weight-bold text-uppercase"
               >
                 Minter
@@ -130,16 +130,16 @@ const route = useRoute();
 const router = useRouter();
 
 const eei = computed(() => eei_page_store.data);
-const is_dassets = computed(() => {
+const is_minter = computed(() => {
   const syncer_instance_id = eei.value?.syncer_instance;
 
   if (syncer_instance_id) {
-    const project_with_same_dassets_syncer_instance =
+    const project_with_same_minter_syncer_instance =
       projects_store.projects.find((project) => {
-        return project.dassets_syncer_instance.id === syncer_instance_id;
+        return project.minter_syncer_instance.id === syncer_instance_id;
       });
 
-    if (project_with_same_dassets_syncer_instance) {
+    if (project_with_same_minter_syncer_instance) {
       return true;
     } else {
       return false;

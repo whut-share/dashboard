@@ -4,7 +4,7 @@ export const pinia = createPinia();
 
 export * from "./auth.store";
 export * from "./preload.store";
-export * from "./dassets-checkout.store";
+export * from "./minter-checkout.store";
 export * from "./projects.store";
 export * from "./sidebar.store";
 export * from "./modals.store";

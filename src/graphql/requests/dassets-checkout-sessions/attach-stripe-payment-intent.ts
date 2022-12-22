@@ -1,8 +1,8 @@
 import { gql } from "graphql-tag";
 
-export const GQL_DASSETS_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT = gql`
-  mutation GqlDassetsCheckoutSessionsAttachStripePaymentIntent($id: ObjectId!) {
-    dassetsCheckoutSessionAttachStripePaymentIntent(id: $id) {
+export const GQL_MINTER_CHECKOUT_SESSIONS_ATTACH_STRIPE_PAYMENT_INTENT = gql`
+  mutation GqlMinterCheckoutSessionsAttachStripePaymentIntent($id: ObjectId!) {
+    minterCheckoutSessionAttachStripePaymentIntent(id: $id) {
       id
       created_at
       updated_at

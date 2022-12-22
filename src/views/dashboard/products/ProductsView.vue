@@ -17,7 +17,7 @@
           },
           {
             title: 'Minter',
-            to: '/dsh/developers/dassets',
+            to: '/dsh/developers/minter',
             icon: 'solid-status-lightning',
             icon_inactive: 'outline-status-lightning',
             disabled: true,

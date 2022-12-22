@@ -99,10 +99,10 @@ const routes: Array<RouteRecordRaw> = [
               ),
           },
           {
-            path: "dassets",
+            path: "minter",
             component: () =>
               loadingMiddleware(
-                import("@/views/dashboard/developers/DassetsPage.vue")
+                import("@/views/dashboard/developers/MinterPage.vue")
               ),
           },
           {

@@ -1,5 +1,5 @@
 <template>
-  <div class="dassets-flow-view flex-grow-1 d-flex flex-column pb-16">
+  <div class="minter-flow-view flex-grow-1 d-flex flex-column pb-16">
     <svg
       width="288"
       class="w-100"
@@ -95,20 +95,20 @@
 </template>
 
 <script setup lang="ts">
-import PaymentStep from "@/components/dassets-checkout/PaymentStep.vue";
-import FirstStep from "@/components/dassets-checkout/FirstStep.vue";
-import WaitStep from "@/components/dassets-checkout/WaitStep.vue";
+import PaymentStep from "@/components/minter-checkout/PaymentStep.vue";
+import FirstStep from "@/components/minter-checkout/FirstStep.vue";
+import WaitStep from "@/components/minter-checkout/WaitStep.vue";
 import GlobalBg from "@/components/common/GlobalBg.vue";
-import { useDassetsCheckoutStore } from "@/store";
+import { useMinterCheckoutStore } from "@/store";
 import { computed, onMounted, ref } from "vue-demi";
 import { useRoute } from "vue-router";
-import StepsBlock from "@/components/dassets-checkout/StepsBlock.vue";
+import StepsBlock from "@/components/minter-checkout/StepsBlock.vue";
 
-const dassets_checkout_store = useDassetsCheckoutStore();
+const minter_checkout_store = useMinterCheckoutStore();
 const route = useRoute();
 
-const step = computed(() => dassets_checkout_store.step);
-const session = computed(() => dassets_checkout_store.session);
+const step = computed(() => minter_checkout_store.step);
+const session = computed(() => minter_checkout_store.session);
 
 const is_session_loading = ref(true);
 
@@ -116,10 +116,10 @@ if (typeof route.params.session !== "string") {
   throw new Error("Invalid session id");
 }
 
-dassets_checkout_store.sync(route.params.session).finally(async () => {
+minter_checkout_store.sync(route.params.session).finally(async () => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
-  dassets_checkout_store.initPage();
+  minter_checkout_store.initPage();
   is_session_loading.value = false;
 });
 </script>

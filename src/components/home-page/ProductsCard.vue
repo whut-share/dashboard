@@ -8,7 +8,7 @@
     <v-row no-gutters>
       <v-col class="d-flex flex-column pa-10">
         <div class="icon-container mb-4">
-          <DassetsIcon />
+          <MinterIcon />
         </div>
         <div class="text-h5 font-weight-medium mb-3 text-black">Minter</div>
         <div class="text-body-2 text-grey font-weight-medium">
@@ -61,7 +61,7 @@
 </template>
 
 <script setup lang="ts">
-import DassetsIcon from "./DassetsIcon.vue";
+import MinterIcon from "./MinterIcon.vue";
 import SyncerIcon from "./SyncerIcon.vue";
 import WalletLoginIcon from "./WalletLoginIcon.vue";
 </script>

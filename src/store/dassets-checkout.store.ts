@@ -1,14 +1,14 @@
 import {
-  GqlDassetsCheckoutSessionsGet,
-  GqlDassetsCheckoutSessionsGetVariables,
-  GqlDassetsCheckoutSessionsUpdateOne,
-  GqlDassetsCheckoutSessionsUpdateOneVariables,
-  GQL_DASSETS_CHECKOUT_SESSIONS_GET,
-  GQL_DASSETS_CHECKOUT_SESSIONS_UPDATE_ONE,
+  GqlMinterCheckoutSessionsGet,
+  GqlMinterCheckoutSessionsGetVariables,
+  GqlMinterCheckoutSessionsUpdateOne,
+  GqlMinterCheckoutSessionsUpdateOneVariables,
+  GQL_MINTER_CHECKOUT_SESSIONS_GET,
+  GQL_MINTER_CHECKOUT_SESSIONS_UPDATE_ONE,
   GQL_USERS_GET_ME,
 } from "@/graphql";
 import { defineStore } from "pinia";
-import { IDassetsCheckoutSession, IUser } from "@/interfaces";
+import { IMinterCheckoutSession, IUser } from "@/interfaces";
 import { apollo_client } from "@/plugins/apollo";
 import { merge } from "lodash";
 
@@ -17,9 +17,9 @@ interface ISessionUpdate {
   network?: string;
 }
 
-export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
+export const useMinterCheckoutStore = defineStore("minter-checkout", {
   state: () => ({
-    session: null as IDassetsCheckoutSession | null,
+    session: null as IMinterCheckoutSession | null,
     is_save_loading: false,
     step: 0,
   }),
@@ -75,15 +75,15 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
 
       const data = await apollo_client
         .query<
-          GqlDassetsCheckoutSessionsGet,
-          GqlDassetsCheckoutSessionsGetVariables
+          GqlMinterCheckoutSessionsGet,
+          GqlMinterCheckoutSessionsGetVariables
         >({
-          query: GQL_DASSETS_CHECKOUT_SESSIONS_GET,
+          query: GQL_MINTER_CHECKOUT_SESSIONS_GET,
           variables: {
             id: session_id,
           },
         })
-        .then((res) => res.data.dassets_checkout_session);
+        .then((res) => res.data.minter_checkout_session);
 
       data.created_at = new Date(data.created_at);
       data.updated_at = new Date(data.updated_at);
@@ -97,7 +97,7 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
       merge(session, data);
     },
 
-    setSession(data: IDassetsCheckoutSession) {
+    setSession(data: IMinterCheckoutSession) {
       this.session = data;
     },
 
@@ -107,7 +107,7 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
       await this.saveSession();
     },
 
-    getSessionOrFail(): IDassetsCheckoutSession {
+    getSessionOrFail(): IMinterCheckoutSession {
       if (!this.session) {
         throw new Error("No session");
       }
@@ -122,10 +122,10 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
 
       await apollo_client
         .query<
-          GqlDassetsCheckoutSessionsUpdateOne,
-          GqlDassetsCheckoutSessionsUpdateOneVariables
+          GqlMinterCheckoutSessionsUpdateOne,
+          GqlMinterCheckoutSessionsUpdateOneVariables
         >({
-          query: GQL_DASSETS_CHECKOUT_SESSIONS_UPDATE_ONE,
+          query: GQL_MINTER_CHECKOUT_SESSIONS_UPDATE_ONE,
           variables: {
             id: session.id,
             data: {
@@ -135,7 +135,7 @@ export const useDassetsCheckoutStore = defineStore("dassets-checkout", {
           },
         })
         .then((res) => {
-          this.session = res.data.dassetsCheckoutSessionUpdate;
+          this.session = res.data.minterCheckoutSessionUpdate;
         })
         .finally(() => {
           this.is_save_loading = false;

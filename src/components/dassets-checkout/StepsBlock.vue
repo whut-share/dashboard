@@ -78,11 +78,11 @@
 </template>
 
 <script setup lang="ts">
-import { useDassetsCheckoutStore } from "@/store";
+import { useMinterCheckoutStore } from "@/store";
 import { computed, ref } from "vue-demi";
 
 const size = ref(40);
-const minter_checkout_store = useDassetsCheckoutStore();
+const minter_checkout_store = useMinterCheckoutStore();
 const page = computed(() => minter_checkout_store.step);
 const max_page = computed(() => minter_checkout_store.maxStep);
 </script>

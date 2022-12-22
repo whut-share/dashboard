@@ -1,11 +1,11 @@
 import { gql } from "graphql-tag";
 
-export const GQL_DASSETS_CHECKOUT_SESSIONS_UPDATE_ONE = gql`
-  mutation GqlDassetsCheckoutSessionsUpdateOne(
+export const GQL_MINTER_CHECKOUT_SESSIONS_UPDATE_ONE = gql`
+  mutation GqlMinterCheckoutSessionsUpdateOne(
     $id: ObjectId!
-    $data: IDassetsCheckoutSessionUpdate!
+    $data: IMinterCheckoutSessionUpdate!
   ) {
-    dassetsCheckoutSessionUpdate(data: $data, id: $id) {
+    minterCheckoutSessionUpdate(data: $data, id: $id) {
       id
       created_at
       updated_at

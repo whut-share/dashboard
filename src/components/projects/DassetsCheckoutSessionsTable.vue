@@ -6,13 +6,13 @@
 
 <script setup lang="ts">
 import {
-  GqlDassetsCheckoutSessionsCreateOne,
-  GqlDassetsCheckoutSessionsCreateOneVariables,
-  GqlDassetsCheckoutSessionsGetVariables,
+  GqlMinterCheckoutSessionsCreateOne,
+  GqlMinterCheckoutSessionsCreateOneVariables,
+  GqlMinterCheckoutSessionsGetVariables,
   GqlWebhookEndpointsCreateOne,
   GqlWebhookEndpointsCreateOneVariables,
   GqlWebhookEndpointsSelect,
-  GQL_DASSETS_CHECKOUT_SESSIONS_CREATE_ONE,
+  GQL_MINTER_CHECKOUT_SESSIONS_CREATE_ONE,
   GQL_WEBHOOK_ENDPOINTS_CREATE_ONE,
   GQL_WEBHOOK_ENDPOINTS_SELECT,
 } from "@/graphql";
@@ -30,10 +30,10 @@ async function create() {
   is_loading.value = true;
   await apollo_client
     .mutate<
-      GqlDassetsCheckoutSessionsCreateOne,
-      GqlDassetsCheckoutSessionsCreateOneVariables
+      GqlMinterCheckoutSessionsCreateOne,
+      GqlMinterCheckoutSessionsCreateOneVariables
     >({
-      mutation: GQL_DASSETS_CHECKOUT_SESSIONS_CREATE_ONE,
+      mutation: GQL_MINTER_CHECKOUT_SESSIONS_CREATE_ONE,
       variables: {
         data: {
           project: props.project,
