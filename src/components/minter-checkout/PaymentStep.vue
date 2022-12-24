@@ -25,6 +25,10 @@
       <v-text-field
         placeholder="0x00...000"
         v-model="wallet_address"
+        :validations="[
+          (v: string) => !!v || 'Wallet address is required',
+          (v: string) => v.length === 42 || 'Wallet address is invalid'
+        ]"
       ></v-text-field>
     </ui-titled-input>
     <v-btn
@@ -126,11 +130,15 @@ async function render() {
 const wallet_address = ref("");
 
 async function submit() {
-  is_payment_loading.value = true;
-
   if (!session.value?.address) {
     throw new Error("No address");
   }
+
+  is_payment_loading.value = true;
+
+  await minter_flow_store.updateSessionAndSave({
+    address: wallet_address.value,
+  });
 
   await stripe
     .confirmPayment({
