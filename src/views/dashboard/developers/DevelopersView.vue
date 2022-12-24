@@ -45,12 +45,14 @@
             to: '/dsh/developers/syncer',
             icon: 'solid-interface-cursor',
             icon_inactive: 'outline-interface-cursor',
+            disabled: true,
           },
           {
             title: 'Web3 Auth',
             to: '/dsh/developers/wallet-login',
             icon: 'solid-general-wallet',
             icon_inactive: 'outline-general-wallet',
+            disabled: true,
           },
         ],
       ]"

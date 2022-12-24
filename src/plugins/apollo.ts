@@ -49,3 +49,5 @@ export const apollo_client = new ApolloClient({
     },
   },
 });
+
+(window as any).$apc = apollo_client;
