@@ -130,7 +130,7 @@ async function render() {
 const wallet_address = ref("");
 
 async function submit() {
-  if (!session.value?.address) {
+  if (!wallet_address.value.length) {
     throw new Error("No address");
   }
 
