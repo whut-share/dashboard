@@ -26,7 +26,11 @@
       <span class="font-weight-bold text-m-emphasis text-body-2"
         >Item minted to:</span
       >
-      <span class="text-black text-body-1 mt-2">{{ session?.address }}</span>
+      <span
+        class="text-black text-body-1 mt-2 text-center"
+        style="word-break: break-all"
+        >{{ session?.address }}</span
+      >
     </div>
 
     <v-btn
