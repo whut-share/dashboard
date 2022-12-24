@@ -2,7 +2,7 @@
   <div class="wallet-login-page d-flex flex-column">
     <div class="d-flex align-center">
       <div class="d-flex flex-column">
-        <div class="text-h4 font-weight-medium">Wallet Login</div>
+        <div class="text-h4 font-weight-medium">Web3 Auth</div>
       </div>
       <v-spacer></v-spacer>
 

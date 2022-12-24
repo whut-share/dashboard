@@ -39,7 +39,10 @@
     </div>
     <v-spacer></v-spacer>
     <div class="d-flex mt-5">
-      <v-btn size="large" :to="`/dsh/developers/eei/${data.id}`" color="primary"
+      <v-btn
+        size="large"
+        :to="`/dsh/developers/event-emitters/${data.id}`"
+        color="primary"
         >Open</v-btn
       >
       <v-btn

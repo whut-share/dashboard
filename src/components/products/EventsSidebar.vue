@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="events-sidebar d-flex flex-column"
+    class="events-sidebar d-flex flex-column ui-bordered-light"
     color="primary"
     :rounded="0"
   >
@@ -14,7 +14,7 @@
         clearable
         hide-details
         clear-icon="outline-interface-close"
-        label="Search"
+        placeholder="Search"
       ></v-text-field>
     </div>
 
@@ -68,7 +68,6 @@ const search = ref("");
   padding-top: 80px;
 
   border-width: 0 0 0 1px !important;
-  border-color: rgba(#fff, 0.25);
 
   .scroller {
     overflow: auto;
@@ -86,7 +85,7 @@ const search = ref("");
       }
 
       .v-input__control {
-        background: rgba(251, 251, 255, 0.2);
+        background: rgba(251, 251, 255, 0.2) !important;
       }
     }
   }

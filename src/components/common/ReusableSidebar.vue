@@ -30,23 +30,6 @@
         </v-card>
       </div>
     </template>
-
-    <v-spacer></v-spacer>
-
-    <div>
-      <v-divider class="mx-4"></v-divider>
-
-      <v-card
-        @click="logout"
-        class="d-flex align-center pa-4 body-2 mx-4 mt-2 mb-4"
-        elevation="0"
-        rounded="lg"
-      >
-        <v-icon start color="error">outline-interface-logout</v-icon>
-
-        <span class="font-weight-bold text-error">Log out</span>
-      </v-card>
-    </div>
   </v-sheet>
 </template>
 
@@ -77,7 +60,7 @@ const sidebar_store = useSidebarStore();
 const route = useRoute();
 
 function isTabActive(to: string): boolean {
-  return route.path === to;
+  return route.path.includes(to);
 }
 
 onMounted(() => {

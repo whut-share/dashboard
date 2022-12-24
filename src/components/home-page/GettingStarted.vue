@@ -18,7 +18,14 @@
           Watch tutorial
         </v-btn>
 
-        <v-btn size="large" variant="outlined"> View API docs </v-btn>
+        <v-btn
+          size="large"
+          href="https://docs.interactwith.com/docs/api/intro"
+          target="_blank"
+          variant="outlined"
+        >
+          View API docs
+        </v-btn>
       </div>
     </div>
   </v-card>

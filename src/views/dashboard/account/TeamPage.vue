@@ -11,6 +11,7 @@
         color="primary"
         variant="flat"
         prepend-icon="solid-communication-user"
+        disabled
       >
         Invite member
       </v-btn>
@@ -28,7 +29,7 @@
         </template>
         <template #body>
           <tr>
-            <td>mariano112</td>
+            <td>{{ user?.email }}</td>
             <td>Admin</td>
             <td>27/11/2022 11:53 PM</td>
             <td></td>
@@ -40,10 +41,11 @@
 </template>
 
 <script setup lang="ts">
-import TutorialCard from "@/components/home-page/TutorialCard.vue";
-import { ref } from "vue-demi";
+import { useAuthStore } from "@/store";
+import { computed, ref } from "vue-demi";
 
-const tab = ref<string>("overview");
+const auth_store = useAuthStore();
+const user = computed(() => auth_store.user);
 </script>
 
 <style lang="scss" scoped>

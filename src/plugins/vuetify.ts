@@ -64,6 +64,11 @@ export default createVuetify({
       color: "black",
       hideDetails: "auto",
     },
+    VProgressCircular: {
+      indeterminate: true,
+      bgColor: "transparent",
+      color: "primary",
+    },
     VBtn: {
       rounded: "pill",
     },

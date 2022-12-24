@@ -3,7 +3,7 @@
     <div class="d-flex align-center">
       <div class="text-h4 font-weight-medium">Webhooks</div>
       <v-spacer></v-spacer>
-      <ProjectsSelector v-model="project" />
+      <ProjectsSelector v-model="selected_project_id" />
     </div>
 
     <v-card elevation="10" variant="flat" class="mt-8 pb-6">
@@ -28,9 +28,9 @@
           </tr>
         </template>
         <template #body>
-          <tr v-for="i in 4" :key="i">
+          <tr v-for="n in event_emitter_instances" :key="n.id">
             <td class="pl-6">
-              https://test-api.interactwith.io/folder/webhook
+              {{ n.webhook_endpoint }}
             </td>
             <td>
               <svg
@@ -55,10 +55,10 @@
                 size="small"
                 variant="flat"
                 color="primary"
-                to="/"
+                :to="`/dsh/developers/event-emitters/${n.id}`"
                 append-icon="solid-interface-arrow-right"
               >
-                GREY-DAWN-4FG1
+                {{ n.name }}
               </v-btn>
             </td>
             <td class="text-error">20%</td>
@@ -72,9 +72,42 @@
 
 <script setup lang="ts">
 import ProjectsSelector from "@/components/common/ProjectsSelector.vue";
-import { ref } from "vue-demi";
+import {
+  GqlEventEmitterInstancesSelect,
+  GqlEventEmitterInstancesSelectVariables,
+  GQL_EVENT_EMITTER_INSTANCES_SELECT,
+} from "@/graphql";
+import { IEventEmitterInstance } from "@/interfaces";
+import { apollo_client } from "@/plugins";
+import { onMounted, ref } from "vue-demi";
 
-const project = ref<string | null>(null);
+const selected_project_id = ref<string | null>(null);
+
+const event_emitter_instances = ref<IEventEmitterInstance[]>([]);
+const is_event_emitter_instances_loading = ref(true);
+async function syncEventEmitterInstances() {
+  is_event_emitter_instances_loading.value = true;
+  await apollo_client
+    .query<
+      GqlEventEmitterInstancesSelect,
+      GqlEventEmitterInstancesSelectVariables
+    >({
+      query: GQL_EVENT_EMITTER_INSTANCES_SELECT,
+      variables: {
+        filter: {
+          type: "webhook",
+        },
+      },
+    })
+    .then((res) => {
+      event_emitter_instances.value = res.data.event_emitter_instances;
+    })
+    .then(() => new Promise((resolve) => setTimeout(resolve, 1000)))
+    .finally(() => {
+      is_event_emitter_instances_loading.value = false;
+    });
+}
+onMounted(syncEventEmitterInstances);
 </script>
 
 <style lang="scss" scoped></style>

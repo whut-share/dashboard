@@ -44,9 +44,7 @@
         <div class="icon-container mb-4">
           <WalletLoginIcon />
         </div>
-        <div class="text-h5 font-weight-medium mb-3 text-black">
-          Wallet Login
-        </div>
+        <div class="text-h5 font-weight-medium mb-3 text-black">Web3 Auth</div>
         <div class="text-body-2 text-grey font-weight-medium">
           Create, manage and trade in-game assets
         </div>

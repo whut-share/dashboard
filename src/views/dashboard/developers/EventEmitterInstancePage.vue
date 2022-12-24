@@ -64,7 +64,7 @@
           </div>
           <div class="d-flex">
             <v-tooltip
-              transition="scroll-y-reverse-transition"
+              transition="slide-y-transition"
               :open-delay="200"
               v-for="(n, i) in 60"
               :key="n"

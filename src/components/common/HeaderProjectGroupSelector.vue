@@ -3,16 +3,15 @@
     <v-card
       @click="toggleDropdown"
       elevation="0"
-      class="d-flex align-center px-2 py-1"
-      variant="outlined"
+      class="d-flex align-center px-2 py-1 ui-bordered-light"
+      variant="text"
       rounded="lg"
-      color="grey-lighten-2"
       style="user-select: none"
     >
       <v-avatar size="40px" class="mr-4">
         <v-img
           cover
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Electronic-Arts-Logo.svg/2048px-Electronic-Arts-Logo.svg.png"
+          :src="`https://source.boringavatars.com/bauhaus/120/${projects_store.selectedProjectGroup?.name}`"
         />
       </v-avatar>
       <div class="d-flex flex-column mr-4">
@@ -27,34 +26,37 @@
       </div>
     </v-card>
 
-    <v-scroll-y-reverse-transition>
+    <v-slide-y-reverse-transition>
       <div class="absolute" v-if="is_opened">
-        <v-card
-          variant="outlined"
-          class="bg-white"
-          rounded="lg"
-          color="grey-lighten-2"
-          elevation="10"
-        >
-          <div v-for="n in 4" :key="n" class="d-flex px-2 py-1 align-center">
+        <v-card rounded="lg" elevation="10" class="ui-bordered-light">
+          <v-card
+            variant="text"
+            v-for="n in project_groups"
+            :key="n.id"
+            class="d-flex px-2 py-1 align-center"
+            @click="
+              projects_store.selectProjectGroup(n.id);
+              closeDropdown();
+            "
+          >
             <v-avatar size="40px" class="mr-4">
               <v-img
                 cover
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Electronic-Arts-Logo.svg/2048px-Electronic-Arts-Logo.svg.png"
+                :src="`https://source.boringavatars.com/bauhaus/120/${n.name}`"
               />
             </v-avatar>
             <div class="d-flex flex-column mr-4">
               <div class="body-2 text-black font-weight-medium">
-                {{ projects_store.selectedProjectGroup?.name }}
+                {{ n.name }}
               </div>
               <div class="text-caption text-grey font-weight-medium">
-                Production
+                Development
               </div>
             </div>
-          </div>
+          </v-card>
         </v-card>
       </div>
-    </v-scroll-y-reverse-transition>
+    </v-slide-y-reverse-transition>
   </div>
 </template>
 

@@ -22,14 +22,14 @@
           {
             title: 'Webhooks',
             to: '/dsh/developers/webhooks',
-            icon: 'solid-interface-attach',
-            icon_inactive: 'outline-interface-attach',
+            icon: 'solid-files-cloud-upload',
+            icon_inactive: 'outline-files-cloud-upload',
           },
           {
             title: 'Event Emitters',
-            to: '/dsh/developers/sync',
-            icon: 'solid-interface-sort',
-            icon_inactive: 'outline-interface-sort',
+            to: '/dsh/developers/event-emitters',
+            icon: 'solid-devices-server',
+            icon_inactive: 'outline-devices-server',
           },
         ],
 
@@ -37,20 +37,20 @@
           {
             title: 'Minter',
             to: '/dsh/developers/minter',
-            icon: 'solid-general-wallet',
-            icon_inactive: 'outline-general-wallet',
-          },
-          {
-            title: 'Syncer',
-            to: '/dsh/developers/syncer',
             icon: 'solid-status-lightning',
             icon_inactive: 'outline-status-lightning',
           },
           {
-            title: 'Wallet Login',
-            to: '/dsh/developers/wallet-login',
+            title: 'Syncer',
+            to: '/dsh/developers/syncer',
             icon: 'solid-interface-cursor',
             icon_inactive: 'outline-interface-cursor',
+          },
+          {
+            title: 'Web3 Auth',
+            to: '/dsh/developers/wallet-login',
+            icon: 'solid-general-wallet',
+            icon_inactive: 'outline-general-wallet',
           },
         ],
       ]"

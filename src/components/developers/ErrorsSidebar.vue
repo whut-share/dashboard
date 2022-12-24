@@ -1,8 +1,6 @@
 <template>
   <v-card
-    class="errors-sidebar d-flex flex-column"
-    variant="outlined"
-    color="accent"
+    class="errors-sidebar d-flex flex-column ui-bordered-light"
     :rounded="0"
   >
     <div class="d-flex flex-column pa-4">

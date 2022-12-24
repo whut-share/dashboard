@@ -31,7 +31,7 @@
             disabled: true,
           },
           {
-            title: 'Wallet Login',
+            title: 'Web3 Auth',
             to: '/dsh/products/wallet-login',
 
             icon: 'solid-general-wallet',

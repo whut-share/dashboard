@@ -50,16 +50,15 @@
           </v-col>
         </v-row>
         <v-card
-          variant="outlined"
-          color="accent"
+          variant="text"
           width="100%"
           height="200"
           v-else
           class="mt-4 d-flex align-center justify-center"
         >
           <v-progress-circular
-            color="primary"
-            indeterminate
+            v-model="is_event_emitter_instances_loading"
+            contained
           ></v-progress-circular>
         </v-card>
       </v-fade-transition>
@@ -95,7 +94,7 @@ const projects_store = useProjectsStore();
 const syncer_instance_id = computed(() => {
   return projects_store.selectedProjectGroupProjects.find(
     (n) => n.id === selected_project_id.value
-  )?.minter_syncer_instance.id;
+  )?.minter_syncer_instance?.id;
 });
 const selected_project_id = ref<string | null>(null);
 
@@ -116,6 +115,7 @@ async function syncEventEmitterInstances() {
     .then((res) => {
       event_emitter_instances.value = res.data.event_emitter_instances;
     })
+    .then(() => new Promise((resolve) => setTimeout(resolve, 1000)))
     .finally(() => {
       is_event_emitter_instances_loading.value = false;
     });
@@ -133,7 +133,7 @@ function openModal() {
   } as ICreateEventEmitterInstanceModalData);
 }
 
-const is_event_emitter_instances_loading = ref(false);
+const is_event_emitter_instances_loading = ref(true);
 </script>
 
 <style lang="scss" scoped></style>

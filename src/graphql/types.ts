@@ -28,6 +28,123 @@ export interface GqlChainNetworksSelect {
 // This file was automatically generated and should not be edited.
 
 // ====================================================
+// GraphQL mutation operation: GqlEventEmitterInstancesCreateOne
+// ====================================================
+
+export interface GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: any;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
+}
+
+export interface GqlEventEmitterInstancesCreateOne {
+  eventEmitterInstanceCreate: GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate;
+}
+
+export interface GqlEventEmitterInstancesCreateOneVariables {
+  data: IEventEmitterInstanceCreate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlEventEmitterInstancesGet
+// ====================================================
+
+export interface GqlEventEmitterInstancesGet_event_emitter_instance {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: any;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
+}
+
+export interface GqlEventEmitterInstancesGet {
+  event_emitter_instance: GqlEventEmitterInstancesGet_event_emitter_instance;
+}
+
+export interface GqlEventEmitterInstancesGetVariables {
+  id: any;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GqlEventEmitterInstancesSelect
+// ====================================================
+
+export interface GqlEventEmitterInstancesSelect_event_emitter_instances {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: any;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
+}
+
+export interface GqlEventEmitterInstancesSelect {
+  event_emitter_instances: GqlEventEmitterInstancesSelect_event_emitter_instances[];
+}
+
+export interface GqlEventEmitterInstancesSelectVariables {
+  filter: IEventEmitterInstancesFilter;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL mutation operation: GqlEventEmitterInstancesUpdateOne
+// ====================================================
+
+export interface GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate {
+  __typename: "EventEmitterInstance";
+  id: string;
+  is_webhook_emitter: boolean;
+  webhook_endpoint: string | null;
+  syncer_instance: any;
+  is_stopped: boolean;
+  name: string;
+  created_at: any;
+  updated_at: any;
+}
+
+export interface GqlEventEmitterInstancesUpdateOne {
+  eventEmitterInstanceUpdate: GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate;
+}
+
+export interface GqlEventEmitterInstancesUpdateOneVariables {
+  id: any;
+  data: IEventEmitterInstanceUpdate;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
 // GraphQL mutation operation: GqlMinterCheckoutSessionsAttachStripePaymentIntent
 // ====================================================
 
@@ -221,123 +338,6 @@ export interface GqlMinterCheckoutSessionsUpdateOne {
 export interface GqlMinterCheckoutSessionsUpdateOneVariables {
   id: any;
   data: IMinterCheckoutSessionUpdate;
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
-// ====================================================
-// GraphQL mutation operation: GqlEventEmitterInstancesCreateOne
-// ====================================================
-
-export interface GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate {
-  __typename: "EventEmitterInstance";
-  id: string;
-  is_webhook_emitter: boolean;
-  webhook_endpoint: string | null;
-  syncer_instance: any;
-  is_stopped: boolean;
-  name: string;
-  created_at: any;
-  updated_at: any;
-}
-
-export interface GqlEventEmitterInstancesCreateOne {
-  eventEmitterInstanceCreate: GqlEventEmitterInstancesCreateOne_eventEmitterInstanceCreate;
-}
-
-export interface GqlEventEmitterInstancesCreateOneVariables {
-  data: IEventEmitterInstanceCreate;
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
-// ====================================================
-// GraphQL query operation: GqlEventEmitterInstancesGet
-// ====================================================
-
-export interface GqlEventEmitterInstancesGet_event_emitter_instance {
-  __typename: "EventEmitterInstance";
-  id: string;
-  is_webhook_emitter: boolean;
-  webhook_endpoint: string | null;
-  syncer_instance: any;
-  is_stopped: boolean;
-  name: string;
-  created_at: any;
-  updated_at: any;
-}
-
-export interface GqlEventEmitterInstancesGet {
-  event_emitter_instance: GqlEventEmitterInstancesGet_event_emitter_instance;
-}
-
-export interface GqlEventEmitterInstancesGetVariables {
-  id: any;
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
-// ====================================================
-// GraphQL query operation: GqlEventEmitterInstancesSelect
-// ====================================================
-
-export interface GqlEventEmitterInstancesSelect_event_emitter_instances {
-  __typename: "EventEmitterInstance";
-  id: string;
-  is_webhook_emitter: boolean;
-  webhook_endpoint: string | null;
-  syncer_instance: any;
-  is_stopped: boolean;
-  name: string;
-  created_at: any;
-  updated_at: any;
-}
-
-export interface GqlEventEmitterInstancesSelect {
-  event_emitter_instances: GqlEventEmitterInstancesSelect_event_emitter_instances[];
-}
-
-export interface GqlEventEmitterInstancesSelectVariables {
-  filter: IEventEmitterInstancesFilter;
-}
-
-/* tslint:disable */
-/* eslint-disable */
-// @generated
-// This file was automatically generated and should not be edited.
-
-// ====================================================
-// GraphQL mutation operation: GqlEventEmitterInstancesUpdateOne
-// ====================================================
-
-export interface GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate {
-  __typename: "EventEmitterInstance";
-  id: string;
-  is_webhook_emitter: boolean;
-  webhook_endpoint: string | null;
-  syncer_instance: any;
-  is_stopped: boolean;
-  name: string;
-  created_at: any;
-  updated_at: any;
-}
-
-export interface GqlEventEmitterInstancesUpdateOne {
-  eventEmitterInstanceUpdate: GqlEventEmitterInstancesUpdateOne_eventEmitterInstanceUpdate;
-}
-
-export interface GqlEventEmitterInstancesUpdateOneVariables {
-  id: any;
-  data: IEventEmitterInstanceUpdate;
 }
 
 /* tslint:disable */
@@ -786,6 +786,8 @@ export interface IEventEmitterInstanceUpdate {
 
 export interface IEventEmitterInstancesFilter {
   syncer_instance?: any | null;
+  type?: string | null;
+  search?: string | null;
 }
 
 export interface IMinterCheckoutSessionCreate {

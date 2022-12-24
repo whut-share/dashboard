@@ -8,25 +8,35 @@
 
       <v-btn
         v-if="!is_editing"
-        size="large"
         color="primary"
         variant="flat"
         prepend-icon="solid-interface-edit"
         @click="turnOnEditing"
+        rounded="lg"
       >
         Edit
       </v-btn>
 
-      <v-btn
-        v-else
-        size="large"
-        color="primary"
-        variant="flat"
-        prepend-icon="solid-interface-edit"
-        @click="turnOffEditing"
-      >
-        Save
-      </v-btn>
+      <template v-else>
+        <v-btn
+          color="error"
+          variant="text"
+          @click="turnOffEditing"
+          class="mr-4"
+          rounded="lg"
+        >
+          Cancel
+        </v-btn>
+        <v-btn
+          color="success"
+          variant="flat"
+          prepend-icon="solid-interface-edit"
+          @click="turnOffEditing"
+          rounded="lg"
+        >
+          Save
+        </v-btn>
+      </template>
     </div>
 
     <v-card class="pa-6 mt-6" elevation="10">

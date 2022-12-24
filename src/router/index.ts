@@ -84,10 +84,10 @@ const routes: Array<RouteRecordRaw> = [
               ),
           },
           {
-            path: "sync",
+            path: "event-emitters",
             component: () =>
               loadingMiddleware(
-                import("@/views/dashboard/developers/SyncPage.vue")
+                import("@/views/dashboard/developers/EventEmittersPage.vue")
               ),
           },
 
@@ -114,7 +114,7 @@ const routes: Array<RouteRecordRaw> = [
           },
 
           {
-            path: "eei/:eei",
+            path: "event-emitters/:eei",
             component: () =>
               loadingMiddleware(
                 import(

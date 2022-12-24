@@ -13,6 +13,16 @@ a {
   --v-shadow-key-umbra-opacity: rgba(0,0,0,0.02);
   --v-shadow-key-penumbra-opacity: rgba(0,0,0,0.02);
   --v-theme-on-success: 255,255,255 !important;
+
+  .ui-bordered-light {
+    border-color: rgba(210, 218, 255, 0.5) !important;
+    border-style: solid !important;
+    border-width: 1px;
+  }
+
+  .v-divider {
+    border-color: rgba(210, 218, 255, 0.5) !important;
+  }
 }
 
 .v-theme--dark {
@@ -75,9 +85,6 @@ html, .v-application {
 
   .v-field__field {
     border-radius: inherit !important;
-    input {
-      background: #fff;
-    }
   }
 
   .v-field__field input {
@@ -86,6 +93,7 @@ html, .v-application {
 
   .v-input__control {
     border-radius: 12px !important;
+    background: #fff !important;
   }
 
   .v-field__outline {

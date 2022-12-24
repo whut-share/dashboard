@@ -1,8 +1,7 @@
 <template>
   <v-card
-    variant="outlined"
-    color="accent"
-    class="pa-3 d-flex align-center projects-selector"
+    class="pa-3 d-flex align-center projects-selector ui-bordered-light"
+    elevation="10"
   >
     <!-- <v-btn
       v-if="props.multiple"
