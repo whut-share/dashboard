@@ -88,7 +88,7 @@ async function render() {
     fonts: [
       {
         family: "Satoshi",
-        cssSrc: "https://test-api.interactwith.com/satoshi.css",
+        cssSrc: "https://test-api.interactwith.com/static/satoshi.css",
       },
     ],
     appearance: {
