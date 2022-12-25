@@ -16,6 +16,7 @@ export interface GqlChainNetworksSelect_chain_networks {
   block_time: number;
   native_curr_symbol: string;
   icon_url: string | null;
+  scan_url: string | null;
 }
 
 export interface GqlChainNetworksSelect {
