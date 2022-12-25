@@ -155,7 +155,7 @@ async function signUp() {
       signup_loading.value = false;
     });
 
-  router.push("/");
+  router.push("/dsh");
 }
 
 const auth_store = useAuthStore();
