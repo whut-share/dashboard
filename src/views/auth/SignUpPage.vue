@@ -4,7 +4,7 @@
       <div class="d-flex flex-column align-center mb-6">
         <div class="text-h4 font-weight-medium">Create account</div>
         <div class="text-body-2 mt-1">
-          Have an account? <router-link to="/">Sign in</router-link>
+          Have an account? <router-link to="/sign-in">Sign in</router-link>
         </div>
       </div>
 

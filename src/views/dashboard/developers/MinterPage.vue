@@ -7,7 +7,20 @@
     </div>
 
     <v-card elevation="10" class="d-flex align-start flex-column pa-6 mt-8">
-      <div class="text-h5 font-weight-bold text-black">Settings</div>
+      <div class="text-h5 font-weight-bold text-black">
+        Settings
+
+        <v-btn
+          :loading="is_test_loading"
+          rounded="lg"
+          class="ml-2"
+          prepend-icon="solid-files-book-mark"
+          color="black"
+          @click="testCreateMinChSess"
+        >
+          Testing Checkout Session
+        </v-btn>
+      </div>
 
       <v-row class="w-100 mt-2">
         <v-col cols="6">
@@ -79,9 +92,12 @@ import {
   GqlEventEmitterInstancesSelectVariables,
   GqlEventEmitterInstancesUpdateOne,
   GqlEventEmitterInstancesUpdateOneVariables,
+  GqlMinterCheckoutSessionsCreateOne,
+  GqlMinterCheckoutSessionsCreateOneVariables,
   GQL_EVENT_EMITTER_INSTANCES_CREATE_ONE,
   GQL_EVENT_EMITTER_INSTANCES_SELECT,
   GQL_EVENT_EMITTER_INSTANCES_UPDATE_ONE,
+  GQL_MINTER_CHECKOUT_SESSIONS_CREATE_ONE,
 } from "@/graphql";
 import { IEventEmitterInstance } from "@/interfaces";
 import { apollo_client } from "@/plugins";
@@ -134,6 +150,37 @@ function openModal() {
 }
 
 const is_event_emitter_instances_loading = ref(true);
+
+const is_test_loading = ref(false);
+
+async function testCreateMinChSess() {
+  is_test_loading.value = true;
+  const {
+    data: { minterCheckoutSessionCreate },
+  } = await apollo_client
+    .query<
+      GqlMinterCheckoutSessionsCreateOne,
+      GqlMinterCheckoutSessionsCreateOneVariables
+    >({
+      query: GQL_MINTER_CHECKOUT_SESSIONS_CREATE_ONE,
+      variables: {
+        data: {
+          project: selected_project_id.value,
+          asset_info: {
+            id: "ITEM_ID_IN_YOUR_BACKEND",
+            name: "Coopol 34454",
+            description: "Some gaming rifle, very rare",
+            image_url: "http://pngimg.com/uploads/ak47/ak47_PNG15453.png",
+          },
+        },
+      },
+    })
+    .finally(() => {
+      is_test_loading.value = false;
+    });
+
+  (window as any).open(minterCheckoutSessionCreate.url, "_blank").focus();
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -209,9 +209,46 @@ export interface GqlMinterCheckoutSessionsAttachStripePaymentIntentVariables {
 // GraphQL mutation operation: GqlMinterCheckoutSessionsCreateOne
 // ====================================================
 
+export interface GqlMinterCheckoutSessionsCreateOne_minterCheckoutSessionCreate_price_estimation {
+  __typename: "MinterCheckoutSessionPriceEstimate";
+  price: number;
+  total_eth: number;
+  eth_price: number;
+  gas_price: number;
+  gas: number;
+  slippage: number;
+}
+
+export interface GqlMinterCheckoutSessionsCreateOne_minterCheckoutSessionCreate_asset_info {
+  __typename: "MinterNftAssetInfo";
+  id: string;
+  name: string;
+  description: string | null;
+  image_url: string | null;
+}
+
 export interface GqlMinterCheckoutSessionsCreateOne_minterCheckoutSessionCreate {
   __typename: "MinterCheckoutSession";
   id: string;
+  created_at: any;
+  updated_at: any;
+  project: string;
+  address: any | null;
+  mint_tx: any | null;
+  mint_request_id: string | null;
+  mint_token_id: number | null;
+  payment_id: string | null;
+  network: any | null;
+  contract_type: string;
+  is_succeeded: boolean;
+  is_minted: boolean;
+  is_payed: boolean;
+  is_expired: boolean;
+  expires_at: any;
+  url: string;
+  payment_expires_at: any | null;
+  price_estimation: GqlMinterCheckoutSessionsCreateOne_minterCheckoutSessionCreate_price_estimation | null;
+  asset_info: GqlMinterCheckoutSessionsCreateOne_minterCheckoutSessionCreate_asset_info;
 }
 
 export interface GqlMinterCheckoutSessionsCreateOne {

@@ -14,11 +14,7 @@
         v-model="overlay"
         class="d-flex align-center justify-center"
       >
-        <v-progress-circular
-          color="primary"
-          indeterminate
-          size="32"
-        ></v-progress-circular>
+        <v-progress-circular color="primary" size="32"></v-progress-circular>
       </v-overlay>
     </v-card>
     <ui-titled-input title="Wallet address">
@@ -58,8 +54,8 @@ const stripe = useStripe();
 const is_render_loading = ref(true);
 const is_payment_loading = ref(false);
 
-const minter_flow_store = useMinterCheckoutStore();
-const session = computed(() => minter_flow_store.session);
+const minter_checkout_store = useMinterCheckoutStore();
+const session = computed(() => minter_checkout_store.session);
 const overlay = computed(
   () => is_render_loading.value || is_payment_loading.value
 );
@@ -78,7 +74,7 @@ async function render() {
       },
     })
     .then((res) => {
-      minter_flow_store.setSession(
+      minter_checkout_store.setSession(
         res.data.minterCheckoutSessionAttachStripePaymentIntent
       );
     });
@@ -136,20 +132,33 @@ async function submit() {
 
   is_payment_loading.value = true;
 
-  await minter_flow_store.updateSessionAndSave({
+  await minter_checkout_store.updateSessionAndSave({
     address: wallet_address.value,
   });
 
   await stripe
     .confirmPayment({
       elements: stripe_elements,
-      confirmParams: {
-        return_url: window.location.href,
-      },
+      // confirmParams: {
+      //   return_url: window.location.href,
+      // },
+      redirect: "if_required",
     })
     .finally(() => {
       is_payment_loading.value = false;
     });
+
+  await startChecks();
+
+  minter_checkout_store.nextPage();
+}
+
+async function startChecks() {
+  await minter_checkout_store.sync();
+  if (!session.value?.is_payed) {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await startChecks();
+  }
 }
 
 onMounted(() => {

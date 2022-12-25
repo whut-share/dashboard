@@ -23,6 +23,11 @@ a {
   .v-divider {
     border-color: rgba(210, 218, 255, 0.5) !important;
   }
+
+  .v-overlay__scrim {
+    background-color: rgba(#0D0D2F, 1) !important;
+    opacity: 0.1 !important;
+  }
 }
 
 .v-theme--dark {

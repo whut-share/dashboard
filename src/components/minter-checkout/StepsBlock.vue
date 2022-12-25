@@ -52,7 +52,7 @@
       </div>
     </div>
     <v-divider color="grey-lighten-5"></v-divider>
-    <div class="cnt mx-3">
+    <div class="cnt ml-3">
       <v-card
         @click="minter_checkout_store.setPage(3)"
         bg-color="white"
