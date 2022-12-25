@@ -66,8 +66,7 @@
         <div class="flex-grow-1">
           <v-fade-transition mode="out-in">
             <v-card
-              color="m-emphasis"
-              variant="tonal"
+              variant="text"
               height="100%"
               class="pa-5 text-h6 d-flex align-center justify-center font-weight-bold"
               rounded="xl"
