@@ -39,6 +39,7 @@
       color="primary"
       rounded="lg"
       :disabled="!session?.is_succeeded"
+      target="_blank"
       :href="`${network?.scan_url}/tx/${session?.mint_tx}`"
     >
       Check transaction
