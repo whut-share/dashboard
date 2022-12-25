@@ -39,7 +39,7 @@
       color="primary"
       rounded="lg"
       :disabled="!session?.is_succeeded"
-      href="#"
+      :href="`${network?.scan_url}/tx/${session?.mint_tx}`"
     >
       Check transaction
     </v-btn>
@@ -47,10 +47,11 @@
 </template>
 
 <script setup lang="ts">
-import { useMinterCheckoutStore } from "@/store";
+import { useChainNetworksStore, useMinterCheckoutStore } from "@/store";
 import { computed, onMounted, ref } from "vue";
 
 const minter_checkout_store = useMinterCheckoutStore();
+const chain_networks_store = useChainNetworksStore();
 
 const session = computed(() => minter_checkout_store.session);
 
@@ -63,4 +64,10 @@ async function startChecks() {
 onMounted(() => {
   startChecks();
 });
+
+const network = computed(() =>
+  chain_networks_store.chain_networks.find(
+    (x) => x.id === session.value?.network
+  )
+);
 </script>
