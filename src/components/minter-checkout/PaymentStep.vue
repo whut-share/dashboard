@@ -130,25 +130,26 @@ async function submit() {
     throw new Error("No address");
   }
 
-  is_payment_loading.value = true;
+  const fire = async () => {
+    await minter_checkout_store.updateSessionAndSave({
+      address: wallet_address.value,
+    });
 
-  await minter_checkout_store.updateSessionAndSave({
-    address: wallet_address.value,
-  });
-
-  await stripe
-    .confirmPayment({
+    await stripe.confirmPayment({
       elements: stripe_elements,
       // confirmParams: {
       //   return_url: window.location.href,
       // },
       redirect: "if_required",
-    })
-    .finally(() => {
-      is_payment_loading.value = false;
     });
 
-  await startChecks();
+    await startChecks();
+  };
+
+  is_payment_loading.value = true;
+  await fire().finally(() => {
+    is_payment_loading.value = false;
+  });
 
   minter_checkout_store.nextPage();
 }
